@@ -16,24 +16,48 @@
 	</head>
 	<body class="bg-darkgrey sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
-			<div style="" class="header absolute inset-0 z-10">
-				<div style="" class="logo float-left">
-					<img height="49px" src="img/logo-white.svg" />
+			<div style="" class="header-container absolute inset-0 z-10">
+				<div style="" class="flex">
+					<img class="logo" src="img/logo-white.svg" />
+					<img class="code-logo self-end" src="img/code-logo-white.svg" />
+					<div style="" class="grid grid-cols-4 gap-0 ml-auto text-white items-center">
+						<div style="" class="flex flex-col p-2 items-center news">
+							<a tabindex="1" href="index">News</a>
+						</div>
+						<div style="" class="flex flex-col p-2 items-center use-cases underline decoration-solid underline-offset-8">
+							<a tabindex="1" href="uses">Use Cases</a>
+						</div>
+						<div style="" class="flex flex-col p-2 items-center">
+							<a tabindex="1" href="community">Community</a>
+						</div>
+						<div style="" class="flex flex-col p-2 items-center">
+							<a tabindex="1" href="contact">Contact</a>
+						</div>
+					</div>
 				</div>
-				<div style="" class="code-logo float-left align-bottom">
-					<img height="45px" src="img/code-logo-white.svg" />
+			</div>
+			<div style="" class="mobile-header-container">
+				<div class="flex place-items-center mobile-header">
+					<img src="img/logo-red.svg" class="logo" />
+					<img src="img/code-logo-red.svg" class="code-logo" />
+					<div id="open-menu-button-div" onclick="openmenu();" class="open-menu-button-div ml-auto">
+						<img class="open-menu-button" src="img/menu.svg" />
+					</div>
+					<div id="close-menu-button-div" onclick="closemenu();" class="close-menu-button-div ml-auto hidden">
+						<img class="close-menu-button" src="img/close.svg" />
+					</div>
 				</div>
-				<div style="" class="grid grid-cols-4 gap-0 float-right text-white">
-					<div style="" class="flex flex-col p-2 items-center news">
+				<div style="" id="mobile-menu" class="mobile-menu hidden">
+					<div style="" class=" ">
 						<a href="index">News</a>
 					</div>
-					<div style="" class="flex flex-col p-2 items-center use-cases">
+					<div style="" class="">
 						<a href="uses">Use Cases</a>
 					</div>
-					<div style="" class="flex flex-col p-2 items-center underline decoration-solid underline-offset-8">
+					<div style="" class="">
 						<a href="community">Community</a>
 					</div>
-					<div style="" class="flex flex-col p-2 items-center">
+					<div style="" class="">
 						<a href="contact">Contact</a>
 					</div>
 				</div>
@@ -55,27 +79,27 @@
 					</div>
 				</div>
 			</div>
-			<div style="" class="footer flex bg-black justify-between">
-				<div style="" class="grid grid-cols-4 gap-0 text-white items-center">
+			<div style="" class="footer flex bg-black lg:py-0 py-6 justify-around lg:justify-between min-h-min lg:min-h-150px">
+				<div style="" class="grid grid-cols-1 place-items-start lg:grid-cols-4 lg:items-center lg:place-items-center  text-white">
 					<div style="" class="flex flex-col p-2 items-center font-bold news">
-						<a href="index">News</a>
+						<a tabindex="3" href="index">News</a>
 					</div>
 					<div style="" class="flex flex-col p-2 items-center font-bold use-cases">
-						<a href="uses">Use Cases</a>
+						<a tabindex="3" href="uses">Use Cases</a>
 					</div>
 					<div style="" class="flex flex-col p-2 items-center font-bold">
-						<a href="community">Community</a>
+						<a tabindex="3" href="community">Community</a>
 					</div>
 					<div style="" class="flex flex-col p-2 items-center font-bold">
-						<a href="contact">Contact</a>
+						<a tabindex="3" href="contact">Contact</a>
 					</div>
 				</div>
-				<div style="" class="grid grid-cols-2 gap-0 text-white content-center">
-					<div style="" class="flex flex-col p-2 pr-6">
-						<a href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/linkedin.svg" />Linkedin</a>
+				<div style="" class="grid grid-cols-1 lg:grid-cols-2 gap-0 text-white content-center ">
+					<div style="" class="flex flex-col p-2  pr-6">
+						<a tabindex="3" href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/linkedin.svg"/>Linkedin</a>
 					</div>
 					<div style="" class="flex flex-col p-2">
-						<a href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/github.svg" />Github</a>
+						<a tabindex="3" href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/github.svg"/>Github</a>
 					</div>
 				</div>
 			</div>
