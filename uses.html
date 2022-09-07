@@ -5,10 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<meta name="description" content="A description of the site" />
-		<meta name="keywords" content="keyword1 keyword2" />
-		<meta name="author" content="author here" />
-		<title>Home Page</title>
+		<meta name="description" content="Use cases for CodeX" />
+		<meta name="keywords" content="codeX HL7 mCode EHR FHIR" />
+		<meta name="author" content="Codex" />
+		<title>Use Cases</title>
 		<link href="css/styles.css" rel="stylesheet" />
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link href="css/satoshi.css" rel="stylesheet" />
@@ -16,202 +16,197 @@
 	</head>
 	<body class="bg-darkgrey sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
-		<div style="" class="header absolute inset-0 z-10">
-			<div style="" class="logo float-left">
-				<img height="49px" src="img/logo-white.svg" />
-			</div>
-			<div style="" class="code-logo float-left align-bottom">
-				<img height="45px" src="img/code-logo-white.svg" />
-			</div>
-			<div style="" class="grid grid-cols-4 gap-0 float-right text-white items-center">
-				<div style="" class="flex flex-col p-2 items-center news">
-					<a href="index">News</a>
-				</div>
-				<div style="" class="flex flex-col p-2 items-center use-cases underline decoration-solid underline-offset-8">
-					<a href="uses">Use Cases</a>
-				</div>
-				<div style="" class="flex flex-col p-2 items-center">
-					<a href="community">Community</a>
-				</div>
-				<div style="" class="flex flex-col p-2 items-center">
-					<a href="contact">Contact</a>
-				</div>
-			</div>
-		</div>
-		<div style="" class="mobile-header">
-			redo this with flex
-			<div style="" class="logo float-left">
-				<img height="49px" src="img/logo-red.svg" />
-			</div>
-			<div style="" class="code-logo float-left align-bottom">
-				<img height="45px" src="img/code-logo-red.svg" />
-			</div>
-			<div style="" class="mobile-menu-show float-right">
-				<img src="img/menu.svg" />
-			</div>
-			<div style="" class="mobile-menu-close float-right">
-				<img src="img/menu.svg" />
-			</div>
-			<div style="" class="mobile-menu items-center">
-				<div style="" class=" ">
-					<a href="index">News</a>
-				</div>
-				<div style="" class="">
-					<a href="uses">Use Cases</a>
-				</div>
-				<div style="" class="">
-					<a href="community">Community</a>
-				</div>
-				<div style="" class="">
-					<a href="contact">Contact</a>
-				</div>
-			</div>
-		</div>
-		<div class="main mb-auto">
-			<div style="" class="use-header flex justify-center items-center">
-				<div class="text-white text-center">
-					<h2 style="" class='h2 satoshi-bold font-40px'>Use Cases</h2>
-					<div style="max-width: 605px;" class="font-normal font-22px">CodeX provides a framework for community driven, implementation-focused initiatives.</div>
-				</div>
-			</div>
-			<div style="" class="flex bg-backgroundgrey justify-center items-center use-explain-container">
-				<div style="" class="use-explain">
-					Each CodeX Use Case progresses through three stages of development.
-				</div>
-				<img src="img/use-steps.png" />
-			</div>
-			<div style="" class="bg-white uses-list">
-				<div style="" class="flex place-content-center use-container">
-					<div style="" class="use-num-container text-darkred">
-						<div class="use-num">5</div>
-						<div class="use-num-desc" style="">In Execution</div>
-					</div>
-					<div style="" class="flex flex-col items-stretch">
-						<img src="img/diamond1.svg" />
-						<div style="" class="use-line border-darkred"></div>
-					</div>
-					<div style="" class="use-list">
-						<div style="" class="use-entry">
-							<div style="">
-								<h3 class="h3">Cancer Registry Reporting</h3>
-							</div>
-							<div class="use-entry-desc">Enable reporting of mCODE-based cancer data from cancer center health center EHRs to a state and a private registries that are aggregating data for different reasons, substantially reducing duplication and burden while increasing reporting speed and accuracy.</div>
+			<div style="" class="header-container absolute inset-0 z-10">
+				<div style="" class="flex">
+					<img class="logo" src="img/logo-white.svg" />
+					<img class="code-logo self-end" src="img/code-logo-white.svg" />
+					<div style="" class="grid grid-cols-4 gap-0 ml-auto text-white items-center">
+						<div style="" class="flex flex-col p-2 items-center news">
+							<a tabindex="1" href="index">News</a>
 						</div>
-						<div style="" class="use-entry">
-							<div>
-								<h3 class="h3">EHR Endpoints for Clinical Trials (iCAREdata)</h3>
-							</div>
-							<div class="use-entry-desc">Collect research-quality mCODE-based data in and share from EHRs to increase the value of real-world data for clinical trials, and reduce and potentially eliminate manual and/or duplicate data entry into case report forms. </div>
+						<div style="" class="flex flex-col p-2 items-center use-cases underline decoration-solid underline-offset-8">
+							<a tabindex="1" href="uses">Use Cases</a>
 						</div>
-						<div style="" class="use-entry">
-							<div>
-								<h3 class="h3">Integrated Trial Matching for Cancer Patients and Providers</h3>
-							</div>
-							<div class="use-entry-desc"> Leverage mCODE-based data standards and open APIs that enable interoperable, scalable, and accessible clinical trial matching services to improve the ability for patients to find clinical trials for which they may be eligible. </div>
+						<div style="" class="flex flex-col p-2 items-center">
+							<a tabindex="1" href="community">Community</a>
 						</div>
-						<div style="" class="use-entry">
-							<div>
-								<h3 class="h3">mCODE++ Extraction</h3>
-							</div>
-							<div class="use-entry-desc"> Software to enable existing EHRs and other systems to share cancer patient data conformant to the mCODE FHIR IG, to support a variety of use cases. </div>
-						</div>
-						<div style="" class="use-entry-last">
-							<div>
-								<h3 class="h3">Radiation Treatment Therapy Data for Cancer</h3>
-							</div>
-							<div class="use-entry-desc"> Leverage mCODE and extensions to enable sharing of critical radiation therapy treatment data for care coordination or data reuse (research, quality measurement, payer-required reporting). </div>
+						<div style="" class="flex flex-col p-2 items-center">
+							<a tabindex="1" href="contact">Contact</a>
 						</div>
 					</div>
 				</div>
-				<div style="" class="flex place-content-center use-container">
-					<div style="" class="use-num-container text-gold">
-						<div class="use-num">1</div>
-						<div class="use-num-desc" style="">In Planning</div>
+			</div>
+			<div style="" class="mobile-header-container">
+				<div class="flex place-items-center mobile-header">
+					<img src="img/logo-red.svg" class="logo" />
+					<img src="img/code-logo-red.svg" class="code-logo" />
+					<div id="open-menu-button-div" onclick="openmenu();" class="open-menu-button-div ml-auto">
+						<img class="open-menu-button" src="img/menu.svg" />
 					</div>
-					<div style="" class="flex flex-col items-stretch">
-						<img src="img/diamond2.svg" />
-						<div style="" class="use-line border-gold"></div>
-					</div>
-					<div style="" class="use-list">
-						<div style="" class="use-entry-last">
-							<div style="">
-								<h3 class="h3">Prior Authorization in Oncology</h3>
-							</div>
-							<div class="use-entry-desc">Facilitate sharing of mCODE-based clinical data between providers and payers to reduce burden and speed authorization or requests for more information.</div>
-						</div>
+					<div id="close-menu-button-div" onclick="closemenu();" class="close-menu-button-div ml-auto hidden">
+						<img class="close-menu-button" src="img/close.svg" />
 					</div>
 				</div>
-				<div style="" class="flex place-content-center use-container">
-					<div style="" class="use-num-container text-medgrey">
-						<div class="use-num">4</div>
-						<div class="use-num-desc" style="">In Discovery</div>
+				<div style="" id="mobile-menu" class="mobile-menu hidden">
+					<div style="" class=" ">
+						<a href="index">News</a>
 					</div>
-					<div style="" class="flex flex-col items-stretch">
-						<img src="img/diamond3.svg" />
-						<div style="" class="use-line border-medgrey"></div>
+					<div style="" class="">
+						<a href="uses">Use Cases</a>
 					</div>
-					<div style="" class="use-list">
+					<div style="" class="">
+						<a href="community">Community</a>
+					</div>
+					<div style="" class="">
+						<a href="contact">Contact</a>
+					</div>
+				</div>
+			</div>
+			<div class="main mb-auto">
+				<div style="" class="use-header flex justify-center items-center">
+					<div class="text-white text-center">
+						<h2  tabindex="2" class="h2 satoshi-bold font-40px">Use Cases</h2>
+						<div tabindex="2" style="max-width: 605px;" class="font-normal font-22px" >CodeX provides a framework for community driven, implementation-focused initiatives.</div>
+					</div>
+				</div>
+				<div style="" class="flex bg-backgroundgrey justify-center items-center use-explain-container" >
+					<div tabindex="2" style="" class="use-explain" >
+						Each CodeX Use Case progresses through three stages of development.
+					</div>
+					<img tabindex="2" src="img/use-steps.png" />
+				</div>
+				<div style="" class="bg-white uses-list">
+					<div style="" class="flex place-content-center use-container">
+						<div style="" class="use-num-container text-darkred">
+							<div tabindex="2" class="use-num" >5</div>
+							<div tabindex="2" class="use-num-desc" style="" >In Execution</div>
+						</div>
+						<div style="" tabindex="-1" class="flex flex-col items-stretch">
+							<img src="img/diamond1.svg" />
+							<div style="" class="use-line border-darkred"></div>
+						</div>
+						<div style="" class="use-list">
+							<div style=""   class="use-entry">
+								<div style="" tabindex="2">
+									<h3 class="h3">Cancer Registry Reporting</h3>
+								</div>
+								<div tabindex="2" class="use-entry-desc">Enable reporting of mCODE-based cancer data from cancer center health center EHRs to a state and a private registries that are aggregating data for different reasons, substantially reducing duplication and burden while increasing reporting speed and accuracy.</div>
+							</div>
+							<div style="" class="use-entry">
+								<div tabindex="2">
+									<h3 class="h3">EHR Endpoints for Clinical Trials (iCAREdata)</h3>
+								</div>
+								<div tabindex="2" class="use-entry-desc">Collect research-quality mCODE-based data in and share from EHRs to increase the value of real-world data for clinical trials, and reduce and potentially eliminate manual and/or duplicate data entry into case report forms. </div>
+							</div>
+							<div style="" class="use-entry">
+								<div tabindex="2">
+									<h3 class="h3">Integrated Trial Matching for Cancer Patients and Providers</h3>
+								</div>
+								<div tabindex="2" class="use-entry-desc"> Leverage mCODE-based data standards and open APIs that enable interoperable, scalable, and accessible clinical trial matching services to improve the ability for patients to find clinical trials for which they may be eligible. </div>
+							</div>
+							<div style="" class="use-entry">
+								<div tabindex="2">
+									<h3 class="h3">mCODE++ Extraction</h3>
+								</div>
+								<div tabindex="2" class="use-entry-desc"> Software to enable existing EHRs and other systems to share cancer patient data conformant to the mCODE FHIR IG, to support a variety of use cases. </div>
+							</div>
+							<div style="" class="use-entry-last">
+								<div tabindex="2">
+									<h3 class="h3">Radiation Treatment Therapy Data for Cancer</h3>
+								</div>
+								<div tabindex="2" class="use-entry-desc"> Leverage mCODE and extensions to enable sharing of critical radiation therapy treatment data for care coordination or data reuse (research, quality measurement, payer-required reporting). </div>
+							</div>
+						</div>
+					</div>
+					<div style="" class="flex place-content-center use-container">
+						<div style="" class="use-num-container text-gold">
+							<div tabindex="2" class="use-num">1</div>
+							<div tabindex="2" class="use-num-desc" style="">In Planning</div>
+						</div>
+						<div style="" tabindex="-1" class="flex flex-col items-stretch">
+							<img src="img/diamond2.svg" />
+							<div style="" class="use-line border-gold"></div>
+						</div>
+						<div style="" class="use-list">
+							<div style="" class="use-entry-last">
+								<div tabindex="2">
+									<h3 class="h3">Prior Authorization in Oncology</h3>
+								</div>
+								<div tabindex="2" class="use-entry-desc">Facilitate sharing of mCODE-based clinical data between providers and payers to reduce burden and speed authorization or requests for more information.</div>
+							</div>
+						</div>
+					</div>
+					<div style="" class="flex place-content-center use-container">
+						<div style="" class="use-num-container text-medgrey">
+							<div tabindex="2" class="use-num">4</div>
+							<div tabindex="2" class="use-num-desc" style="">In Discovery</div>
+						</div>
+						<div style="" tabindex="-1" class="flex flex-col items-stretch">
+							<img src="img/diamond3.svg" />
+							<div style="" class="use-line border-medgrey"></div>
+						</div>
+						<div style="" class="use-list">
 							<div style="" class="use-entry">
 								<div class="">
 									<div style="">
-										<h3 style="" class="h3 inline-block">CardX Hypertension Management</h3>
-										<span style="" class="use-explain-badge">NEW DOMAIN</span>
+										<h3 tabindex="2" style="" class="h3 inline-block">CardX Hypertension Management</h3>
+										<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap">NEW DOMAIN</span>
 									</div>
-									<div class="use-entry-desc">Designing and building an integrated standard that enables interoperable, scalable, and accessible hypertension management both at home and in the clinic, so that blood pressure data can easily be shared between home blood pressure measurement devices, patient data managers and health systems. </div>
+									<div tabindex="2" class="use-entry-desc">Designing and building an integrated standard that enables interoperable, scalable, and accessible hypertension management both at home and in the clinic, so that blood pressure data can easily be shared between home blood pressure measurement devices, patient data managers and health systems. </div>
 								</div>
 							</div>
 							<div style="" class="use-entry">
 								<div class="">
 									<div style="">
-										<h3 style="" class="h3 inline-block">Genomics Data Exchange</h3>
-										<span style="" class="use-explain-badge">NEW DOMAIN</span>
+										<h3 tabindex="2" style="" class="h3 inline-block">Genomics Data Exchange</h3>
+										<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap">NEW DOMAIN</span>
 									</div>
-									<div class="use-entry-desc">Designing and building scalable FHIR genomics interfaces so that genomic data can easily be shared between laboratories, EHRs and/or genomics repositories. </div>
+									<div tabindex="2" class="use-entry-desc">Designing and building scalable FHIR genomics interfaces so that genomic data can easily be shared between laboratories, EHRs and/or genomics repositories. </div>
 								</div>
 							</div>
 							<div style="" class="use-entry">
 								<div class="">
 									<div style="">
-										<h3 style="" class="h3 inline-block">Genomics Operations</h3>
-										<span style="" class="use-explain-badge">NEW DOMAIN</span>
+										<h3 tabindex="2" style="" class="h3 inline-block">Genomics Operations</h3>
+										<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap">NEW DOMAIN</span>
 									</div>
-									<div class="use-entry-desc">Enabling access to complex genomic data through APIs so that developers can more easily develop and populate data for a range of genomic applications. </div>
+									<div tabindex="2" class="use-entry-desc">Enabling access to complex genomic data through APIs so that developers can more easily develop and populate data for a range of genomic applications. </div>
 								</div>
 							</div>
 							<div style="" class="use-entry-last">
 								<div class="">
 									<div style="">
-										<h3 style="" class="h3 inline-block">Risk Evaluation and Mitigation Strategies</h3>
-										<span style="" class="use-explain-badge">NEW DOMAIN</span>
+										<h3 tabindex="2" style="" class="h3 inline-block">Risk Evaluation and Mitigation Strategies</h3>
+										<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap">NEW DOMAIN</span>
 									</div>
-									<div class="use-entry-desc">Create integrated, automated, efficient, and effective REMS programs by leveraging open data standards and creating the data infrastructure to enable REMS integration into the current workflow and data sharing across REMS stakeholders reducing undue burden. </div>
+									<div tabindex="2" class="use-entry-desc">Create integrated, automated, efficient, and effective REMS programs by leveraging open data standards and creating the data infrastructure to enable REMS integration into the current workflow and data sharing across REMS stakeholders reducing undue burden. </div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div style="" class="footer flex bg-black justify-between">
-				<div style="" class="grid grid-cols-4 gap-0 text-white items-center">
+			<div style="" class="footer flex bg-black lg:py-0 py-6 justify-around lg:justify-between min-h-min lg:min-h-150px">
+				<div style="" class="grid grid-cols-1 place-items-start lg:grid-cols-4 lg:items-center lg:place-items-center  text-white">
 					<div style="" class="flex flex-col p-2 items-center font-bold news">
-						<a href="index">News</a>
+						<a tabindex="3" href="index">News</a>
 					</div>
 					<div style="" class="flex flex-col p-2 items-center font-bold use-cases">
-						<a href="uses">Use Cases</a>
+						<a tabindex="3" href="uses">Use Cases</a>
 					</div>
 					<div style="" class="flex flex-col p-2 items-center font-bold">
-						<a href="community">Community</a>
+						<a tabindex="3" href="community">Community</a>
 					</div>
 					<div style="" class="flex flex-col p-2 items-center font-bold">
-						<a href="contact">Contact</a>
+						<a tabindex="3" href="contact">Contact</a>
 					</div>
 				</div>
-				<div style="" class="grid grid-cols-2 gap-0 text-white content-center ">
+				<div style="" class="grid grid-cols-1 lg:grid-cols-2 gap-0 text-white content-center ">
 					<div style="" class="flex flex-col p-2  pr-6">
-						<a href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/linkedin.svg"/>Linkedin</a>
+						<a tabindex="3" href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/linkedin.svg"/>Linkedin</a>
 					</div>
 					<div style="" class="flex flex-col p-2">
-						<a href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/github.svg"/>Github</a>
+						<a tabindex="3" href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/github.svg"/>Github</a>
 					</div>
 				</div>
 			</div>

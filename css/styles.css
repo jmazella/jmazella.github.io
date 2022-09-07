@@ -30,11 +30,53 @@ p {
 }
 
 .logo{
-	padding-right: 17px
+	height: 49px;
+	padding-right: 17px;
 }
 
 .code-logo{
-	padding-top:8px
+	height: 45px;
+}
+
+.header-container{
+	margin-top: 22px;
+	padding-left: 42px;
+	padding-right:30px;
+	height: 55px;
+	font-size: 20px;
+}
+
+.mobile-header-container{
+	display: none;
+	padding-left: 25px;
+	background-color: white;
+}
+
+.mobile-header{
+	min-height:80px;
+}
+
+.mobile-menu{
+	margin-left: 36%;
+	margin-bottom: 5%;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.open-menu-button-div{
+	margin-right: 25px;
+}
+
+.close-menu-button-div{
+	margin-right: 25px;
+}
+
+.close-menu-button{
+	height:50px;
+}
+
+.footer{
+	font-size: 20px;
 }
 
 .news{
@@ -75,43 +117,6 @@ p {
 
 .use-num-container{
 	margin-right: 80px;
-}
-
-.header{
-	margin-top: 22px;
-	padding-left: 42px;
-	padding-right:30px;
-	height: 55px;
-	font-size: 20px;
-}
-
-.mobile-header{
-	display: none;
-	padding-top: 15px;
-	padding-left: 25px;
-	min-height:80px;
-	max-height: 180px;
-	background-color: white;
-
-}
-
-.mobile-menu{
-
-}
-
-.mobile-menu-show{
-	margin-top: 10px;
-	margin-right: 25px;
-}
-
-.mobile-menu-close{
-	display:none;
-}
-
-.footer{
-	min-height: 150px;
-	max-height: 150px;
-	font-size: 20px;
 }
 
 .use-header{
@@ -172,7 +177,7 @@ p {
 }
 
 
-@media all and (max-width: 1024px) {
-	.header {display: none;}
-	.mobile-header {display: block;}
+@media all and (max-width: 768px) {
+	.header-container {display: none;}
+	.mobile-header-container {display: block;}
 }

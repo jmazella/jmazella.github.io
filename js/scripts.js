@@ -12,11 +12,27 @@ tailwind.config = {
 				gold: '#D69B41',
 			},
 			textUnderlineOffset: {
-				6: '6px',
+				6: '6px'
 			},
 			fontFamily: {
 				sans: ['Satoshi-Regular', 'sans-serif']
+			},
+			minHeight: {
+				'150px': '150px'
 			}
 		}
 	}
+};
+
+
+function openmenu(){
+	document.querySelector('#open-menu-button-div').classList.add('hidden');
+	document.querySelector('#close-menu-button-div').classList.remove('hidden');
+	document.querySelector('#mobile-menu').classList.remove('hidden');
+}
+
+function closemenu(){
+	document.querySelector('#close-menu-button-div').classList.add('hidden');
+	document.querySelector('#open-menu-button-div').classList.remove('hidden');
+	document.querySelector('#mobile-menu').classList.add('hidden');
 }
