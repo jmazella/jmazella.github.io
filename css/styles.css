@@ -12,6 +12,19 @@
 	font-size: 24px;
 }
 
+.satoshi-bold{
+	font-weight:900;
+	font-family:Satoshi-Bold;
+}
+
+.font-40px{
+	font-size: 40px;
+}
+
+.font-22px{
+	font-size: 22px;
+}
+
 p {
 	font-size: 16px;
 }
@@ -32,11 +45,38 @@ p {
 	margin-right:10px
 }
 
-.use-entry{
+.use-entry-desc{
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 24px;
 }
+
+.use-entry{
+	padding-left: 20px;
+	margin-bottom: 30px;
+}
+
+.use-entry-last{
+	padding-left: 20px;
+}
+
+.use-line{
+	margin-right:46%;
+	height:100%;
+	margin-top:-4px;
+	border-right-style: solid;
+	border-right-width: 3px;
+
+}
+
+.use-container{
+	padding-top:65px;
+}
+
+.use-num-container{
+	margin-right: 80px;
+}
+
 .header{
 	margin-top: 22px;
 	padding-left: 42px;
@@ -46,24 +86,57 @@ p {
 }
 
 .footer{
-	height: 150px;
+	min-height: 150px;
+	max-height: 150px;
 	font-size: 20px;
 }
 
-.red-gradient{
+.use-header{
+	height: 370px;
+	padding-top: 160px;
+	padding-bottom:80px;
 	background: linear-gradient(90deg, #A95131 0%, #292828 100%);
 	mix-blend-mode: normal;
 }
 
 .use-explain{
-	padding-left: 50%;
+	max-width: 450px;
 	font-family: Satoshi-Bold;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 32px;
 }
 
+.use-num{
+	font-family: Satoshi-Bold;
+	font-weight: 700;
+	font-size: 57px;
+	line-height: 76px;
+	width: 123px;
+}
+
+.use-num-desc{
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 31px;
+}
+
+.uses-list{
+	padding-top: 40px;
+	padding-bottom: 170px;
+}
+
+.use-list{
+	padding-left: 80px;
+	width: 800px;
+}
+
+.use-explain-container{
+	height:190px;
+}
+
 .use-explain-badge{
+	border-radius: 5px;
 	margin-left: 10px;
 	padding: 5px 15px 5px 15px;
 	font-family: Satoshi-Black;
