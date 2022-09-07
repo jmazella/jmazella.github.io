@@ -85,6 +85,29 @@ p {
 	font-size: 20px;
 }
 
+.mobile-header{
+	display: none;
+	padding-top: 15px;
+	padding-left: 25px;
+	min-height:80px;
+	max-height: 180px;
+	background-color: white;
+
+}
+
+.mobile-menu{
+
+}
+
+.mobile-menu-show{
+	margin-top: 10px;
+	margin-right: 25px;
+}
+
+.mobile-menu-close{
+	display:none;
+}
+
 .footer{
 	min-height: 150px;
 	max-height: 150px;
@@ -146,4 +169,10 @@ p {
 	letter-spacing: 0em;
 	text-align: center;
 	background: #E0815145;
+}
+
+
+@media all and (max-width: 1024px) {
+	.header {display: none;}
+	.mobile-header {display: block;}
 }
