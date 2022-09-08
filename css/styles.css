@@ -17,12 +17,21 @@
 	font-family:Satoshi-Bold;
 }
 
+.satoshi-black{
+	font-weight:900;
+	font-family:Satoshi-Black;
+}
+
 .font-16px{
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .font-20px{
 	font-size: 20px;
+}
+
+.font-21px{
+	font-size: 21px;
 }
 
 .font-22px{
@@ -33,8 +42,16 @@
 	font-size: 24px;
 }
 
+.font-36px{
+	font-size: 36px;
+}
+
 .font-40px{
 	font-size: 40px;
+}
+
+.leading-42px{
+	line-height: 42px;
 }
 
 .rounded-5px{
@@ -45,12 +62,17 @@
 	border-width: 3px;
 }
 
+.w-30{
+	width:30%;
+}
+
 p {
 	font-size: 16px;
 }
 
 .home-banner{
 	min-height: 1500px;
+	background-size: cover;
 	background-blend-mode: overlay;
 	background-image: url('../img/top.jpg'), linear-gradient(rgba(56,56,56,0.5),rgba(56,56,56,0.5));
 }
@@ -112,6 +134,27 @@ p {
 
 .news{
 	margin-right:-20px
+}
+
+.blurb-grid{
+	grid-template-columns: 26% 54% 26%;
+}
+
+.step-container1{
+	width: 280px;
+	height:280px;
+	margin-bottom:30px;
+}
+
+.step-container2{
+	width: 360px;
+	height:280px;
+	margin-bottom:30px;
+}
+
+.step-text{
+	width:330px;
+	height: 120px;
 }
 
 .use-cases{
@@ -216,4 +259,9 @@ p {
 		background-image: url('../img/top.jpg');
 		background-size: cover;
 	}
+}
+
+
+@media all and (max-width: 1279px) {
+	.blurb-grid{  grid-template-columns: none; }
 }

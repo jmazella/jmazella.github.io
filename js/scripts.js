@@ -21,7 +21,12 @@ tailwind.config = {
 				'150px': '150px'
 			},
 			screens: {
-				'lgx': {'max': '767px'},
+				'mdx': {'max': '767px'},
+				'lgx': {'max': '1023px'},
+				'xlx': {'max': '1279px'}
+			},
+			spacing: {
+				'300px': '300px'
 			}
 		}
 	}
