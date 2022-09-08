@@ -19,6 +19,9 @@ tailwind.config = {
 			},
 			minHeight: {
 				'150px': '150px'
+			},
+			screens: {
+				'lgx': {'max': '767px'},
 			}
 		}
 	}
