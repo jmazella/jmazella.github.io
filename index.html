@@ -13,17 +13,6 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link href="css/satoshi.css" rel="stylesheet" />
 		<script src="js/scripts.js"></script>
-		<style>
-			.quoteSource{
-			font-family:Satoshi-Regular; font-size:20px; font-weight:700px;
-			}
-			.historyNumbers{
-			font-family:Satoshi-Bold; font-weight:700px; font-size:40px;
-			}
-			.newsHeader{
-			font-family:Satoshi-Bold; font-weight:900px; font-size:18px;
-			}
-		</style>
 	</head>
 	<body class="bg-white sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
@@ -73,7 +62,6 @@
 					</div>
 				</div>
 			</div>
-			<!--image-->
   			<div style="" class="flex justify-left items-left place-items-center home-banner">
 				<div style="padding-left: 110px;" class="text-white text-left banner-container mdx:hidden">
 					<h1 style="" class='h1 font-black satoshi-bold leading-none'>Better Data.</h1>
@@ -116,10 +104,16 @@
 					</div>
 				</div>
 			</div>
-			<div style="" class="md:hidden h-1 mt-9 mb-5 bg-darkbrown" >&nbsp</div>
+			<div class="flex flex-row justify-center py-12 mb-10 md:mb-0 bg-offwhite">
+				<div class="basis-5/6">
+					<div class="satoshi-bold font-20px mb-6 lg:mb-0">We are driven by the vision of an equitable future driven by innovation, owned by patients, and empowered by the healthcare community.</div>
+					<div class="font-20px">CodeX is the only member-driven community focused on solving the problem of data silos endemic to our current health care system for specialty data. Dedicated to radical improvements in patient outcomes and supercharging the capability of care team and researchers.</div>
+				</div>
+			</div>
+
 			<div class="grid bg-white place-items-center">
 				<div style="" class="bg-white pb-2">
-					<img class="mdx:hidden mt-36" src="img/healthcare.svg"/>
+					<img class="mdx:hidden mt-16" src="img/healthcare.svg"/>
 					<img class="md:hidden"  src="img/healthcare-mobile.svg"/>
 				</div>
 			</div>
@@ -169,16 +163,16 @@
 				</div>
 			</div>
 			<!--quote 1-->
-			<div style="padding:66px 0px" class="bg-darkbrown flex justify-center">
-				<div class="m-2">
-					<img style="width:31px" class="w-6" src="img/quote.png">
+			<div style="" class="bg-darkbrown flex flex-col md:flex-row p-8 lg:py-16 justify-center">
+				<div class="quote ml-2 mb-2 place-self-center md:place-self-auto">
+					<img src="img/quote.png">
 				</div>
 				<div>
 					<div>
-						<h1 class="h3 text-white pb-2">People's lives are depending on what we do and what these data tell us</h1>
+						<h1 class="pb-4 text-white font-bold font-24px">People's lives are depending on what we do and what these data tell us</h1>
 					</div>
 					<div>
-						<h2 style="" class="text-white quoteSource">Dr. Monica Bertagnolli</h2>
+						<h2 style="" class="text-white font-bold font-20px">Dr. Monica Bertagnolli</h2>
 						<h3 class="p text-white">Prior President of American Society of Clinical Oncology, Prior Group Chair of Alliance for Clinical Trials in Oncology</h3>
 					</div>
 				</div>
@@ -191,7 +185,7 @@
 					<h2 style="" class="h2 font-black satoshi-bold leading-none">Use Everywhere.</h2>
 					<p>CodeX is a global community of healthcare stakeholders currently working on data standards in three domains.</p>
 					<p><a class="underline flex" href="#">Join Us and Spread the Word <img class="ml-2" src="img/arrow.svg"></a></p>
-					<img src="img/boxes.svg"/>
+					<img class="pt-12" src="img/boxes.svg"/>
 				</div>
 				<div style="" class="flex flex-col gap-y-4 health-domains">
 					<div class="">
@@ -215,35 +209,35 @@
 					</div>
 				</div>
 			</div>
-			<div style="" class="bg-backgroundgrey flex justify-center">
+			<div style="background: linear-gradient(to bottom, #F9F5F5 50%, white 0%);" class="bg-backgroundgrey flex justify-center">
 				<div style="line-height: 22px;" class="use-explain-badge font-black satoshi-bold font-16px">OUR COLLECTIVE IMPACT</div>
 			</div>
 			<!--Collective Impact-->
 			<div style="" class="bg-white text-center px-10 lg:px-20">
-				<h1 class="font-black satoshi-bold font-40px">The CodeX Community</h1>
+				<h1 class="font-black satoshi-bold font-40px pb-6">The CodeX Community</h1>
 				<img src="img/patient.jpg">
 			</div>
 			<!--News-->
-			<div style="padding:95px 96px" class="bg-white">
-				<h1 style=""class="satoshi-bold font-black font-36px pb-2">News & Updates</h1>
-				<div style="" class="flex flex-col xl:grid xl:grid-cols-3 xl:gap-x-6 xl:justify-between">
-					<a style="" class="pr-2" href="#">
+			<div style="" class="bg-white p-10 flex flex-col">
+				<h1 style=""class="satoshi-bold font-black font-36px pb-2 place-self-center">News & Updates</h1>
+				<div style="" class="flex flex-col lg:grid lg:grid-cols-3 lg:gap-x-6 lg:justify-between">
+					<a style="" class="mb-4 mx-20 lg:mx-0 lg:mb-0 lg:pr-2" target='_blank' href="https://www.fightcancer.org/releases/acs-can-provided-nearly-1-million-support-amgen-expand-cancer-clinical-trial-enrollment">
 						<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
-							<h1 style="" class="newsHeader">ACS-CAN and CodeX Provided Nearly $1 Million in Support from Amgen</h1>
+							<h1 style="" class="satoshi-bold font-black font-16px underline">ACS-CAN and CodeX Provided Nearly $1 Million in Support from Amgen</h1>
 							<h2 class="flex py-2">ACS CAN <img class="px-2" src="img/diamond-bullet.svg"/> August 23, 2022</h2>
 							<p>Pilot Test Trial Eligibility Screening Interventions Aiming to Increase and Diversify Patient Enrollment in Cancer Clinical Trials</p>
 						</div>
 					</a>
-					<a style="" class="" href="#">
+					<a style="" class="mb-4 mx-20 lg:mx-0 lg:mb-0" target="_blank" href="https://confluence.hl7.org/display/COD/July+Newsletter%3A+CodeX+Adds+Genomics%2C+Cardiovascular+Health+to+Data-Sharing+Domains">
 						<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
-							<h1 style="" class="newsHeader">CodeX Adds Genomics and Cardiovascular Health to Data-Sharing Domains</h1>
+							<h1 style="" class="satoshi-bold font-black font-16px underline">CodeX Adds Genomics and Cardiovascular Health to Data-Sharing Domains</h1>
 							<h2 class="flex py-2">CodeX Confluence <img class="px-2" src="img/diamond-bullet.svg"/> August 23, 2022</h2>
 							<p>From enhanced data-sharing for cancer registry reporting to improved patient access to clinical trials, to helping patients better manage hypertension from the comfort of their own homes, CodeX community members continue to push the data-sharing envelope. </p>
 						</div>
 					</a>
-					<a style="" class="pl-2" href="#">
+					<a style="" class="mb-4 mx-20 lg:mx-0 lg:mb-0 lg:pl-2" target="_blank" href="https://www.whitehouse.gov/briefing-room/statements-releases/2022/08/10/president-biden-intends-to-appoint-dr-monica-bertagnolli-as-director-of-the-national-cancer-institute/">
 						<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
-							<h1 style="" class="newsHeader">President Biden Intends to Appoint Dr. Monica Bertagnolli, Past President and Chair of ASCO and Founding Chair of mCODE, as Director of NCI</h1>
+							<h1 style="" class="satoshi-bold font-black font-16px underline">President Biden Intends to Appoint Dr. Monica Bertagnolli, Past President and Chair of ASCO and Founding Chair of mCODE, as Director of NCI</h1>
 							<h2 class="flex py-2">The White House <img class="px-2" src="img/diamond-bullet.svg"/> August 23, 2022</h2>
 							<p>From enhanced data-sharing for cancer registry reporting to improved patient access to clinical trials, to helping patients better manage hypertension from the comfort of their own homes, CodeX community members continue to push the data-sharing envelope.</p>
 						</div>
@@ -251,41 +245,44 @@
 				</div>
 			</div>
 			<!--Quote 2-->
-			<div style="padding:100px 268px 66px 268px;background-image: url('img/dark-curve.svg');background-size:cover;" class=" flex justify-center">
-				<div class="m-2">
-					<img style="width:31px" class="w-6" src="img/quote.png">
+			<div style="background-image: url('img/dark-curve.svg');background-size:cover;" class="flex flex-col md:flex-row p-8 lg:py-20 justify-center">
+				<div class="quote ml-2 mb-2 place-self-center md:place-self-auto">
+					<img src="img/quote.png">
 				</div>
 				<div>
 					<div>
-						<h1 class="h3 text-white pb-2">Cancer patients are willing to share their data in hopes of finding solutions, not just for themselves but for patients in the future</h1>
+						<h1 class="pb-4 text-white font-bold font-24px">Cancer patients are willing to share their data in hopes of finding solutions, not just for themselves but for patients in the future</h1>
 					</div>
 					<div>
-						<h2 style="" class="text-white quoteSource">Debi Willis</h2>
+						<h2 style="" class="text-white font-bold font-20px">Debi Willis</h2>
 						<h3 class="p text-white">CEO and Founder of PatientLink Enterprises, Cancer Survivor</h3>
 					</div>
 				</div>
 			</div>
 			<!--Build & Innovate-->
-			<div style="padding: 137px 157px" class="bg-darkbrown text-white">
+			<div style="" class="bg-darkbrown text-white md:p-40">
 				<h1 style="" class="satoshi-bold font-black font-32px pb-2">Build and Innovate on Our Work</h1>
 				<p class="pb-4">Data is unreliable, unstandardized, lacks integrity and is largely unusable. Data intake questions and answers are based on the localized priorities, methods and judgments of individual physicians and providers with each representing their own mini silo within today’s Digital Health Ecosystem. Today essential patient response data is often captured in unstructured text, such as clinical notes, PDF files, or other non-standardized reports creating critical gaps in the patient story and making any analysis to determine treatment options entirely manual. </p>
-				<div class="flex justify-between">
-					<div style="width:32%; padding:2% 1%" class="bg-white text-black">
+				<div class="flex flex-col lg:flex-row space-y-5 lg:space-x-5 lg:space-y-0 justify-between">
+					<div style="" class="basis-1/3 p-11 bg-white text-black">
 						<h2 style="" class="satoshi-bold font-black font-18px">Get Engaged</h2>
 						<p>CodeX hosts events every month to keep our community informed and engaged, and to make sure the public’s opinions are heard. These events include (...) </p>
+						<p class="mt-4"><a class="underline" target="_blank" href="https://confluence.hl7.org/display/COD/CodeX+Home">Notify me of upcoming events</a><img class="inline ml-2" src="img/arrow.svg"/></p>
 					</div>
-					<div style="width:32%; padding:2% 1%" class="bg-white text-black">
+					<div style="" class="basis-1/3 p-11 bg-white text-black">
 						<h2 style="" class="satoshi-bold font-black font-18px">Expand Our Reach</h2>
 						<p>There are currently over 250+ stakeholders involved in CodeX. Become a member today or join our community of practice. We also are looking to expand our partnerships across various health systems to include small community health centers. Spread the word, and Implement CodeX at your institution. </p>
+						<p class="mt-4"><a class="underline" target="_blank" href="#">Learn about our community</a><img class="inline ml-2" src="img/arrow.svg"/></p>
 					</div>
-					<div style="width:32%; padding:2% 1%" class="bg-white text-black">
+					<div style="" class="basis-1/3 p-11 bg-white text-black">
 						<h2 style="" class="satoshi-bold font-black font-18px">Support Our Mission</h2>
 						<p>Funding from foundations, philanthropies, and government organizations will allow us to further scale and drive maximum adoption across systems. Your support will also allow us to expand our work into new domains such as genomics and cardiovascular disease.</p>
+						<p class="mt-4"><a class="underline" target="_blank" href="#">Learn More</a><img class="inline ml-2" src="img/arrow.svg"/></p>
 					</div>
 				</div>
-				<div style="padding:2% 1%" class="bg-white text-black mt-2">
+				<div style="" class="bg-white text-black mt-5 p-10">
 					<h2 style="" class="satoshi-bold font-black font-18px">Open Source</h2>
-					<p>CodeX tools and implementations are open source under the Apache 2.0 license. CodeX data standards are available under the Creative Commons 0 license (CC0). Take a closer look at our technical work at our GitHub.</p>
+					<p>CodeX tools and implementations are open source under the Apache 2.0 license. CodeX data standards are available under the Creative Commons 0 license (CC0). Take a closer look at our technical work at our <a class='underline font-black' href="https://github.com">GitHub.</a></p>
 				</div>
 			</div>
 			<!--Timeline-->
@@ -293,46 +290,46 @@
 				<iframe style="width: 100%; height:700px" src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=11MDNixyECHr7Qpaxa-cv2vv1XICGoFix_nAF46u0_fU&font=Default&lang=en&initial_zoom=2&height=650" title="Timeline"></iframe>
 			</div>
 			<!--History-->
-			<!--TO DO: fix the flex around the numbers, add arrow images for see more-->
 			<div style="" class="bg-darkgrey">
-				<div style="margin:0% 15%; padding-top:136px" class="bg-darkgrey text-white pb-40">
+				<div style="" class="bg-darkgrey text-white py-32 px-64">
 					<div>
 						<h1 style="" class="satoshi-bold font-black font-36px">Our History</h1>
 						<p style=""  class="font-16px">Waiting on origination story from Beverly. CodeX began in (2019?) as part of a research program launched by the health federally funded research and development center (Health FFRDC), operated by The MITRE Corporation, the American Society of Clinical Oncology and others to explore the value of a small, standardized subset of data collected at point of care to substantially improve cancer patient care and research everywhere. (Add content on HL7, ASCO, Monica launched into CodeX - founders were scrappy, two residents sketched this idea on a napkin on an airplane flight)</p>
 						<a href="#">See our timeline <img> </a>
 					</div>
-					<div style="padding-top:67px" class="flex">
-						<div style="width:45%">
+					<div style="" class="flex flex-row pt-16">
+						<div style="" class="basis-2/5 mr-14">
 							<h1 style="" class="satoshi-bold font-black font-36px">Our Traction</h1>
-							<p style=""  class="font-16px">Since 2019, CodeX has been working in partnership with our community, building interoperable systems to positively ipact the lives of real patients.</p>
+							<p style=""  class="font-16px">Since 2019, CodeX has been working in partnership with our community, building interoperable systems to positively impact the lives of real patients.</p>
 						</div>
-						<div style="" class="flex-wrap">
-							<div style="width:40%">
-								<h1 style="" class="historyNumbers">12</h1>
+						<div style="" class="grid grid-cols-2 gap-y-6">
+							<div style="">
+								<h1 style="" class="satoshi-bold font-black font-40px leading-9">12</h1>
 								<h2 style="" class="font-16px">Use Cases Underway</h2>
 							</div>
-							<div style="width:40%">
-								<h1 style="" class="historyNumbers">6</h1>
+							<div style="">
+								<h1 style="" class="satoshi-bold font-black font-40px leading-9">6</h1>
 								<h2 style="" class="font-16px">External Sources of Funding</h2>
 							</div>
-							<div style="width:40%">
-								<h1 style="" class="historyNumbers">24</h1>
+							<div style="">
+								<h1 style="" class="satoshi-bold font-black font-40px leading-9">24</h1>
 								<h2 style="" class="font-16px">Member Organizations</h2>
 							</div>
-							<div style="width:40%">
-								<h1 style="" class="historyNumbers">200+</h1>
+							<div style="">
+								<h1 style="" class="satoshi-bold font-black font-40px leading-9">200+</h1>
 								<h2 style="" class="font-16px">Community Members</h2>
 							</div>
 						</div>
 					</div>
-					<div style="margin-top:115px" class="bg-white text-black flex pt-16 px-6">
-						<div style="width:40%">
-							<h3 style="border-radius:5px; width:fit-content" class="mx-2 px-1 bg-lightbrown satoshi-bold font-black font-36px">RESEARCH</h3>
-							<h2 style="" class="mx-2 px-1 py-2 satoshi-bold font-bold font-20px">Use Case Spotlight: iCAREdata</h2>
+					<div style="" class="flex flex-row justify-around bg-white text-black mt-28 px-12 py-16">
+						<div style="">
+							<span style="" class="research-badge">RESEARCH</span>
+							<h3 style="" class="satoshi-bold font-bold font-20px mt-4 mb-0">Use Case Spotlight:</h3>
+							<h3 style="" class="satoshi-bold font-bold font-20px">iCAREdata</h3>
 						</div>
-						<div class="pb-16">
-							<p style="" class="pb-6 pt-2 font-16px">Clinical trials are the gold standard for clinical care interventions. 92% of cancer patients in the United States are not enrolled in clinical trials due to poor data collection of their cancer therapies. This project focuses on collecting key outcome data that is standardized, research-grade, and longitudinal across organizations to promote health equity and reduce burden on health sites. This novel approach to data collection has already been adopted by over 13 health sites including (....).</p>
-							<a class="" href="#">Read More Use Cases <img></a>
+						<div class="basis-3/5">
+							<p style="" class="font-16px">Clinical trials are the gold standard for clinical care interventions. 92% of cancer patients in the United States are not enrolled in clinical trials due to poor data collection of their cancer therapies. This project focuses on collecting key outcome data that is standardized, research-grade, and longitudinal across organizations to promote health equity and reduce burden on health sites. This novel approach to data collection has already been adopted by over 13 health sites including (....).</p>
+							<p class="mt-4"><a class="underline" target="_blank" href="uses">Read more use cases</a><img class="inline ml-2" src="img/arrow.svg"/></p>
 						</div>
 					</div>
 				</div>

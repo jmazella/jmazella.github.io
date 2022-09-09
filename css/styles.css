@@ -279,9 +279,28 @@ p {
 	background: #E0815145;
 }
 
+.research-badge{
+	border-radius: 5px;
+	padding: 5px 15px 5px 15px;
+	font-family: Satoshi-Black;
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: center;
+	background: #E0815145;
+}
+
 .news-card{
 	padding: 35px;
-	min-height:400px;
+	min-height: 400px;
+}
+
+.quote{
+	margin-top: .2rem;
+	margin-right: 1.5rem;
+	min-width: 40px;
+	max-width: 40px;
 }
 
 @media all and (max-width: 768px) {
