@@ -6,6 +6,7 @@ tailwind.config = {
 				darkbrown: '#A95131',
 				darkgrey: '#383838',
 				lightgrey: '#D9D9D9',
+				faintgrey: '#D0CFCE',
 				medgrey: '#9F9F9F',
 				backgroundgrey: '#F9F5F5',
 				darkred: '#98391E',
