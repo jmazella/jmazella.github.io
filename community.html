@@ -27,7 +27,7 @@
 				font-family:Satoshi-Bold; font-size:16px; color:#A95031; text-transform:uppercase;
 			}
 			.communityContainer{
-				padding:0% 5%; background-color:white;
+				padding:0% 7%; background-color:white;
 			}
 			.coPNumber{
 				font-family:Satoshi-Bold; font-size:40px; font-weight:700px;
@@ -39,25 +39,24 @@
 	</head>
 	<body class="bg-darkgrey sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
-			<div style="" class="header absolute inset-0 z-10">
-				<div style="" class="logo float-left">
-					<img height="49px" src="img/logo-white.svg" />
-				</div>
-				<div style="" class="code-logo float-left align-bottom">
-					<img height="45px" src="img/code-logo-white.svg" />
-				</div>
-				<div style="" class="grid grid-cols-4 gap-0 float-right text-white">
-					<div style="" class="flex flex-col p-2 items-center news">
-						<a href="index">News</a>
-					</div>
-					<div style="" class="flex flex-col p-2 items-center use-cases">
-						<a href="uses">Use Cases</a>
-					</div>
-					<div style="" class="flex flex-col p-2 items-center underline decoration-solid underline-offset-8">
-						<a href="community">Community</a>
-					</div>
-					<div style="" class="flex flex-col p-2 items-center">
-						<a href="contact">Contact</a>
+
+			<div style="" class="header-container absolute inset-0 z-10">
+				<div style="" class="flex">
+					<img class="logo" src="img/logo-white.svg" />
+					<img class="code-logo self-end" src="img/code-logo-white.svg" />
+					<div style="" class="grid grid-cols-4 gap-0 ml-auto text-white items-center">
+						<div style="" class="flex flex-col p-2 items-center news">
+							<a tabindex="1" href="index">News</a>
+						</div>
+						<div style="" class="flex flex-col p-2 items-center use-cases">
+							<a tabindex="1" href="uses">Use Cases</a>
+						</div>
+						<div style="" class="flex flex-col p-2 items-center underline decoration-solid underline-offset-8">
+							<a tabindex="1" href="community">Community</a>
+						</div>
+						<div style="" class="flex flex-col p-2 items-center">
+							<a tabindex="1" href="contact">Contact</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -87,24 +86,24 @@
 				<div style="" class="communityContainer">
 				<h1 class="sectionHeader">Leadership</h1>
 				<div style="padding-top:10px" class="flex justify-between">
-					<div style="padding:0px 12px 0px 0px">
+					<div style="width:23%">
 						<img style="padding-bottom:10px" src="img/steveBratt.png">
 						<a class="leadershipName" href="https://confluence.hl7.org/display/~steve_bratt">Dr. Steven Bratt, PhD</a>
 						<h3 class="leadershipTitle">Program Manager</h3>
 					</div>
-					<div style="padding:0px 12px">
+					<div style="width:23%">
 						<img style="padding-bottom:10px" src="img/suChen.png">
-						<a class="leadershipName" href="https://confluence.hl7.org/display/~steve_bratt">Dr. Su Chen, MD</a>
+						<a class="leadershipName" href="https://confluence.hl7.org/display/~suchen">Dr. Su Chen, MD</a>
 						<h3 class="leadershipTitle">Clinical Director</h3>
 					</div>
-					<div style="padding:0px 12px">
+					<div style="width:23%">
 						<img style="padding-bottom:10px" src="img/micheleGalioto.png">
-						<a class="leadershipName" href="https://confluence.hl7.org/display/~steve_bratt">Michele Galioto, DNP, RN, CNS</a>
+						<p class="leadershipName" style="text-decoration:none">Michele Galioto, DNP, RN, CNS</p>
 						<h3 class="leadershipTitle">Deputy Director</h3>
 					</div>
-					<div style="padding:0px 0px 0px 12px">
-						<img style="padding-bottom:10px" src="img/susanHull.png">
-						<a class="leadershipName" href="https://confluence.hl7.org/display/~steve_bratt">Susan Hull, MSN, RN-BC, NEA-BC, FAMIA</a>
+					<div style="width:23%">
+						<img style="padding-bottom:10px; filter:grayscale(100%)" src="img/sHull.png">
+						<p class="leadershipName" style="text-decoration:none">Susan Hull, MSN, RN-BC, NEA-BC, FAMIA</p>
 						<h3 class="leadershipTitle">Strategic Advisor</h3>
 					</div>
 				</div>
@@ -133,8 +132,8 @@
 				<h1 class="sectionHeader">Community of Practice</h1>
 				<p style="padding-top:10px">The Community of Practice (CoP) aims to improve cancer care and research by gathering health systems to develop best practices for implementing mCODE and use-case-based extensions into production EHRs and other systems. There is no cost for participation in the CoP's monthly calls.</p>
 				<div style="padding-top:10px">
-					<a class="flex" href="#">Sign Up Here<img src="img/arrow.png"></a>
-					<a class="flex" href="#">Our Events<img src="img/arrow.png"></a>
+					<a class="flex" href="#">Sign Up Here<img style="vertical-align:bottom; width:auto; height:15px" class="pl-2" src="img/arrow.png"></a>
+					<a class="flex" href="#">Our Events<img style="vertical-align:bottom; width:auto; height:15px" class="pl-2" src="img/arrow.png"></a>
 				</div>
 				<div class="flex flex-wrap">
 					<div style="padding-top:35px; padding-bottom:21px; width:33%" class="flex">
@@ -209,38 +208,38 @@
 				<div style="padding-bottom:128px; padding-top:100px" class="communityContainer">
 					<h1 class="sectionHeader">Membership</h1>
 					<p style="width:50%; padding-bottom:16px;">Paying, government, and sponsored CodeX Members are recognized as leaders through CodeX decision-making, thought leadership, conference key notes, and more.</p>
-					<a class="flex" href="#">Contact Us <img class="w-4 h-4" src="img/arrow.png"> </a>
+					<a class="flex" href="#">Contact Us <img style="vertical-align:bottom; width:auto; height:15px" class="pl-2" src="img/arrow.png"> </a>
 				</div>
 				
 			</div>
 
 			
 
-			<!--footer-->
-			<div style="" class="footer flex bg-black justify-between">
-				<div style="" class="grid grid-cols-4 gap-0 text-white items-center">
+			<div style="" class="footer flex bg-black md:py-0 py-6 justify-around md:justify-between min-h-min md:min-h-150px">
+				<div style="" class="grid grid-cols-1 place-items-start md:grid-cols-4 md:items-center md:place-items-center  text-white">
 					<div style="" class="flex flex-col p-2 items-center font-bold news">
-						<a href="index">News</a>
+						<a tabindex="3" href="index">News</a>
 					</div>
 					<div style="" class="flex flex-col p-2 items-center font-bold use-cases">
-						<a href="uses">Use Cases</a>
+						<a tabindex="3" href="uses">Use Cases</a>
 					</div>
 					<div style="" class="flex flex-col p-2 items-center font-bold">
-						<a href="community">Community</a>
+						<a tabindex="3" href="community">Community</a>
 					</div>
 					<div style="" class="flex flex-col p-2 items-center font-bold">
-						<a href="contact">Contact</a>
+						<a tabindex="3" href="contact">Contact</a>
 					</div>
 				</div>
-				<div style="" class="grid grid-cols-2 gap-0 text-white content-center">
-					<div style="" class="flex flex-col p-2 pr-6">
-						<a href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/linkedin.svg" />Linkedin</a>
+				<div style="" class="grid grid-cols-1 md:grid-cols-2 gap-0 text-white content-center ">
+					<div style="" class="flex flex-col p-2  pr-6">
+						<a tabindex="3" href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/linkedin.svg"/>Linkedin</a>
 					</div>
 					<div style="" class="flex flex-col p-2">
-						<a href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/github.svg" />Github</a>
+						<a tabindex="3" href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/github.svg"/>Github</a>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</body>
 </html>
