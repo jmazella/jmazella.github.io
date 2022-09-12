@@ -64,122 +64,149 @@
 			</div>
 			<div class="main mb-auto">
 				<div style="" class="use-header flex justify-center items-center">
-					<div class="text-white text-center">
+					<div class="text-white text-center md:pt-10">
 						<h2  tabindex="2" class="h2 satoshi-bold font-black font-40px">Use Cases</h2>
 						<div tabindex="2" style="max-width: 605px;" class="font-normal font-22px" >CodeX provides a framework for community driven, implementation-focused initiatives.</div>
 					</div>
 				</div>
-				<div style="" class="flex bg-backgroundgrey justify-center items-center use-explain-container" >
-					<div tabindex="2" style="" class="use-explain" >
+				<div style="" class="flex flex-col lg:flex-row bg-backgroundgrey justify-center items-center use-explain-container" >
+					<div tabindex="2" style="" class="use-explain satoshi-bold font-bold py-8 px-10 lg:p-0">
 						Each CodeX Use Case progresses through three stages of development.
 					</div>
-					<img tabindex="2" src="img/use-steps.png" />
+					<img tabindex="2" class="lgx:hidden" src="img/use-steps.png" />
+					<img tabindex="2" class="pb-8 lg:hidden" src="img/use-steps-small.png" />
 				</div>
-				<div style="" class="bg-white uses-list">
-					<div style="" class="flex place-content-center use-container">
-						<div style="" class="use-num-container text-darkred">
-							<div tabindex="2" class="use-num" >5</div>
-							<div tabindex="2" class="use-num-desc" style="" >In Execution</div>
+				<div style="" class="bg-white uses-list ">
+					<div style="" class="flex flex-col place-content-center use-container lgx:p-0 lg:flex-row">
+						<div style="" class="lgx:flex flex-row justify-center items-center use-num-container lgx:m-0 bg-darkred text-white lg:bg-white lg:text-darkred py-10 lg:py-0">
+							<div tabindex="2" class="use-num satoshi-bold font-bold lgx:leading-none mr-5 w-fit lg:mr-0 lg:w-32">5</div>
+							<div tabindex="2" class="use-num-desc self-end">In Execution</div>
 						</div>
-						<div style="" tabindex="-1" class="flex flex-col items-stretch">
-							<img src="img/diamond1.svg" />
+						<div style="" tabindex="-1" class="lg:flex flex-col items-stretch hidden">
+							<img width="43px" src="img/diamond1.svg" />
 							<div style="" class="use-line border-darkred"></div>
 						</div>
-						<div style="" class="use-list">
-							<div style=""   class="use-entry">
-								<div style="" tabindex="2">
-									<h3 class="h3">Cancer Registry Reporting</h3>
+						<div style="" class="use-list pr-14 pt-10 lg:pr-0 lg:pt-0">
+							<div class="flex flex-row items-start pb-4">
+								<img width="22px" style="" class="mx-6 mt-1 lg:hidden" src="img/diamond1.svg" />
+								<div>
+									<div tabindex="2">
+										<h3 class="use-title font-bold lg:underline">Cancer Registry Reporting</h3>
+									</div>
+									<div tabindex="2" class="font-18px leading-6 mt-1">Enable reporting of mCODE-based cancer data from cancer center health center EHRs to a state and a private registries that are aggregating data for different reasons, substantially reducing duplication and burden while increasing reporting speed and accuracy.</div>
 								</div>
-								<div tabindex="2" class="use-entry-desc">Enable reporting of mCODE-based cancer data from cancer center health center EHRs to a state and a private registries that are aggregating data for different reasons, substantially reducing duplication and burden while increasing reporting speed and accuracy.</div>
 							</div>
-							<div style="" class="use-entry">
-								<div tabindex="2">
-									<h3 class="h3">EHR Endpoints for Clinical Trials (iCAREdata)</h3>
+							<div class="flex flex-row items-start py-4">
+								<img width="22px" style="" class="mx-6 mt-1 lg:hidden" src="img/diamond1.svg" />
+								<div>
+									<div tabindex="2">
+										<h3 class="use-title font-bold lg:underline">EHR Endpoints for Clinical Trials (iCAREdata)</h3>
+									</div>
+									<div tabindex="2" class="font-18px leading-6 mt-1">Collect research-quality mCODE-based data in and share from EHRs to increase the value of real-world data for clinical trials, and reduce and potentially eliminate manual and/or duplicate data entry into case report forms. </div>
 								</div>
-								<div tabindex="2" class="use-entry-desc">Collect research-quality mCODE-based data in and share from EHRs to increase the value of real-world data for clinical trials, and reduce and potentially eliminate manual and/or duplicate data entry into case report forms. </div>
 							</div>
-							<div style="" class="use-entry">
-								<div tabindex="2">
-									<h3 class="h3">Integrated Trial Matching for Cancer Patients and Providers</h3>
+							<div class="flex flex-row items-start py-4">
+								<img width="22px" style="" class="mx-6 mt-1 lg:hidden" src="img/diamond1.svg" />
+								<div>
+									<div tabindex="2">
+										<h3 class="use-title font-bold lg:underline">Integrated Trial Matching for Cancer Patients and Providers</h3>
+									</div>
+									<div tabindex="2" class="font-18px leading-6 mt-1"> Leverage mCODE-based data standards and open APIs that enable interoperable, scalable, and accessible clinical trial matching services to improve the ability for patients to find clinical trials for which they may be eligible. </div>
 								</div>
-								<div tabindex="2" class="use-entry-desc"> Leverage mCODE-based data standards and open APIs that enable interoperable, scalable, and accessible clinical trial matching services to improve the ability for patients to find clinical trials for which they may be eligible. </div>
 							</div>
-							<div style="" class="use-entry">
-								<div tabindex="2">
-									<h3 class="h3">mCODE++ Extraction</h3>
+							<div class="flex flex-row items-start py-4">
+								<img width="22px" style="" class="mx-6 mt-1 lg:hidden" src="img/diamond1.svg" />
+								<div>
+									<div tabindex="2">
+										<h3 class="use-title font-bold lg:underline">mCODE++ Extraction</h3>
+									</div>
+									<div tabindex="2" class="font-18px leading-6 mt-1"> Software to enable existing EHRs and other systems to share cancer patient data conformant to the mCODE FHIR IG, to support a variety of use cases. </div>
 								</div>
-								<div tabindex="2" class="use-entry-desc"> Software to enable existing EHRs and other systems to share cancer patient data conformant to the mCODE FHIR IG, to support a variety of use cases. </div>
 							</div>
-							<div style="" class="use-entry-last">
-								<div tabindex="2">
-									<h3 class="h3">Radiation Treatment Therapy Data for Cancer</h3>
+							<div style="" class="flex flex-row items-start">
+								<img width="22px" style="" class="mx-6 mt-1 lg:hidden" src="img/diamond1.svg" />
+								<div>
+									<div tabindex="2">
+										<h3 class="use-title font-bold lg:underline">Radiation Treatment Therapy Data for Cancer</h3>
+									</div>
+									<div tabindex="2" class="font-18px leading-6 mt-1"> Leverage mCODE and extensions to enable sharing of critical radiation therapy treatment data for care coordination or data reuse (research, quality measurement, payer-required reporting). </div>
 								</div>
-								<div tabindex="2" class="use-entry-desc"> Leverage mCODE and extensions to enable sharing of critical radiation therapy treatment data for care coordination or data reuse (research, quality measurement, payer-required reporting). </div>
 							</div>
 						</div>
 					</div>
-					<div style="" class="flex place-content-center use-container">
-						<div style="" class="use-num-container text-gold">
-							<div tabindex="2" class="use-num">1</div>
-							<div tabindex="2" class="use-num-desc" style="">In Planning</div>
+					<div style="" class="flex flex-col place-content-center use-container mt-10 lg:mt-0 lgx:p-0 lg:flex-row">
+						<div style="" class="lgx:flex flex-row justify-center items-center use-num-container lgx:m-0 bg-gold text-white lg:bg-white lg:text-gold py-10 lg:py-0">
+							<div tabindex="2" class="use-num satoshi-bold font-bold lgx:leading-none mr-5 w-fit lg:mr-0 lg:w-32">1</div>
+							<div tabindex="2" class="use-num-desc self-end">In Planning</div>
 						</div>
-						<div style="" tabindex="-1" class="flex flex-col items-stretch">
-							<img src="img/diamond2.svg" />
+						<div style="" tabindex="-1" class="lg:flex flex-col items-stretch hidden">
+							<img width="43px" src="img/diamond2.svg" />
 							<div style="" class="use-line border-gold"></div>
 						</div>
-						<div style="" class="use-list">
-							<div style="" class="use-entry-last">
-								<div tabindex="2">
-									<h3 class="h3">Prior Authorization in Oncology</h3>
+						<div style="" class="use-list pr-14 pt-10 lg:pr-0 lg:pt-0">
+							<div class="flex flex-row items-start pb-4">
+								<img width="22px" style="" class="mx-6 mt-1 lg:hidden" src="img/diamond2.svg" />
+								<div>
+									<div tabindex="2">
+										<h3 class="use-title font-bold lg:underline">Prior Authorization in Oncology</h3>
+									</div>
+									<div tabindex="2" class="font-18px leading-6 mt-1">Facilitate sharing of mCODE-based clinical data between providers and payers to reduce burden and speed authorization or requests for more information.</div>
 								</div>
-								<div tabindex="2" class="use-entry-desc">Facilitate sharing of mCODE-based clinical data between providers and payers to reduce burden and speed authorization or requests for more information.</div>
 							</div>
 						</div>
 					</div>
-					<div style="" class="flex place-content-center use-container">
-						<div style="" class="use-num-container text-medgrey">
-							<div tabindex="2" class="use-num">4</div>
-							<div tabindex="2" class="use-num-desc" style="">In Discovery</div>
+					<div style="" class="flex flex-col place-content-center use-container mt-10 lg:mt-0 lgx:p-0 lg:flex-row">
+						<div style="" class="lgx:flex flex-row justify-center items-center use-num-container lgx:m-0 bg-medgrey text-white lg:bg-white lg:text-medgrey py-10 lg:py-0">
+							<div tabindex="2" class="use-num satoshi-bold font-bold lgx:leading-none mr-5 w-fit lg:mr-0 lg:w-32">4</div>
+							<div tabindex="2" class="use-num-desc self-end">In Discovery</div>
 						</div>
-						<div style="" tabindex="-1" class="flex flex-col items-stretch">
-							<img src="img/diamond3.svg" />
+						<div style="" tabindex="-1" class="lg:flex flex-col items-stretch hidden">
+							<img width="43px" src="img/diamond3.svg" />
 							<div style="" class="use-line border-medgrey"></div>
 						</div>
-						<div style="" class="use-list">
-							<div style="" class="use-entry">
+						<div style="" class="use-list pr-14 pt-10 lg:pr-0 lg:pt-0">
+							<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap lg:hidden">NEW DOMAIN</span>
+							<div class="flex flex-row items-start py-4 mb-6">
+								<img width="22px" style="" class="mx-6 mt-1 lg:hidden" src="img/diamond3.svg" />
 								<div class="">
 									<div style="">
-										<h3 tabindex="2" style="" class="h3 inline-block">CardX Hypertension Management</h3>
-										<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap">NEW DOMAIN</span>
+										<h3 tabindex="2" style="" class="h3 inline-block lg:underline">CardX Hypertension Management</h3>
+										<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap hidden lg:inline">NEW DOMAIN</span>
 									</div>
-									<div tabindex="2" class="use-entry-desc">Designing and building an integrated standard that enables interoperable, scalable, and accessible hypertension management both at home and in the clinic, so that blood pressure data can easily be shared between home blood pressure measurement devices, patient data managers and health systems. </div>
+									<div tabindex="2" class="font-18px leading-6 mt-1">Designing and building an integrated standard that enables interoperable, scalable, and accessible hypertension management both at home and in the clinic, so that blood pressure data can easily be shared between home blood pressure measurement devices, patient data managers and health systems. </div>
 								</div>
 							</div>
-							<div style="" class="use-entry">
+							<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap lg:hidden">NEW DOMAIN</span>
+							<div class="flex flex-row items-start py-4 mb-6">
+								<img width="22px" style="" class="mx-6 mt-1 lg:hidden" src="img/diamond3.svg" />
 								<div class="">
 									<div style="">
-										<h3 tabindex="2" style="" class="h3 inline-block">Genomics Data Exchange</h3>
-										<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap">NEW DOMAIN</span>
+										<h3 tabindex="2" style="" class="h3 inline-block lg:underline">Genomics Data Exchange</h3>
+										<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap hidden lg:inline">NEW DOMAIN</span>
 									</div>
-									<div tabindex="2" class="use-entry-desc">Designing and building scalable FHIR genomics interfaces so that genomic data can easily be shared between laboratories, EHRs and/or genomics repositories. </div>
+									<div tabindex="2" class="font-18px leading-6 mt-1">Designing and building scalable FHIR genomics interfaces so that genomic data can easily be shared between laboratories, EHRs and/or genomics repositories. </div>
 								</div>
 							</div>
-							<div style="" class="use-entry">
+							<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap lg:hidden">NEW DOMAIN</span>
+							<div class="flex flex-row items-start py-4 mb-6">
+								<img width="22px" style="" class="mx-6 mt-1 lg:hidden" src="img/diamond3.svg" />
 								<div class="">
 									<div style="">
-										<h3 tabindex="2" style="" class="h3 inline-block">Genomics Operations</h3>
-										<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap">NEW DOMAIN</span>
+										<h3 tabindex="2" style="" class="h3 inline-block lg:underline">Genomics Operations</h3>
+										<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap hidden lg:inline">NEW DOMAIN</span>
 									</div>
-									<div tabindex="2" class="use-entry-desc">Enabling access to complex genomic data through APIs so that developers can more easily develop and populate data for a range of genomic applications. </div>
+									<div tabindex="2" class="font-18px leading-6 mt-1">Enabling access to complex genomic data through APIs so that developers can more easily develop and populate data for a range of genomic applications. </div>
 								</div>
 							</div>
-							<div style="" class="use-entry-last">
+							<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap lg:hidden">NEW DOMAIN</span>
+							<div class="flex flex-row items-start pt-4">
+								<img width="22px" style="" class="mx-6 mt-1 lg:hidden" src="img/diamond3.svg" />
 								<div class="">
 									<div style="">
-										<h3 tabindex="2" style="" class="h3 inline-block">Risk Evaluation and Mitigation Strategies</h3>
-										<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap">NEW DOMAIN</span>
+										<h3 tabindex="2" style="" class="h3 inline-block lg:underline">Risk Evaluation and Mitigation Strategies</h3>
+										<span tabindex="2" style="" class="use-explain-badge whitespace-nowrap hidden lg:inline">NEW DOMAIN</span>
 									</div>
-									<div tabindex="2" class="use-entry-desc">Create integrated, automated, efficient, and effective REMS programs by leveraging open data standards and creating the data infrastructure to enable REMS integration into the current workflow and data sharing across REMS stakeholders reducing undue burden. </div>
+									<div tabindex="2" class="font-18px leading-6 mt-1">Create integrated, automated, efficient, and effective REMS programs by leveraging open data standards and creating the data infrastructure to enable REMS integration into the current workflow and data sharing across REMS stakeholders reducing undue burden. </div>
 								</div>
 							</div>
 						</div>
