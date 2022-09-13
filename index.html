@@ -15,12 +15,34 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link href="css/satoshi.css" rel="stylesheet" />
 		<script src="js/scripts.js"></script>
+		<style>
+			.communityIconsContainer{
+				margin:0% 6%; padding:52px 0px 82px 0px;
+			}
+			.communityIconCont{
+				padding: 19px 23px;
+			}
+			.communityIcon{
+				padding-right:12px;
+				width:78.65px;
+			}
+			.communityIconHeadText{
+				font-size:14px;
+			}
+			.communityIconText{
+				font-size:12px;
+			}
+			@media all and (max-width: 1023px) {
+				.communityIconCont{padding: 15px 0px;}
+				.communityIconsContainer{margin:0% 10%; padding:28px 0px 52px 0px;}
+			}
+		</style>
 	</head>
 	<body class="bg-white sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
 			<div style="" class="header-container absolute inset-0 z-10">
 				<div style="" class="flex">
-					<img class="logo" src="img/logo-white.svg" />
+					<img class="logo" alt="CodeX Logo" src="img/logo-white.svg" />
 					<img class="code-logo self-end" src="img/code-logo-white.svg" />
 					<div style="" class="grid grid-cols-4 gap-0 ml-auto text-white items-center">
 						<div style="" class="flex flex-col p-2 items-center news underline decoration-solid underline-offset-8">
@@ -129,12 +151,12 @@
 					<p  style="" class="font-21px mt-3">Common data definitions drive common understanding of patient care and health education.</p>
 				</div>
 				<div style="margin-top: auto; max-width: 160px;" class="xlx:hidden">
-					<img class="" src="img/stairs.svg"/>
+					<img class="" alt="Icon of person climbing rising steps" src="img/stairs.svg"/>
 				</div>
 			</div>
 			<div style="" class="bg-white flex flex-col mt-8 mb-16 xl:grid xl:grid-cols-3 xl:mt-16 xl:mb-36 xl:mx-60 xl:gap-x-48">
 				<div class="flex flex-col items-center">
-					<div style="" class="grid step-container1"><img style="" src="img/step1.svg"></div>
+					<div style="" class="grid step-container1"><img style="" alt="Elderly patient, nurse, and clinician chatting with one another." src="img/step1.svg"></div>
 					<div style="" class="flex flex-row step-text">
 						<img class="p-1 mb-auto mr-3" src="img/bullet1.svg">
 						<div>
@@ -144,7 +166,7 @@
 					</div>
 				</div>
 				<div class="flex flex-col items-center">
-					<div style="" class="grid step-container2"><img style="" src="img/step2.svg"></div>
+					<div style="" class="grid step-container2"><img style="" alt="Clinician and nurse looking at x-ray to assess their patient's condition." src="img/step2.svg"></div>
 					<div style="" class="flex flex-row step-text">
 						<img class="p-1 mb-auto mr-3" src="img/bullet2.svg">
 						<div>
@@ -154,7 +176,7 @@
 					</div>
 				</div>
 				<div class="flex flex-col items-center">
-					<div style="" class="grid step-container2"><img style=""  src="img/step3.svg"></div>
+					<div style="" class="grid step-container2"><img style="" alt="Group of people working with each other to fit puzzle pieces together." src="img/step3.svg"></div>
 					<div style="" class="flex flex-row step-text">
 						<img class="p-1 mb-auto mr-3" src="img/bullet3.svg">
 						<div>
@@ -185,7 +207,7 @@
 					<h2 style="" class="h2 font-black satoshi-bold leading-none">Use Everywhere.</h2>
 					<p>CodeX is a global community of healthcare stakeholders currently working on data standards in three domains.</p>
 					<p><a class="underline flex" href="#">Join Us and Spread the Word <img class="ml-2" src="img/arrow.svg"></a></p>
-					<img class="pt-12" src="img/boxes.svg"/>
+					<img class="pt-12" alt="Data elements of patient connected together in a digital format." src="img/boxes.svg"/>
 				</div>
 				<div style="" class="flex flex-col gap-y-4 health-domains">
 					<div class="">
@@ -214,7 +236,95 @@
 			</div>
 			<div style="" class="bg-white text-center px-10 lg:px-20">
 				<h1 class="font-black satoshi-bold font-40px pb-6">The CodeX Community</h1>
-				<img src="img/patient.jpg">
+				<img src="img/patient.jpg" alt="The CodeX Community stakeholder map which includes patients, researchers, providers, payers, pharmaceuticals, health systems, public health, advocacy groups, global community, health IT, regulators, and philanthropy.">
+			</div>
+			<!--icons-->
+			<!--TO DO: center text and image on x axis-->
+			<div style="" class="communityIconsContainer py-4 lg:grid lg:grid-cols-4">
+				<div style="" class="flex communityIconCont">
+					<img style="" class="communityIcon" src="img/icon-patient.svg">
+					<div style="padding-left:12px">
+						<h2 style="" class="font-bold communityIconHeadText">Patients</h2>
+						<p style="" class="font-normal communityIconText">Growing a high-resolution longitudinal health record with easier access to care, research, clinical trials, and your health data. </p>
+					</div>
+				</div>
+				<div style="" class="flex communityIconCont">
+					<img style="" class="communityIcon" src="img/icon-providers.svg">
+					<div style="padding-left:12px">
+						<h2 style="" class="font-bold communityIconHeadText">Providers</h2>
+						<p style="" class="font-normal communityIconText">Improving care continuity with standards based clinical specialty data with more time on care than administration.</p>
+					</div>
+				</div>
+				<div style="" class="flex communityIconCont">
+					<img style="" class="communityIcon" src="img/icon-healthcenter.svg">
+					<div style="padding-left:12px">
+						<h2 style="" class="font-bold communityIconHeadText">Health Centers</h2>
+						<p style="" class="font-normal communityIconText">Assuring efficient, interoperable data exchange and reporting, and improved patient and care team satisfaction.</p>
+					</div>
+				</div>
+				<div style="" class="flex communityIconCont">
+					<img style="" class="communityIcon" src="img/icon-pharma.svg">
+					<div style="padding-left:12px">
+						<h2 style="" class="font-bold communityIconHeadText">Pharmaceuticals</h2>
+						<p style="" class="font-normal communityIconText">Increasing diversity and accessibility in clinical trial enrollment, improving treatment and drug safety monitoring.</p>
+					</div>
+				</div>
+				<div style="" class="flex communityIconCont">
+					<img style="" class="communityIcon" src="img/icon-healthit.svg">
+					<div style="padding-left:12px">
+						<h2 style="" class="font-bold communityIconHeadText">Health IT</h2>
+						<p style="" class="font-normal communityIconText">Removing data accuracies by embedding structured CodeX data in real world innovative solutions. </p>
+					</div>
+				</div>
+				<div style="" class="flex communityIconCont">
+					<img style="" class="communityIcon" src="img/icon-research.svg">
+					<div style="padding-left:12px">
+						<h2 style="" class="font-bold communityIconHeadText">Research</h2>
+						<p style="" class="font-normal communityIconText">Improving diversity and equity in clinical research with improved trial matching, common data sets and targeted population research.</p>
+					</div>
+				</div>
+				<div style="" class="flex communityIconCont">
+					<img style="" class="communityIcon" src="img/icon-regulator.svg">
+					<div style="padding-left:12px">
+						<h2 style="" class="font-bold communityIconHeadText">Regulators</h2>
+						<p style="" class="font-normal communityIconText">Advancing healthcare policy decisions with high quality and timely data in registries and adverse events reporting.</p>
+					</div>
+				</div>
+				<div style="" class="flex communityIconCont">
+					<img style="" class="communityIcon" src="img/icon-philanthropy.svg">
+					<div style="padding-left:12px">
+						<h2 style="" class="font-bold communityIconHeadText">Philanthropy</h2>
+						<p style="" class="font-normal communityIconText">Building collective impact to accelerate health equity, research and care outcomes.</p>
+					</div>
+				</div>
+				<div style="" class="flex communityIconCont">
+					<img style="" class="communityIcon" src="img/icon-pubhealth.svg">
+					<div style="padding-left:12px">
+						<h2 style="" class="font-bold communityIconHeadText">Public Health</h2>
+						<p style="" class="font-normal communityIconText">Assuring real time public health data and solutions for diverse populations across care and research settings.</p>
+					</div>
+				</div>
+				<div style="" class="flex communityIconCont">
+					<img style="" class="communityIcon" src="img/icon-payers.svg">
+					<div style="padding-left:12px">
+						<h2 style="" class="font-bold communityIconHeadText">Payers</h2>
+						<p style="" class="font-normal communityIconText">Gaining insights to drive effective value-based care models and fraud reduction.</p>
+					</div>
+				</div>
+				<div style="" class="flex communityIconCont">
+					<img style="" class="communityIcon" src="img/icon-advocacy.svg">
+					<div style="padding-left:12px">
+						<h2 style="" class="font-bold communityIconHeadText">Advocacy Groups</h2>
+						<p style="" class="font-normal communityIconText">Mobilizing efforts by understanding the healthcare and research needs and challenges in the communities you serve.</p>
+					</div>
+				</div>
+				<div style="" class="flex communityIconCont">
+					<img style="" class="communityIcon" src="img/icon-global.svg">
+					<div style="padding-left:12px">
+						<h2 style="" class="font-bold communityIconHeadText">Global Community</h2>
+						<p style="" class="font-normal communityIconText">Growing a global learning health system through open standards clinical specialty data.</p>
+					</div>
+				</div>
 			</div>
 			<div style="" class="bg-white p-10 flex flex-col">
 				<h1 style=""class="satoshi-bold font-black font-36px pb-2 place-self-center">News & Updates</h1>
