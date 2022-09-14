@@ -15,6 +15,25 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link href="css/satoshi.css" rel="stylesheet" />
 		<script src="js/scripts.js"></script>
+		<style>
+			.contactContentContainer{
+				margin:0% 21%; margin-top:250px;
+			}
+			.contactText{
+				height:96px; width:auto;
+			}
+			.contactHeading{
+				font-size:36px; font-family:Satoshi-Bold;
+			}
+			.contactBodyText{
+				font-size:20px;
+			}
+			@media all and (max-width: 767px) {
+				.contactContentContainer{margin:0% 13%; margin-top:50px;}
+				.contactHeading{font-size:28px;}
+				.contactBodyText{font-size:16px;}
+			}
+		</style>
 	</head>
 	<body class="bg-darkgrey sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
@@ -27,13 +46,13 @@
 						<div style="" class="flex flex-col p-2 items-center news">
 							<a tabindex="1" href="index">News</a>
 						</div>
-						<div style="" class="flex flex-col p-2 items-center use-cases underline decoration-solid underline-offset-8">
+						<div style="" class="flex flex-col p-2 items-center use-cases">
 							<a tabindex="1" href="uses">Use Cases</a>
 						</div>
 						<div style="" class="flex flex-col p-2 items-center">
 							<a tabindex="1" href="community">Community</a>
 						</div>
-						<div style="" class="flex flex-col p-2 items-center">
+						<div style="" class="flex flex-col p-2 items-center underline decoration-solid underline-offset-8">
 							<a tabindex="1" href="contact">Contact</a>
 						</div>
 					</div>
@@ -66,15 +85,19 @@
 				</div>
 			</div>
 
-			<div style="" class="content mb-auto">
-				<div style="height:96px; width:auto; margin:15%" class="text-white flex flex-wrap lg:flex-nowrap">
+			<!--to do: move the image so it is in between header and text in mobile-->
+			<div style="" class="contactContentContainer">
+				<div style="" class="text-white flex flex-wrap lg:flex-nowrap">
 					<div class="lg:px-4">
 						<div class="">
-							<h2 class="h2 font-bold">We’d love to hear from you!</h2>
+							<h2 class="font-bold contactHeading pb-2">We’d love to hear from you!</h2>
 						</div>
-						<div class="font-normal">Want to be a part of our pilot projects? Got the technical skills to improve our data standard? Have any questions about CodeX? Email us at CodeX@hl7.org or fill out the contact form.</div>
+						<div>
+							<p class="py-2 font-normal">Want to be a part of our pilot projects? Got the technical skills to improve our data standard? Have any questions about CodeX?</p>
+							<p class="py-2 font-normal">Let's get in touch! Email us at <a href="mailto:codeX@hl7.org">CodeX@hl7.org</a>.</p>
+						</div>
 					</div>
-					<div>
+					<div class="">
 						<img src="img/letter.svg">
 					</div>
 				</div>
