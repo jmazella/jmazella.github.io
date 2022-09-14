@@ -87,7 +87,9 @@ p {
 .home-banner{
 	min-height: 1500px;
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-blend-mode: overlay;
+	background-position-x: center;
 	background-image: url('../img/top.jpg'), linear-gradient(rgba(56,56,56,0.5),rgba(56,56,56,0.5));
 }
 
@@ -345,6 +347,12 @@ p {
 	.contact-body-text{font-size:16px;}
 }
 
+@media all and (min-width: 769px) {
+	.home-banner{
+		min-height:  1000px;
+	}
+}
+
 @media all and (max-width: 1023px) {
 	.health-cta{
 		min-width: unset;
@@ -389,7 +397,6 @@ p {
 		background-color: white;
 		background: none;
 	}
-
 
 }
 
