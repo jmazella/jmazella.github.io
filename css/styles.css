@@ -119,6 +119,17 @@ p {
 	background-color: white;
 }
 
+.mobile-header-container-grey{
+	display: none;
+	padding-left: 25px;
+}
+
+.mobile-header-container-gradient{
+	display: none;
+	padding-left: 25px;
+	background: linear-gradient(90deg, #A95131 0%, #292828 100%);
+}
+
 .mobile-header{
 	min-height:80px;
 }
@@ -312,14 +323,26 @@ p {
 	max-width: 40px;
 }
 
+.contact-heading{
+	font-size:36px;
+}
+
+.contact-body-text{
+	font-size:20px;
+}
+
 @media all and (max-width: 768px) {
 	.header-container {display: none;}
 	.mobile-header-container {display: block;}
+	.mobile-header-container-grey {display: block;}
+	.mobile-header-container-gradient {display: block;}
 	.home-banner{
 		min-height:  430px;
 		background-image: url('../img/top.jpg');
 		background-size: cover;
 	}
+	.contact-heading{font-size:28px;}
+	.contact-body-text{font-size:16px;}
 }
 
 @media all and (max-width: 1023px) {

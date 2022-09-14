@@ -1,109 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-PR2D1PD0CN"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-PR2D1PD0CN');
+		</script>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-		<meta name="description" content="A description of the site" />
-		<meta name="keywords" content="keyword1 keyword2" />
-		<meta name="author" content="author here" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="description" content="Codex Contact" />
+		<meta name="keywords" content="codeX HL7 mCode EHR FHIR REMS MITRE iCAREdata" />
+		<meta name="author" content="Codex" />
 		<link rel="icon" href="/favicon.ico" sizes="any">
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-		<title>Home Page</title>
+		<title>CodeX Contact</title>
 		<link href="css/styles.css" rel="stylesheet" />
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link href="css/satoshi.css" rel="stylesheet" />
 		<script src="js/scripts.js"></script>
-		<style>
-			.contactContentContainer{
-				margin:0% 21%; margin-top:250px; margin-bottom:50px;
-			}
-			.contactText{
-				height:96px; width:auto;
-			}
-			.contactHeading{
-				font-size:36px; font-family:Satoshi-Bold;
-			}
-			.contactBodyText{
-				font-size:20px;
-			}
-			.letterLargeScreen{
-				display:block;
-			}
-			.letterSmallScreen{
-				display:none; padding:40px 0px;
-			}
-			@media all and (max-width: 767px) {
-				.contactContentContainer{margin:0% 13%; margin-top:50px; margin-bottom:50px}
-				.contactHeading{font-size:28px;}
-				.contactBodyText{font-size:16px;}
-			}
-			@media all and (max-width: 1023px){
-				.letterLargeScreen{display:none;}
-				.letterSmallScreen{display:block;}
-				.contactContentContainer{margin-top:100px}
-			}
-		</style>
 	</head>
 	<body class="bg-darkgrey sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
-
-			<div style="" class="header-container absolute inset-0 z-10">
-				<div style="" class="flex">
+			<div class="header-container absolute inset-0 z-10">
+				<div class="flex">
 					<img class="logo" src="img/logo-white.svg" />
 					<img class="code-logo self-end" src="img/code-logo-white.svg" />
-					<div style="" class="grid grid-cols-4 gap-0 ml-auto text-white items-center">
-						<div style="" class="flex flex-col p-2 items-center news">
+					<div class="grid grid-cols-4 gap-0 ml-auto text-white items-center">
+						<div class="flex flex-col p-2 items-center news">
 							<a tabindex="1" href="index">News</a>
 						</div>
-						<div style="" class="flex flex-col p-2 items-center use-cases">
+						<div class="flex flex-col p-2 items-center use-cases">
 							<a tabindex="1" href="uses">Use Cases</a>
 						</div>
-						<div style="" class="flex flex-col p-2 items-center">
+						<div class="flex flex-col p-2 items-center">
 							<a tabindex="1" href="community">Community</a>
 						</div>
-						<div style="" class="flex flex-col p-2 items-center underline decoration-solid underline-offset-8">
+						<div class="flex flex-col p-2 items-center underline decoration-solid underline-offset-8">
 							<a tabindex="1" href="contact">Contact</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div style="" class="mobile-header-container">
+			<div class="mobile-header-container-grey">
 				<div class="flex place-items-center mobile-header">
-					<img src="img/logo-red.svg" class="logo" />
-					<img src="img/code-logo-red.svg" class="code-logo" />
+					<img src="img/logo-white.svg" class="logo" />
+					<img src="img/code-logo-white.svg" class="code-logo" />
 					<div id="open-menu-button-div" onclick="openmenu();" class="open-menu-button-div ml-auto">
-						<img class="open-menu-button" src="img/menu.svg" />
+						<img class="open-menu-button" src="img/menu-white.svg" />
 					</div>
 					<div id="close-menu-button-div" onclick="closemenu();" class="close-menu-button-div ml-auto hidden">
-						<img class="close-menu-button" src="img/close.svg" />
+						<img class="close-menu-button" src="img/close-white.svg" />
 					</div>
 				</div>
-				<div style="" id="mobile-menu" class="mobile-menu hidden">
-					<div style="" class=" ">
+				<div id="mobile-menu" class="mobile-menu text-white hidden">
+					<div class=" ">
 						<a href="index">News</a>
 					</div>
-					<div style="" class="">
+					<div>
 						<a href="uses">Use Cases</a>
 					</div>
-					<div style="" class="">
+					<div>
 						<a href="community">Community</a>
 					</div>
-					<div style="" class="">
+					<div>
 						<a href="contact">Contact</a>
 					</div>
 				</div>
 			</div>
-
-			<!--to do: move the image so it is in between header and text in mobile-->
-			<div style="" class="contactContentContainer">
-				<div style="" class="text-white flex flex-wrap lg:flex-nowrap">
-					<div class="lg:px-4">
-						<div class="">
-							<h2 class="font-bold contactHeading pb-2">We’d love to hear from you!</h2>
+			<div class="mx-16 my-16 md:my-40 lg:mx-52 lg:mt-64 lg:mb-32">
+				<div class="text-white flex justify-center items-center lg:flex-nowrap">
+					<div class="w-4/5 md:w-2/5">
+						<div>
+							<h2 class="satoshi-bold font-bold contact-heading pb-2">We’d love to hear from you!</h2>
 						</div>
-						<div class="letterSmallScreen">
+						<div class="py-8 lg:hidden">
 							<img alt="Email and letter illustration" src="img/letter.svg">
 						</div>
 						<div>
@@ -111,33 +85,31 @@
 							<p class="py-2 font-normal">Let's get in touch! Email us at <a href="mailto:codeX@hl7.org">CodeX@hl7.org</a>.</p>
 						</div>
 					</div>
-					<div class="letterLargeScreen">
+					<div class="hidden ml-8 lg:block">
 						<img alt="Email and letter illustration" src="img/letter.svg">
 					</div>
 				</div>
 			</div>
-
-
-			<div style="" class="footer flex bg-black md:py-0 py-6 justify-around md:justify-between min-h-min md:min-h-150px">
-				<div style="" class="grid grid-cols-1 place-items-start md:grid-cols-4 md:items-center md:place-items-center  text-white">
-					<div style="" class="flex flex-col p-2 items-center font-bold news">
+			<div class="footer flex bg-black md:py-0 py-6 justify-around md:justify-between min-h-min md:min-h-150px">
+				<div class="grid grid-cols-1 place-items-start md:grid-cols-4 md:items-center md:place-items-center text-white">
+					<div class="flex flex-col p-2 items-center font-bold news">
 						<a tabindex="3" href="index">News</a>
 					</div>
-					<div style="" class="flex flex-col p-2 items-center font-bold use-cases">
+					<div class="flex flex-col p-2 items-center font-bold use-cases">
 						<a tabindex="3" href="uses">Use Cases</a>
 					</div>
-					<div style="" class="flex flex-col p-2 items-center font-bold">
+					<div class="flex flex-col p-2 items-center font-bold">
 						<a tabindex="3" href="community">Community</a>
 					</div>
-					<div style="" class="flex flex-col p-2 items-center font-bold">
+					<div class="flex flex-col p-2 items-center font-bold">
 						<a tabindex="3" href="contact">Contact</a>
 					</div>
 				</div>
-				<div style="" class="grid grid-cols-1 md:grid-cols-2 gap-0 text-white content-center ">
-					<div style="" class="flex flex-col p-2  pr-6">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-0 text-white content-center ">
+					<div class="flex flex-col p-2 pr-6">
 						<a tabindex="3" href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/linkedin.svg"/>Linkedin</a>
 					</div>
-					<div style="" class="flex flex-col p-2">
+					<div class="flex flex-col p-2">
 						<a tabindex="3" href="#" class="flex place-items-center font-bold"><img height="34px" class="float-left pr-3" src="img/github.svg"/>Github</a>
 					</div>
 				</div>
