@@ -17,7 +17,7 @@
 		<script src="js/scripts.js"></script>
 		<style>
 			.contactContentContainer{
-				margin:0% 21%; margin-top:250px;
+				margin:0% 21%; margin-top:250px; margin-bottom:50px;
 			}
 			.contactText{
 				height:96px; width:auto;
@@ -28,10 +28,21 @@
 			.contactBodyText{
 				font-size:20px;
 			}
+			.letterLargeScreen{
+				display:block;
+			}
+			.letterSmallScreen{
+				display:none; padding:40px 0px;
+			}
 			@media all and (max-width: 767px) {
-				.contactContentContainer{margin:0% 13%; margin-top:50px;}
+				.contactContentContainer{margin:0% 13%; margin-top:50px; margin-bottom:50px}
 				.contactHeading{font-size:28px;}
 				.contactBodyText{font-size:16px;}
+			}
+			@media all and (max-width: 1023px){
+				.letterLargeScreen{display:none;}
+				.letterSmallScreen{display:block;}
+				.contactContentContainer{margin-top:100px}
 			}
 		</style>
 	</head>
@@ -92,13 +103,16 @@
 						<div class="">
 							<h2 class="font-bold contactHeading pb-2">We’d love to hear from you!</h2>
 						</div>
+						<div class="letterSmallScreen">
+							<img alt="Email and letter illustration" src="img/letter.svg">
+						</div>
 						<div>
 							<p class="py-2 font-normal">Want to be a part of our pilot projects? Got the technical skills to improve our data standard? Have any questions about CodeX?</p>
 							<p class="py-2 font-normal">Let's get in touch! Email us at <a href="mailto:codeX@hl7.org">CodeX@hl7.org</a>.</p>
 						</div>
 					</div>
-					<div class="">
-						<img src="img/letter.svg">
+					<div class="letterLargeScreen">
+						<img alt="Email and letter illustration" src="img/letter.svg">
 					</div>
 				</div>
 			</div>
