@@ -11,6 +11,7 @@ tailwind.config = {
 				medgrey: '#9F9F9F',
 				backgroundgrey: '#F9F5F5',
 				darkred: '#98391E',
+				newsgrey: '#625D5D',
 				gold: '#D69B41',
 			},
 			textUnderlineOffset: {
