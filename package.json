@@ -1,0 +1,24 @@
+{
+  "name": "jmazella.github.io",
+  "version": "1.0.0",
+  "description": "Build goes here",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./css/input.css -o ./css/output.css",
+    "watch": "tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmazella/jmazella.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmazella/jmazella.github.io/issues"
+  },
+  "homepage": "https://github.com/jmazella/jmazella.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
