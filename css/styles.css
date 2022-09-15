@@ -171,6 +171,10 @@ p {
 	margin-right:-20px
 }
 
+.vision{
+	max-width: 80%;
+}
+
 .blurb-grid{
 	grid-template-columns: 26% 54% 26%;
 }
@@ -354,14 +358,19 @@ p {
 		background-image: url('../img/top.jpg');
 		background-size: cover;
 	}
+	
+	.vision{
+		max-width: 350px;
+	}
 	.contact-heading{font-size:28px;}
 	.contact-body-text{font-size:16px;}
 }
 
-@media all and (min-width: 769px) {
+@media all and (min-width: 769px) and (max-width: 1023px) {
 	.home-banner{
 		min-height:  1000px;
 	}
+
 }
 
 @media all and (max-width: 1023px) {

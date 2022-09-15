@@ -80,22 +80,26 @@
 	</head>
 	<body class="bg-darkgrey sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
-
 			<div class="header-container absolute inset-0 z-10">
 				<div class="flex">
-					<img class="logo" src="img/logo-white.svg" />
-					<img class="code-logo self-end" src="img/code-logo-white.svg" />
-					<div class="grid grid-cols-4 gap-0 ml-auto text-white items-center">
-						<div class="flex flex-col p-2 items-center news">
-							<a tabindex="1" href="index">News</a>
+					<a class="flex" href="index">
+						<img class="logo" alt="CodeX Logo" src="img/logo-white.svg" />
+						<img class="code-logo self-end" src="img/code-logo-white.svg" />
+					</a>
+					<div class="flex flex-row gap-8 ml-auto text-white items-center">
+						<div class="flex items-center">
+							<a tabindex="1" href="index">Home</a>
 						</div>
-						<div class="flex flex-col p-2 items-center use-cases">
+						<div class="flex items-center">
+							<a tabindex="1" href="index#news">News</a>
+						</div>
+						<div class="flex items-center">
 							<a tabindex="1" href="uses">Use Cases</a>
 						</div>
-						<div class="flex flex-col p-2 items-center underline decoration-solid underline-offset-8">
+						<div class="flex items-center underline decoration-solid underline-offset-8">
 							<a tabindex="1" href="community">Community</a>
 						</div>
-						<div class="flex flex-col p-2 items-center">
+						<div class="flex items-center">
 							<a tabindex="1" href="contact">Contact</a>
 						</div>
 					</div>
@@ -113,8 +117,11 @@
 					</div>
 				</div>
 				<div id="mobile-menu" class="mobile-menu text-white hidden">
-					<div class=" ">
-						<a href="index">News</a>
+					<div>
+						<a href="index">Home</a>
+					</div>
+					<div>
+						<a href="index#news">News</a>
 					</div>
 					<div>
 						<a href="uses">Use Cases</a>
