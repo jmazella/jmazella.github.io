@@ -210,6 +210,13 @@ p {
 	margin-right:10px
 }
 
+.use-headline-text{
+	font-size:40px;
+}
+.use-headline-subheader-text{
+	font-size:22px;
+}
+
 .use-entry-desc{
 	font-size: 18px;
 	font-weight: 400;
@@ -370,6 +377,12 @@ p {
 		float: unset;
 		margin-bottom: 10px;
 	}
+	.use-headline-text{
+		font-size:28px;
+	}
+	.use-headline-subheader-text{
+		font-size:16px;
+	}
 	.use-explain{
 		max-width: 450px;
 		font-size: 16px;
@@ -378,7 +391,9 @@ p {
 	.use-explain-container{
 		height:250px;
 	}
-
+	.use-header{
+		height:319px;
+	}
 	.use-list{
 		width: fit-content;
 		padding-left: 0px;
