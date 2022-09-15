@@ -175,6 +175,10 @@ p {
 	grid-template-columns: 26% 54% 26%;
 }
 
+.build-innovate-cards-header-text{
+	font-size:18px;
+}
+
 .step-container1{
 	width: 280px;
 	height:280px;
@@ -398,6 +402,9 @@ p {
 		background: none;
 	}
 
+	.build-innovate-cards-header-text{
+		font-size:24px;
+	}
 }
 
 @media all and (max-width: 1279px) {
