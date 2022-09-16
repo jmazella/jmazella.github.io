@@ -340,6 +340,30 @@ p {
 	max-width: 40px;
 }
 
+.community-header-block{
+	height:370px;
+}
+
+.community-page-headline{
+	font-size:40px;
+}
+
+.community-page-subheader{
+	font-size:20px;
+}
+
+.community-container{
+	padding:0% 7%; 
+}
+
+.community-cop-number{
+	font-size:40px;
+}
+
+.community-cop-numb-metric{
+	font-size:16px;
+}
+
 .contact-heading{
 	font-size:36px;
 }
@@ -429,6 +453,26 @@ p {
 	.build-innovate-cards-header-text{
 		font-size:24px;
 	}
+	.community-header-block{
+		height:272px;
+	}
+
+	.community-page-headline{
+		font-size:28px;
+	}
+
+	.community-page-subheader{
+		font-size:16px;
+	}
+
+	.community-cop-number{
+		font-size:26px;
+	}
+
+	.community-cop-numb-metric{
+		font-size:12px;
+	}
+
 }
 
 @media all and (max-width: 1279px) {
