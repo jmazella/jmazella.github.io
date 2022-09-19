@@ -1,1 +1,2 @@
-Build goes here
+# Build on windows
+`.\tailwindcss-windows-x64.exe -i ../css/base.css -o ../css/styles.css --minify`
