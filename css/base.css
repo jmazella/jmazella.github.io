@@ -81,7 +81,7 @@ p {
 }
 
 .home-banner{
-	min-height: 1500px;
+	min-height: 1250px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-blend-mode: overlay;
@@ -167,10 +167,6 @@ p {
 
 .news{
 	margin-right:-20px
-}
-
-.vision{
-	max-width: 80%;
 }
 
 .blurb-grid{
