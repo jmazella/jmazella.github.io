@@ -186,6 +186,7 @@ p {
 }
 
 .step-text{
+	line-height: 22px;
 	width:330px;
 	height: 120px;
 }
