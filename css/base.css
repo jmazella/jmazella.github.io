@@ -142,11 +142,14 @@ p {
 
 .open-menu-button-div{
 	margin-right: 25px;
-
 }
 
 .close-menu-button-div{
 	margin-right: 25px;
+}
+
+.open-menu-button{
+	height:30px;
 }
 
 .close-menu-button{
