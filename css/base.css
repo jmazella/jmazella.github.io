@@ -101,6 +101,7 @@ p {
 
 .code-logo{
 	height: 45px;
+	padding-top: 5px;
 }
 
 .header-container{
@@ -141,6 +142,7 @@ p {
 
 .open-menu-button-div{
 	margin-right: 25px;
+
 }
 
 .close-menu-button-div{
@@ -148,7 +150,7 @@ p {
 }
 
 .close-menu-button{
-	height:50px;
+	height:30px;
 }
 
 .footer{
