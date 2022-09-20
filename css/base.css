@@ -227,6 +227,10 @@ p {
 
 }
 
+.use-line-1{
+	margin-right:47%;
+}
+
 .use-container{
 	padding-top:65px;
 }
@@ -318,6 +322,7 @@ p {
 .news-card{
 	padding: 35px;
 	min-height: 400px;
+	height:100%;
 }
 
 .quote{
