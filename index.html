@@ -20,6 +20,7 @@
 		<title>CodeX Home</title>
 		<link href="css/styles.css" rel="stylesheet" />
 		<link href="css/satoshi.css" rel="stylesheet" />
+		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="js/scripts.js"></script>
 	</head>
 	<body class="bg-white sans">
@@ -123,14 +124,14 @@
 				</div>
 			</div>
 			<div class="flex flex-row justify-center py-12 mb-10 md:mb-0 bg-offwhite">
-				<div class="px-12">
+				<div class="flex flex-col max-w-[350px] md:max-w-max md:px-12">
 					<div tabindex="1" class="satoshi-bold font-20px mb-6 lg:mb-1">We are driven by the vision of an equitable future enabled by innovation, owned by patients, and empowered by the healthcare community. </div>
 					<div tabindex="1" class="font-16px">We build high-quality computable data using Health Level Seven International (HL7) and Fast Healthcare Interoperability Resource (FHIR) standards to create a common language across the healthcare spectrum. CodeX is the only member-driven community focused on solving the problem of data silos endemic to our current health care system for specialty health data. We are dedicated to radical improvements in patient outcomes and supercharging the capability of care teams and researchers by harmonizing health data that is trusted, consistent, and usable.</div>
 				</div>
 			</div>
 
 			<div class="grid bg-white place-items-center">
-				<div class="bg-white pb-2">
+				<div class="bg-white pb-2 px-6">
 					<img class="mdx:hidden mt-16" src="img/healthcare.svg"/>
 					<img class="md:hidden" src="img/healthcare-mobile.svg"/>
 				</div>
@@ -150,8 +151,8 @@
 			</div>
 			<div class="bg-white flex flex-col mt-8 mb-16 xl:grid xl:grid-cols-3 xl:mt-16 xl:mb-36 xl:mx-60 xl:gap-x-48">
 				<div class="flex flex-col items-center pb-10 xl:pb-0">
-					<div class="grid step-container1 xl:h-[280px]"><img alt="Elderly patient, nurse, and clinician chatting with one another." src="img/step1.svg"></div>
-					<div class="flex flex-row step-text">
+					<div class="grid step-container1 content-end xl:h-[280px]"><img alt="Elderly patient, nurse, and clinician chatting with one another." src="img/step1.png"></div>
+					<div class="flex flex-row step-text mt-4 xl:mt-2">
 						<img class="p-1 mb-auto mr-3" src="img/bullet1.svg">
 						<div>
 							<h1 tabindex="1" class="font-16px satoshi-bold font-black">Caring for Every Patient</h1>
@@ -160,8 +161,8 @@
 					</div>
 				</div>
 				<div class="flex flex-col items-center pb-10 xl:pb-0">
-					<div class="grid step-container2 mb-[10px] xl:mb-0 xl:h-[280px]"><img alt="Clinician and nurse looking at x-ray to assess their patient's condition." src="img/step2.svg"></div>
-					<div class="flex flex-row step-text">
+					<div class="grid step-container2 content-end xl:pb-4 xl:mb-0 xl:h-[280px]"><img alt="Clinician and nurse looking at x-ray to assess their patient's condition." src="img/step2.png"></div>
+					<div class="flex flex-row step-text mt-6 xl:mt-2">
 						<img class="p-1 mb-auto mr-3" src="img/bullet2.svg">
 						<div>
 							<h1 tabindex="1" class="font-16px satoshi-bold font-black">Learning with Every Patient</h1>
@@ -170,8 +171,8 @@
 					</div>
 				</div>
 				<div class="flex flex-col items-center">
-					<div class="grid step-container2 mb-[10px] xl:mb-0 xl:h-[280px]"><img alt="Group of people working with each other to fit puzzle pieces together." src="img/step3.png"></div>
-					<div class="flex flex-row step-text">
+					<div class="grid step-container2 content-end xl:mb-0 xl:h-[280px]"><img alt="Group of people working with each other to fit puzzle pieces together." src="img/step3.png"></div>
+					<div class="flex flex-row step-text mt-4 xl:mt-2">
 						<img class="p-1 mb-auto mr-3" src="img/bullet3.svg">
 						<div>
 							<h1 tabindex="1" class="font-16px satoshi-bold font-black">Transforming Care for All</h1>
@@ -211,15 +212,15 @@
 						<p tabindex="1"><span class="satoshi-bold">70+ oncology elements</span> in use at Dana-Farber Cancer Institute, MD Anderson Center, Massachusetts General Hospital and 44 other institutions. Versions of the mCODE and associated modeling tools are currently operational in over 250 organizations.</p>
 					</div>
 						<p tabindex="1" class="underline"><a class="flex" target="_blank" href="https://confluence.hl7.org/display/COD/Oncology">See Our Work <img class="ml-2" src="img/arrow.svg"></a></p>
-					<div class="border-b border-solid border-faintgrey pt-6 pb-2 lg:pt-0"></div>
+					<div class="border-b border-solid border-faintgrey pb-2 lg:pt-0"></div>
 					<div>
-						<div class="mb-3 lg:mb-0"><span class="domain-badge whitespace-nowrap">NEW DOMAIN</span></div>
+						<div class="mb-3 mt-1 lg:mb-0"><span class="domain-badge whitespace-nowrap">NEW DOMAIN</span></div>
 						<h2 tabindex="1" class="font-black satoshi-bold font-20px">Genomics</h2>
 						<p tabindex="1">Advance the standardization, interoperability and exchange of genomic data to improve care processes, clinical workflows, and patient outcomes from all areas of clinical care</p>
 					</div>
-					<div class="border-b border-solid border-faintgrey pt-6 lg:pt-0"></div>
+					<div class="border-b border-solid border-faintgrey pt-1 lg:pt-0"></div>
 					<div>
-						<div class="mb-3 lg:mb-0"><span class="domain-badge whitespace-nowrap">NEW DOMAIN</span></div>
+						<div class="mb-3 mt-1 lg:mb-0"><span class="domain-badge whitespace-nowrap">NEW DOMAIN</span></div>
 						<h2 tabindex="1" class="font-black satoshi-bold font-20px pb-2">Cardiovascular Health</h2>
 						<p tabindex="1">Engaging patient, clinical and research stakeholders to create standard representations of heart health to enable standards-based interoperability in cardiovascular health and healthcare.</p>
 					</div>
@@ -320,32 +321,32 @@
 			</div>
 			<div class="news-container p-10 flex flex-col">
 				<h1 tabindex="1" id="news" class="satoshi-black font-black font-36px pb-5 place-self-center">News & Updates</h1>
-				<div class="flex flex-col px-2 justify-center sm:px-16 md:px-32 lg:px-4 xl:px-32 lg:grid lg:grid-cols-3 lg:gap-x-4 xl:gap-x-16">
+				<div class="flex flex-col px-2 justify-center sm:px-16 md:px-32 lg:px-4 xl:px-16 lg:grid lg:grid-cols-3 lg:gap-x-4 xl:gap-x-6">
 					<a class="mb-8 xl:mb-0 xl:pr-2" target='_blank' href="https://www.fightcancer.org/releases/acs-can-provided-nearly-1-million-support-amgen-expand-cancer-clinical-trial-enrollment">
 						<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
 							<h1 tabindex="1" class="satoshi-bold font-black font-16px underline">ACS-CAN and CodeX Provided Nearly $1 Million in Support from Amgen</h1>
-							<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey">ACS CAN <img class="px-2" src="img/diamond-bullet.svg"/> March 3, 2022</h2>
+							<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[12px] sm:text-[16px]">ACS CAN <img class="px-2" src="img/diamond-bullet.svg"/> March 3, 2022</h2>
 							<p tabindex="1">Pilot Test Trial Eligibility Screening Interventions Aiming to Increase and Diversify Patient Enrollment in Cancer Clinical Trials.</p>
 						</div>
 					</a>
 					<a class="mb-8 xl:mb-0" target="_blank" href="https://confluence.hl7.org/display/COD/July+Newsletter%3A+CodeX+Adds+Genomics%2C+Cardiovascular+Health+to+Data-Sharing+Domains">
 						<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
 							<h1 tabindex="1" class="satoshi-bold font-black font-16px underline">CodeX Adds Genomics and Cardiovascular Health to Data-Sharing Domains</h1>
-							<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey">CodeX Confluence <img class="px-2" src="img/diamond-bullet.svg"/> July 14, 2022</h2>
+							<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[12px] sm:text-[16px]">CodeX Confluence <img class="px-2" src="img/diamond-bullet.svg"/> July 14, 2022</h2>
 							<p tabindex="1">From enhanced data-sharing for cancer registry reporting, to improved patient access to clinical trials, to helping patients better manage hypertension from the comfort of their own homes, CodeX community members continue to push the data-sharing envelope. </p>
 						</div>
 					</a>
 					<a class="mb-8 xl:mb-0 xl:pl-2" target="_blank" href="https://www.whitehouse.gov/briefing-room/statements-releases/2022/08/10/president-biden-intends-to-appoint-dr-monica-bertagnolli-as-director-of-the-national-cancer-institute/">
 						<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
 							<h1 tabindex="1" class="satoshi-bold font-black font-16px underline">President Biden Intends to Appoint Dr. Monica Bertagnolli, Past President and Chair of ASCO and Founding Chair of mCODE, as Director of NCI</h1>
-							<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey">The White House <img class="px-2" src="img/diamond-bullet.svg"/> August 10, 2022</h2>
+							<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[10px] sm:text-[16px]">The White House <img class="px-2" src="img/diamond-bullet.svg"/> August 10, 2022</h2>
 							<p tabindex="1">Dr. Bertagnolli joins NCI at a time of renewed attention to the Cancer Moonshot, one of President Biden’s signature initiatives – reignited in February with bold new goals to reduce the cancer death rate by at least 50 percent in the United States over the next 25 years and create a more supportive experience for patients and families.</p>
 						</div>
 					</a>
 				</div>
 			</div>
-			<div class="flex flex-col bg-darkgrey md:flex-row py-16 px-10 lg:pb-24 lg:px-64 justify-center">
-				<div class="quote ml-2 mb-2 mt-4 place-self-center md:place-self-auto">
+			<div class="bg-darkgrey flex flex-col md:flex-row px-8 py-12 lg:py-16 justify-center">
+				<div class="quote ml-2 mb-6 md:mt-3 place-self-center md:place-self-auto">
 					<img src="img/quote.png">
 				</div>
 				<div class="place-self-end mx-12 my-4 md:m-2">
@@ -358,7 +359,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="bg-darkbrown text-white py-12 px-20 md:p-32">
+			<div class="bg-darkbrown text-white p-12 md:p-32">
 				<h1 tabindex="1" class="satoshi-black font-black font-32px pb-7 lg:pb-2 lg:pt-0">Build and Innovate on Our Work</h1>
 				<p tabindex="1" class="pb-9 lg:pb-14">We build high-quality computable data using Health Level Seven International (HL7) and Fast Healthcare Interoperability Resource (FHIR) standards to create a common language.</p>
 				<div class="flex flex-col lg:flex-row space-y-5 lg:space-x-5 lg:space-y-0 justify-between">
@@ -402,15 +403,15 @@
 				<iframe tabindex="1" id="timeline" class="timeline" src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=11MDNixyECHr7Qpaxa-cv2vv1XICGoFix_nAF46u0_fU&font=Default&lang=en&initial_zoom=2&start_at_slide=11&height=650" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0' title="Timeline"></iframe>
 			</div>
 	 		<div class="bg-darkgrey">
-				<div class="bg-darkgrey text-white py-20 px-16 lg:py-32 lg:px-60">
+				<div class="bg-darkgrey text-white py-20 px-8 sm:px-16 lg:py-32 lg:px-60">
 					<div>
-						<h1 tabindex="1" class="satoshi-black font-black font-36px mb-4 lg:mb-2">Our History</h1>
+						<h1 tabindex="1" class="satoshi-black font-black whitespace-nowrap font-36px mb-4 lg:mb-2">Our History</h1>
 						<p tabindex="1" class="font-16px py-2">Innovation can sometimes strike at unexpected moments. A chance encounter, <a class="underline" target="_blank" href="https://www.mitre.org/who-we-are/our-people/jay-schnitzer">Dr. Jay Schnitzer</a> sat on a plane besides a former colleague. He and <a class="underline" target="_blank" href="https://www.dana-farber.org/find-a-doctor/monica-m-bertagnolli/">Dr. Monica Bertagnolli</a> had trained together as surgeons once upon a time at Brigham and Women’s Hospital and had remained friends. They started catching up on their current endeavors. Dr. Bertagnolli, a cancer surgeon at Brigham and Women’s and Dana Farber, was also leading the Alliance for Clinical Trials in Oncology. She was passionate about finding ways to transform the way clinical trials are conducted, for example, by using electronic health records (EHR) to increase diverse data and broaden the range of trial participants.  Dr. Schnitzer, as the Chief Technology Officer at MITRE, was leading a wide-ranging research program, including a focus on healthcare. He spoke about MITRE’s quest to drive data standards for EHR systems so that patient data could be aggregated and searched for better treatments and new therapies. </p>
 						<p tabindex="1" class="font-16px py-2">The two got out a napkin and started jotting down ideas for a standard health record. This led to the partnership that created mCODE, minimal Common Oncology Data Elements. Today, what began as an impromptu meeting of old friends and scribbled ideas on an airplane napkin is a robust community creating clinical specialty standards to transform cancer patient care and research. Someday, Drs Bertagnolli and Schnitzer and their many partners hope to use data standards to achieve a Learning Health System, one in which each interaction between a clinician and patient provides high-quality data leading to safer care, improved outcomes, and lower costs for everyone.</p>
 					</div>
 					<div class="flex flex-col lg:flex-row pt-16">
 						<div class="basis-2/5 mr-14 mb-8 lg:mb-0">
-							<h1 tabindex="1" class="satoshi-black font-black font-36px mb-4 lg:mb-2">Our Traction</h1>
+							<h1 tabindex="1" class="satoshi-black font-black font-36px whitespace-nowrap mb-4 lg:mb-2">Our Traction</h1>
 							<p tabindex="1" class="font-16px">Since 2019, CodeX has been working in partnership with our community, building interoperable systems to positively impact the lives of real patients.</p>
 						</div>
 						<div class="grid grid-cols-2 gap-y-6">
