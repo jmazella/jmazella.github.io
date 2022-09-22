@@ -21,30 +21,7 @@
 		<link href="css/styles.css" rel="stylesheet" />
 		<link href="css/satoshi.css" rel="stylesheet" />
 		<script src="js/scripts.js"></script>
-		<!--emailjs script-->
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function(){
-                //https://dashboard.emailjs.com/admin/account
-                emailjs.init('ZSEI8dIJhVsk2B3Ji');
-            })();
-        </script>
-		<script type="text/javascript">
-            window.onload=function(){
-                document.getElementById('contact-form').addEventListener('submit', function(event){
-                    event.preventDefault();
-                    //generate a five digit number for the contact_number variable
-                    this.contact_number.value = Math.random() * 10000 | 0;
-                    //these IDs from the previous steps
-                    emailjs.sendForm('service_go5wfit', 'template_o6r4ibd', this)
-                        .then(function(){
-                            console.log('SUCCESS!');
-                        }, function(error){
-                            console.log('FAILED...', error);
-                        });
-                });
-            }
-        </script>
 	</head>
 	<body class="bg-darkgrey sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
@@ -119,23 +96,23 @@
 						</div>
 					</div>
 					<div class="w-full md:w-1/2 pt-10 md:pt-0">
-						<form id="contact-form" class="">
+						<form id="contactForm" onsubmit="submitform(contactForm);" class="">
 							<input type="hidden" name="contact_number">
                             <div class="flex flex-col md:flex-row md:items-center mb-6">
                                 <div class="md:w-1/2 md:mr-3 mb-6 md:mb-0">
                                     <label class="block mb-1 pr-4">Name</label>
-                                    <input type="text" name="from-name" class="appearance-none border-2 border-white rounded w-full py-2 px-4 text-gray-700">
+                                    <input type="text" name="from-name" required class="appearance-none border-2 border-white rounded w-full py-2 px-4 text-gray-700">
                                 </div>
                                 <div class="md:w-1/2 md:ml-3">
                                     <label class="block mb-1 pr-4">Email</label>
-                                    <input type="email" name="from-email" class="appearance-none border-2 border-white rounded w-full py-2 px-4 text-gray-700">
+                                    <input type="email" name="to-email" required class="appearance-none border-2 border-white rounded w-full py-2 px-4 text-gray-700">
                                 </div>
                             </div>
                             <div class="mb-6">
                                 <label class="block mb-1 pr-4">Topic of Interest</label>
-                                <select name="topic-of-interest" class="appearance-none border-2 border-white rounded w-full py-2 px-4 text-gray-700">Select topic of interest
-                                    <option disabled selected>Select topic of interest</option>
-                                    <option value="General Inquiry" class="bg-white">General Inquiry</option>
+								<select name="topic-of-interest" required class="form-select form-select-lg block w-full border-2 border-white rounded py-2 px-4 text-gray-700 text-base font-normal bg-white bg-clip-padding bg-no-repeat transition ease-in-out m-0 focus:text-gray-700">
+									<option selected value="General Inquiry">Select topic of interest</option>
+                                    <option value="General Inquiry">General Inquiry</option>
                                     <option value="Media Inquiry">Media Inquiry</option>
                                     <option value="Supporting CodeX">Supporting CodeX</option>
                                     <option value="Membership">Membership</option>
@@ -147,7 +124,7 @@
                             </div>
                             <div class="mb-9 md:mb-8">
                                 <label class="block mb-1 pr-4">Message</label>
-                                <textarea name="message" class="appearance-none border-2 border-white rounded w-full py-2 px-4 text-gray-700 md:h-28 h-36 flex flex-wrap"></textarea>
+                                <textarea name="message" required class="appearance-none border-2 border-white rounded w-full py-2 px-4 text-gray-700 md:h-28 h-36 flex flex-wrap"></textarea>
                             </div>
                             <div class="mb-6">
                                 <input type="submit" value="Submit" class="bg-darkbrown md:w-36 w-full h-11 satoshi-bold rounded">
