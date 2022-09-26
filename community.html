@@ -2,6 +2,10 @@
 <html lang="en">
 	<head>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-PR2D1PD0CN"></script>
+		<script async src="js/es-module-shims.js"></script>
+		<script type="importmap">
+			{ "imports": { "vue": "/js/vue.esm-browser.prod.js" } }
+		</script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
@@ -85,6 +89,7 @@
 				<div class="community-header-block bg-darkgrey flex justify-center items-center px-4">
 					<div class="text-white text-center md:pt-10">
 						<h2 tabindex="2" class="community-page-headline satoshi-black font-bold lg:font-black">Community</h2>
+						<div id="app">{{ message }}</div>
 						<div tabindex="2" class="community-page-subheader max-w-xl font-normal satoshi-light" >Partnering clinicians, industry, patients, and philanthropy to create better data for health.</div>
 					</div>
 				</div>
@@ -262,5 +267,10 @@
 				</div>
 			</div>
 		</div>
+	<script type="module">
+		// Define data here to be use in templates
+		import { createApp } from 'vue';
+		createApp({ data() { return { message: 'Hello Vue!' } } }).mount('#app');
+	</script>
 	</body>
 </html>
