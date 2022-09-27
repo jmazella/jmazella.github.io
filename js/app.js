@@ -78,7 +78,7 @@ const steeringCommittee = Vue.createApp({
 })
 
 const operatingCommittee = Vue.createApp({
-    template:'<div class="flex"><div class="w-full md:w-1/2 px-4"><ul v-for="item in commMembers.slice(0, ((commMembers.length)/2))"><p tabindex="2">{{item.name}}</p></ul></div> <div class="w-full md:w-1/2 hidden lg:block"><ul v-for="item in commMembers.slice(((commMembers.length)/2), commMembers.length)"><p tabindex="2">{{item.name}}</p></ul><div><div>',
+    template:'<div class="flex"><div class="w-full lg:w-1/2 px-0 lg:px-4"><ul v-for="item in commMembers.slice(0, ((commMembers.length)/2))"><p tabindex="2">{{item.name}}</p></ul></div> <div class="w-full lg:w-1/2 hidden lg:block"><ul v-for="item in commMembers.slice(((commMembers.length)/2), commMembers.length)"><p tabindex="2">{{item.name}}</p></ul><div><div>',
     data(){
         return{
             commMembers:[
