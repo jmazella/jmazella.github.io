@@ -1,5 +1,9 @@
 const leaders = Vue.createApp({
-    template:'<ul v-for="item in profiles" class="w-full pb-4 flex flex-col"><img v-bind:alt="item.imgAlt" class="pb-2.5" v-bind:src="item.imgSrc"><a tabindex="2" class="satoshi-bold underline" target="_blank" v-bind:href="item.profLink">{{item.name}}</a><h3 tabindex="2" class="font-medium text-medgrey">{{item.title}}</h3></ul>',
+    template:`<ul v-for="item in profiles" class="w-full pb-4 flex flex-col">
+                <img v-bind:alt="item.imgAlt" class="pb-2.5" v-bind:src="item.imgSrc">
+                <a tabindex="2" class="satoshi-bold underline" target="_blank" v-bind:href="item.profLink">{{item.name}}</a>
+                <h3 tabindex="2" class="font-medium text-medgrey">{{item.title}}</h3>
+            </ul>`,
     data() {
         return {
             profiles:[
@@ -31,6 +35,13 @@ const leaders = Vue.createApp({
                     profLink:'https://confluence.hl7.org/display/~susanhull',
                     title:'Strategic Advisor', 
                 },
+                {
+                    imgAlt:'Headshot of Susan Hull',
+                    imgSrc:'img/sHull.png',
+                    name:'Susan Hull, MSN, RN-BC, NEA-BC, FAMIA',
+                    profLink:'https://confluence.hl7.org/display/~susanhull',
+                    title:'Strategic Advisor', 
+                },
             ]
            
         }
@@ -38,7 +49,9 @@ const leaders = Vue.createApp({
 })
 
 const steeringCommittee = Vue.createApp({
-    template:'<ul v-for="item in commMembers"><p tabindex="2">{{item.name}} ({{item.company}})</p></ul>',
+    template:`<ul v-for="item in commMembers">
+                <p tabindex="2">{{item.name}} ({{item.company}})</p>
+            </ul>`,
     data(){
         return{
             commMembers:[
@@ -56,7 +69,18 @@ const steeringCommittee = Vue.createApp({
 })
 
 const operatingCommittee = Vue.createApp({
-    template:'<div class="flex"><div class="w-full lg:w-1/2 px-0 lg:px-4"><ul v-for="item in commMembers.slice(0, ((commMembers.length)/2))"><p tabindex="2">{{item.name}}</p></ul></div> <div class="w-full lg:w-1/2 hidden lg:block"><ul v-for="item in commMembers.slice(((commMembers.length)/2), commMembers.length)"><p tabindex="2">{{item.name}}</p></ul><div><div>',
+    template:`<div class="flex">
+                <div class="w-full lg:w-1/2 px-0 lg:px-4">
+                    <ul v-for="item in commMembers.slice(0, ((commMembers.length)/2))">
+                        <p tabindex="2">{{item.name}}</p>
+                    </ul>
+                </div>
+                <div class="w-full lg:w-1/2 hidden lg:block">
+                    <ul v-for="item in commMembers.slice(((commMembers.length)/2), commMembers.length)">
+                        <p tabindex="2">{{item.name}}</p>
+                    </ul>
+                </div>
+            </div>`,
     data(){
         return{
             commMembers:[
