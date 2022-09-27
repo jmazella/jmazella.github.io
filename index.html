@@ -8,6 +8,8 @@
 			gtag('js', new Date());
 			gtag('config', 'G-PR2D1PD0CN');
 		</script>
+		<script src="js/vue.global.prod.js"></script>
+		<script>window._app = Vue.createApp()</script>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,64 +24,12 @@
 		<link href="css/styles.css" rel="stylesheet" />
 		<link href="css/satoshi.css" rel="stylesheet" />
 		<script src="js/scripts.js"></script>
+		<script src="js/templates.js"></script>
 	</head>
-	<body class="bg-white sans">
+	<body  class="bg-white sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
-			<div class="header-container absolute inset-0 z-10">
-				<div class="flex">
-					<a class="flex" href="index">
-					<img class="logo" alt="CodeX Logo" src="img/logo-red.svg" />
-					<img class="code-logo self-end" src="img/code-logo-white.png" />
-					</a>
-					<div class="flex flex-row gap-8 ml-auto text-white items-center">
-						<div class="flex items-center underline decoration-solid underline-offset-8">
-							<a tabindex="1" href="index">Home</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="#news">News</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="uses">Use Cases</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="community">Community</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="contact">Contact</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="mobile-header-container">
-				<div class="flex place-items-center mobile-header">
-					<a class="flex" href="index">
-					<img src="img/logo-red.svg" class="logo" />
-					<img src="img/code-logo-red.png" class="code-logo" />
-					</a>
-					<div id="open-menu-button-div" onclick="openmenu();" class="open-menu-button-div ml-auto">
-						<img class="open-menu-button" src="img/menu-black.svg" />
-					</div>
-					<div id="close-menu-button-div" onclick="closemenu();" class="close-menu-button-div ml-auto hidden">
-						<img class="close-menu-button" src="img/close-black.svg" />
-					</div>
-				</div>
-				<div id="mobile-menu" class="mobile-menu hidden">
-					<div>
-						<a href="index">Home</a>
-					</div>
-					<div>
-						<a href="#news">News</a>
-					</div>
-					<div>
-						<a href="uses">Use Cases</a>
-					</div>
-					<div>
-						<a href="community">Community</a>
-					</div>
-					<div>
-						<a href="contact">Contact</a>
-					</div>
-				</div>
+			<div id="headerApp">
+				<headers logo-color='red' />
 			</div>
 			<div class="flex justify-left items-left place-items-center home-banner">
 				<div class="text-white pl-28 text-left banner-container mt-64 mdx:hidden">
@@ -556,6 +506,7 @@
 				</div>
 			</div>
 		</div>
+		<script>window._app.mount('#headerApp')</script>
 		<script src="js/index.min.js"></script>
 	</body>
 </html>
