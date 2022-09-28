@@ -115,7 +115,7 @@ const leaders = Vue.createApp({
 })
 
 const steeringCommittee = Vue.createApp({
-    template:`<ul v-for="item in commMembers">
+	template:`<ul v-for="item in commMembers">
                 <p tabindex="2">{{item.name}} ({{item.company}})</p>
             </ul>`,
     data(){
