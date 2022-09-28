@@ -1,4 +1,4 @@
-const leaders = Vue.createApp({
+/*const leaders = Vue.createApp({
     template:`<ul v-for="item in profiles" class="w-full pb-4 flex flex-col">
                 <img v-bind:alt="item.imgAlt" class="pb-2.5" v-bind:src="item.imgSrc">
                 <a tabindex="2" class="satoshi-bold underline" target="_blank" v-bind:href="item.profLink">{{item.name}}</a>
@@ -46,9 +46,35 @@ const leaders = Vue.createApp({
            
         }
     }
-})
+})*/
 
-const steeringCommittee = Vue.createApp({
+/*window._app.component('leader-profile', {
+    template:
+        `<h1>Hello {{leaderName}}</h2>`,*/
+
+       /* `<img  v-bind:alt="profImgAlt" class="pb-2.5" v-bind:src="profImgSrc">
+        <a tabindex="2" class="satoshi-bold underline" target="_blank" v-bind:href="profLink">{{leaderName}}</a>
+        <h3 tabindex="2" class="font-medium text-medgrey">{{leaderTitle}}</h3>`,
+
+    props: {leaderName: String, leaderTitle: String, profLink: String, profImgAlt: String, profImgSrc: String},
+});*/
+
+const leaderProfile = Vue.createApp({
+    template:
+    `<h1>Hello {{leaderName}}</h2>`,
+
+    props: {leaderName: String},
+
+   /* `<img  v-bind:alt="profImgAlt" class="pb-2.5" v-bind:src="profImgSrc">
+    <a tabindex="2" class="satoshi-bold underline" target="_blank" v-bind:href="profLink">{{leaderName}}</a>
+    <h3 tabindex="2" class="font-medium text-medgrey">{{leaderTitle}}</h3>`,
+
+    props: {leaderName: String, leaderTitle: String, profLink: String, profImgAlt: String, profImgSrc: String},*/
+});
+
+leaderProfile.mount('#leaderProfile');
+
+/*const steeringCommittee = Vue.createApp({
     template:`<ul v-for="item in commMembers">
                 <p tabindex="2">{{item.name}} ({{item.company}})</p>
             </ul>`,
@@ -66,9 +92,9 @@ const steeringCommittee = Vue.createApp({
             ]
         }
     }
-})
+})*/
 
-const operatingCommittee = Vue.createApp({
+/*const operatingCommittee = Vue.createApp({
     template:`<div class="flex">
                 <div class="w-full lg:w-1/2 px-0 lg:px-4">
                     <ul v-for="item in commMembers.slice(0, ((commMembers.length)/2))">
@@ -117,4 +143,4 @@ const operatingCommittee = Vue.createApp({
 
 leaders.mount('#leaders')
 steeringCommittee.mount('#steeringComm')
-operatingCommittee.mount('#oppComm')
+operatingCommittee.mount('#oppComm')*/
