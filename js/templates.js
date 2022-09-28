@@ -83,7 +83,7 @@ const leaders = Vue.createApp({
                {
                     imgAlt:'Headshot of Dr. Steven Bratt',
                     imgSrc:'img/steveBratt.svg',
-                    name:'Dr. Steve Bratt, PhD',
+                    name:'Dr. Steven Bratt, PhD',
                     profLink:'https://confluence.hl7.org/display/~steve_bratt',
                     title:'Program Manager', 
                 },
@@ -112,13 +112,13 @@ const leaders = Vue.createApp({
            
         }
     }
-})
+});
 
 const steeringCommittee = Vue.createApp({
 	template:`<ul v-for="item in commMembers">
                 <p tabindex="2">{{item.name}} ({{item.company}})</p>
             </ul>`,
-    data(){
+   data(){
         return{
             commMembers:[
                 {
@@ -132,7 +132,7 @@ const steeringCommittee = Vue.createApp({
             ]
         }
     }
-})
+});
 
 const operatingCommittee = Vue.createApp({
     template:`<div class="flex">
@@ -179,7 +179,7 @@ const operatingCommittee = Vue.createApp({
             ]
         }
     }
-})
+});
 
 
 leaders.mount('#leaders')
