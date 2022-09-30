@@ -23,7 +23,77 @@
 		<link href="css/satoshi.css" rel="stylesheet" />
 		<script src="js/scripts.js"></script>
 	</head>
-    <body>
+    <body class="bg-darkgrey sans">
+	<div class="container flex flex-col h-screen justify-between min-w-full">
+		<div class="header-container absolute inset-0 z-10">
+			<div class="flex">
+				<a class="flex" href="index">
+				<img class="logo" alt="CodeX Logo" src="img/logo-white.svg" />
+				<img class="code-logo self-end" src="img/code-logo-white.png" />
+				</a>
+				<div class="flex flex-row gap-8 ml-auto text-white items-center">
+					<div class="flex items-center">
+						<a tabindex="1" href="index">Home</a>
+					</div>
+					<div class="flex items-center">
+						<a tabindex="1" href="index#news">News</a>
+					</div>
+					<div class="flex items-center">
+						<a tabindex="1" href="uses">Use Cases</a>
+					</div>
+					<div class="flex items-center">
+						<a tabindex="1" href="community">Community</a>
+					</div>
+                    <div class="flex items-center underline decoration-solid underline-offset-8">
+						<a tabindex="1" href="story.html">Our Story</a>
+					</div>
+					<div class="flex items-center">
+						<a tabindex="1" href="contact">Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-header-container-grey">
+			<div class="flex place-items-center mobile-header">
+				<a class="flex" href="index">
+				<img src="img/logo-white.svg" class="logo" />
+				<img src="img/code-logo-white.png" class="code-logo" />
+				</a>
+				<div id="open-menu-button-div" onclick="openmenu();" class="open-menu-button-div ml-auto">
+					<img class="open-menu-button" src="img/menu-white.svg" />
+				</div>
+				<div id="close-menu-button-div" onclick="closemenu();" class="close-menu-button-div ml-auto hidden">
+					<img class="close-menu-button" src="img/close-white.svg" />
+				</div>
+			</div>
+			<div id="mobile-menu" class="mobile-menu text-white hidden">
+				<div>
+					<a href="index">Home</a>
+				</div>
+				<div>
+					<a href="index#news">News</a>
+				</div>
+				<div>
+					<a href="uses">Use Cases</a>
+				</div>
+				<div>
+					<a href="community">Community</a>
+				</div>
+                <div>
+                    <a href="story">Our Story</a>
+                </div>
+				<div>
+					<a href="contact">Contact</a>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="main mb-auto">
+				<div class="h-72 bg-darkgrey flex justify-center items-center px-4">
+					<div class="text-white text-center md:pt-10">
+						<h2 tabindex="2" class="community-page-headline satoshi-black font-bold lg:font-black">Our Story</h2>
+                    </div>
+				</div>
         <div class="bg-white flex">
             <iframe tabindex="1" id="timeline" class="timeline" src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=11MDNixyECHr7Qpaxa-cv2vv1XICGoFix_nAF46u0_fU&font=Default&lang=en&initial_zoom=2&start_at_slide=11&height=650" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0' title="Timeline"></iframe>
         </div>
@@ -37,6 +107,9 @@
                     <p tabindex="1" class="font-16px py-2">But from the beginning, their vision was even more ambitious. Drs. Bertagnolli and Schnitzer and their other partners plan to use data standards to achieve a Learning Health System in which each interaction between a patient and clinician results in high-quality data owned by the patient themselves and usable by all future care givers and researchers. The spark that started with that chance encounter between two old friends has now holds the promise to revolutionize healthcare data, lower costs, optimize trials, and dramatically improve health outcomes.</p>
                 </div>
             </div>
+        </div>
+        </div>
+        </div>
         </div>
     </body>
 </html>
