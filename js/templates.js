@@ -114,15 +114,15 @@ const leaders = Vue.createApp({
     }
 });
 
-/*let steeringCommittee = Vue.createApp({
+/*const steeringCommittee = Vue.createApp({
 	//template: "<h1>Hi {{memName}}</h1>",
-	props: {memName: String},
-    data(){
+	//props: {memName: String},
+   /* data(){
         return{
             memName: "margaret"
         }
     }
-	/*template:`<ul v-for="item in commMembers">
+	template:`<ul v-for="item in commMembers">
                 <p tabindex="2">{{item.name}} ({{item.company}})</p>
             </ul>`,
    data(){
@@ -190,5 +190,5 @@ const operatingCommittee = Vue.createApp({
 
 
 leaders.mount('#leaders')
-//steeringCommittee.mount('#steeringComm')
+steeringCommittee.mount('#steeringComm')
 operatingCommittee.mount('#oppComm')
