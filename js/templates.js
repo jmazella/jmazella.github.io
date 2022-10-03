@@ -141,6 +141,27 @@ const leaders = Vue.createApp({
     }
 });*/
 
+
+const steeringCommittee = Vue.createApp({
+    template:`<ul v-for="item in commMembers">
+                <p tabindex="2">{{item.name}} ({{item.company}})</p>
+              </ul>`,
+    data(){
+        return{
+            commMembers:[
+                {
+                    name:'Dr. Steve Bratt, PhD',
+                    company:'MITRE',
+                },
+                {
+                    name:'Dr. Charles Jaffee, MD',
+                    company:'HL7',
+                },
+            ]
+        }
+    }
+});
+
 const operatingCommittee = Vue.createApp({
     template:`<div class="flex">
                 <div class="w-full lg:w-1/2 px-0 lg:pr-10">
