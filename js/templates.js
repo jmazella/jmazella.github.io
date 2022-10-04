@@ -71,7 +71,8 @@ window._app.component('headers', {
 	props: {logoColor: String}
 });
 
-const leaders = Vue.createApp({
+//leaders - data in js
+/*const leaders = Vue.createApp({
     template:`<ul v-for="item in profiles" class="w-full pb-4 flex flex-col">
                 <img v-bind:alt="item.imgAlt" class="pb-2.5" v-bind:src="item.imgSrc">
                 <a tabindex="2" class="satoshi-bold underline" target="_blank" v-bind:href="item.profLink">{{item.name}}</a>
@@ -112,24 +113,38 @@ const leaders = Vue.createApp({
            
         }
     }
-});
+});*/
 
+//leaders - data in html
+//come back to this - not loading!!
+const leaders = Vue.createApp({});
+leaders.component('leadersApp', {
+     template:`
+        <ul v-for="(item, index) in leaderNames" class="w-full pb-4 flex flex-col">
+            <img v-bind:alt="leaderImgAlt[index]" class="pb-2.5" v-bind:src="leaderImgSrc[index]">
+            <a tabindex="2" class="satoshi-bold underline" target="_blank" v-bind:href="leaderProfLink[index]">{{leaderNames[index]}}</a>
+            <h3 tabindex="2" class="font-medium text-medgrey">{{leaderTitles[index]}}</h3>
+        </ul>
+     `,
+     props:{
+         leaderImgAlt: Array,
+         leaderImgSrc: Array,
+         leaderProfLink: Array,
+         leaderNames: Array,
+         leaderTitles: Array,
+    },
+ });
+
+//steering committee - data in js
 /*const steeringCommittee = Vue.createApp({
-	//template: "<h1>Hi {{memName}}</h1>",
-	//props: {memName: String},
-   /* data(){
-        return{
-            memName: "margaret"
-        }
-    }
-	template:`<ul v-for="item in commMembers">
+    template:`<ul v-for="item in commMembers">
                 <p tabindex="2">{{item.name}} ({{item.company}})</p>
-            </ul>`,
-   data(){
+              </ul>`,
+    data(){
         return{
             commMembers:[
                 {
-                    name:'Dr. Steve Bratt, PhD',
+                    name:'Dr. Steven Bratt, PhD',
                     company:'MITRE',
                 },
                 {
@@ -141,28 +156,24 @@ const leaders = Vue.createApp({
     }
 });*/
 
+//steering committee - data in html
+const steeringCommittee = Vue.createApp({});
+steeringCommittee.component('steeringCommApp', {
+     template:`
+        <ul v-for="(item, index) in commMembersNames">
+            <p tabindex="2">{{commMembersNames[index]}} ({{commMembersCompanies[index]}})</p>
+        </ul>
+     `,
+     props:{
+         commMembersNames: Array,
+         commMembersCompanies: Array,
+     }
+ });
 
-const steeringCommittee = Vue.createApp({
-    template:`<ul v-for="item in commMembers">
-                <p tabindex="2">{{item.name}} ({{item.company}})</p>
-              </ul>`,
-    data(){
-        return{
-            commMembers:[
-                {
-                    name:'Dr. Steve Bratt, PhD',
-                    company:'MITRE',
-                },
-                {
-                    name:'Dr. Charles Jaffee, MD',
-                    company:'HL7',
-                },
-            ]
-        }
-    }
-});
 
-const operatingCommittee = Vue.createApp({
+
+//OPERATING COMMITTEE - data in js
+/*const operatingCommittee = Vue.createApp({
     template:`<div class="flex">
                 <div class="w-full lg:w-1/2 px-0 lg:pr-10">
                     <ul v-for="item in commMembers.slice(0, ((commMembers.length)/2))">
@@ -206,6 +217,36 @@ const operatingCommittee = Vue.createApp({
                 {name:'Varian'},
             ]
         }
+    }
+});*/
+
+//OPERATING COMMITTEE - props in html
+//MISSING: re-order
+const operatingCommittee = Vue.createApp({});
+operatingCommittee.component('operatingCommApp', {
+   /* template:`
+        <div class="flex">
+            <div class="w-full lg:w-1/2 px-0 lg:pr-10">
+                <ul v-for="(item, index) in commMembers.slice(0, ((commMembers.length)/2))">
+                    <p tabindex="2">{{commMembers[index]}}</p>
+                </ul>
+            </div>
+            <div class="w-full lg:w-1/2 hidden lg:block">
+                <ul v-for="(item,index) in commMembers.slice(((commMembers.length)/2), commMembers.length)">
+                    <p tabindex="2">{{commMembers[ ( index + ( (commMembers.length) / 2 ) )]}}</p>
+                </ul>
+            </div>
+        </div>`,*/
+    template:`
+
+            <div class="grid lg:grid-cols-2 grid-cols-1">
+                <ul v-for="(item, index) in commMembers">
+                    <p tabindex="2">{{commMembers[index]}}</p>
+                </ul>
+            </div>
+    `,
+    props:{
+        commMembers: Array,
     }
 });
 
