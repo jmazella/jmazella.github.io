@@ -116,23 +116,22 @@ window._app.component('headers', {
 });*/
 
 //leaders - data in html
-//come back to this - not loading!!
-const leaders = Vue.createApp({});
-leaders.component('leadersApp', {
+const leadership = Vue.createApp({});
+leadership.component('leadersApp', {
      template:`
-        <ul v-for="(item, index) in leaderNames" class="w-full pb-4 flex flex-col">
-            <img v-bind:alt="leaderImgAlt[index]" class="pb-2.5" v-bind:src="leaderImgSrc[index]">
-            <a tabindex="2" class="satoshi-bold underline" target="_blank" v-bind:href="leaderProfLink[index]">{{leaderNames[index]}}</a>
-            <h3 tabindex="2" class="font-medium text-medgrey">{{leaderTitles[index]}}</h3>
+        <ul v-for="(item, index) in leadersName" class="w-full pb-4 flex flex-col">
+            <img v-bind:alt="leadersImgAlt[index]" class="pb-2.5" v-bind:src="leadersImgSrc[index]">
+            <a tabindex="2" class="satoshi-bold underline" target="_blank" v-bind:href="leadersProfLink[index]">{{leadersName[index]}}</a>
+            <h3 tabindex="2" class="font-medium text-medgrey">{{leadersTitle[index]}}</h3>
         </ul>
      `,
      props:{
-         leaderImgAlt: Array,
-         leaderImgSrc: Array,
-         leaderProfLink: Array,
-         leaderNames: Array,
-         leaderTitles: Array,
-    },
+         leadersImgAlt: Array,
+         leadersImgSrc: Array,
+         leadersProfLink: Array,
+         leadersName: Array,
+         leadersTitle: Array,
+     }
  });
 
 //steering committee - data in js
@@ -221,36 +220,36 @@ steeringCommittee.component('steeringCommApp', {
 });*/
 
 //OPERATING COMMITTEE - props in html
-//MISSING: re-order
+//grid would not order correctly or allow half to disappear when the screen is smaller
 const operatingCommittee = Vue.createApp({});
 operatingCommittee.component('operatingCommApp', {
-   /* template:`
+  template:`
         <div class="flex">
             <div class="w-full lg:w-1/2 px-0 lg:pr-10">
-                <ul v-for="(item, index) in commMembers.slice(0, ((commMembers.length)/2))">
-                    <p tabindex="2">{{commMembers[index]}}</p>
+                <ul v-for="item in commMembers.slice(0, ((commMembers.length)/2))">
+                    <p tabindex="2">{{item}}</p>
                 </ul>
             </div>
             <div class="w-full lg:w-1/2 hidden lg:block">
-                <ul v-for="(item,index) in commMembers.slice(((commMembers.length)/2), commMembers.length)">
-                    <p tabindex="2">{{commMembers[ ( index + ( (commMembers.length) / 2 ) )]}}</p>
+               <ul v-for="item in commMembers.slice(((commMembers.length)/2), commMembers.length)">
+                    <p tabindex="2">{{item}}</p>
                 </ul>
             </div>
-        </div>`,*/
-    template:`
+        </div>`,
+   /*template:`
 
             <div class="grid lg:grid-cols-2 grid-cols-1">
-                <ul v-for="(item, index) in commMembers">
-                    <p tabindex="2">{{commMembers[index]}}</p>
+                <ul v-for="item in commMembers">
+                    <p tabindex="2">{{item}}</p>
                 </ul>
             </div>
-    `,
+    `,*/
     props:{
         commMembers: Array,
     }
 });
 
 
-leaders.mount('#leaders')
-steeringCommittee.mount('#steeringComm')
-operatingCommittee.mount('#oppComm')
+leadership.mount('#leaders');
+steeringCommittee.mount('#steeringComm');
+operatingCommittee.mount('#oppComm');
