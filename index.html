@@ -21,72 +21,15 @@
 		<link href="css/index.min.css" rel="stylesheet" />
 		<link href="css/styles.css" rel="stylesheet" />
 		<link href="css/satoshi.css" rel="stylesheet" />
-		<script src="js/scripts.js"></script>
+    <script src="js/vue.global.prod.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/scripts.js"></script>
 	</head>
 	<body class="bg-white sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
-			<div class="header-container absolute inset-0 z-10">
-				<div class="flex">
-					<a class="flex" href="index">
-					<img class="logo" alt="CodeX Logo" src="img/logo-red.svg" />
-					<img class="code-logo self-end" src="img/code-logo-white.png" />
-					</a>
-					<div class="flex flex-row gap-8 ml-auto text-white items-center">
-						<div class="flex items-center underline decoration-solid underline-offset-8">
-							<a tabindex="1" href="index">Home</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="#news">News</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="uses">Use Cases</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="community">Community</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="story">Our Story</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="contact">Contact</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="mobile-header-container">
-				<div class="flex place-items-center mobile-header">
-					<a class="flex" href="index">
-					<img src="img/logo-red.svg" class="logo" />
-					<img src="img/code-logo-red.png" class="code-logo" />
-					</a>
-					<div id="open-menu-button-div" onclick="openmenu();" class="open-menu-button-div ml-auto">
-						<img class="open-menu-button" src="img/menu-black.svg" />
-					</div>
-					<div id="close-menu-button-div" onclick="closemenu();" class="close-menu-button-div ml-auto hidden">
-						<img class="close-menu-button" src="img/close-black.svg" />
-					</div>
-				</div>
-				<div id="mobile-menu" class="mobile-menu hidden">
-					<div>
-						<a href="index">Home</a>
-					</div>
-					<div>
-						<a href="#news">News</a>
-					</div>
-					<div>
-						<a href="uses">Use Cases</a>
-					</div>
-					<div>
-						<a href="community">Community</a>
-					</div>
-					<div>
-						<a href="story">Our Story</a>
-					</div>
-					<div>
-						<a href="contact">Contact</a>
-					</div>
-				</div>
-			</div>
+      <div id="headerApp">
+        <headers logo-color="red" underline-link="index" />
+      </div>
 			<div class="flex justify-left items-left place-items-center home-banner">
 				<div class="text-white pl-28 text-left banner-container mt-64 mdx:hidden">
 					<h1 tabindex="1" class='h1 font-black satoshi-bold leading-none'>Better Data.</h1>
@@ -136,8 +79,8 @@
 			</div>
 			<div class="flex flex-row justify-center py-12 mb-10 md:mb-0 bg-offwhite">
 				<div class="flex flex-col max-w-[350px] md:max-w-max md:px-12">
-					<div tabindex="1" class="satoshi-bold font-20px mb-6 lg:mb-1">In our healthcare system, 65% of data belonging to patients is siloed, unstructured and is held in different forms across patient care, research and payment ecosystems. <span class="font-14px">—Source: Health Information Technology Advisory Committee (HITAC)</span></div>
-					<div tabindex="1" class="font-20px">Today, a consistent patient health story is nearly impossible to track and share because data are unreliable, lack standardization, and are largely unusable. CodeX is the only member-driven community focused on solving the problem of silos endemic to our current healthcare system for specialty health data. We establish high-quality computable data — using Health Level Seven International (HL7) and Fast Healthcare Interoperability Resource (FHIR) standards — to create modern Patient Health Records for patients, care teams, and researchers.</div>
+					<div tabindex="1" class="satoshi-bold font-20px mb-6 lg:mb-1">In our healthcare system, 65% of data belonging to patients is siloed, unstructured and is held in different forms across patient care, research and payment ecosystems. <span class="font-14px">— Source: Health Information Technology Advisory Committee (HITAC)</span></div>
+					<div tabindex="1" class="font-20px">Today, a consistent patient health story is nearly impossible to track and share because data are unreliable, lack standardization, and are largely unusable. CodeX is the only member-driven community focused on solving the problem of silos endemic to our current healthcare system for specialty health data. We enable high-quality computable data — using Health Level Seven International (HL7) and Fast Healthcare Interoperability Resource (FHIR) standards — to create an open common language for patients, care teams, and researchers to advance data ownership, sharing, and reliability.</div>
 				</div>
 			</div>
 			<div class="bg-backgroundgrey grid blurb-grid">
@@ -394,9 +337,9 @@
 							<div class="flex flex-col px-2 justify-center sm:px-16 md:px-32 lg:px-4 xl:px-16 lg:grid lg:grid-cols-3 lg:gap-x-4 xl:gap-x-6">
 								<div class="mb-8 xl:mb-0 xl:pl-2">
 									<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
-										<h1 tabindex="1" class="satoshi-bold font-black font-16px underline"><a target="_blank" href="https://www.whitehouse.gov/briefing-room/statements-releases/2022/08/10/president-biden-intends-to-appoint-dr-monica-bertagnolli-as-director-of-the-national-cancer-institute/">President Biden Intends to Appoint Dr. Monica Bertagnolli, Past President and Chair of ASCO and Founding Chair of mCODE, as Director of NCI</a></h1>
+										<h1 tabindex="1" class="satoshi-bold font-black font-16px underline"><a target="_blank" href="https://www.whitehouse.gov/ostp/news-updates/2022/08/10/statements-on-president-bidens-historic-appointment-of-dr-monica-bertagnolli-as-director-of-the-national-cancer-institute/">Statements on President Biden’s Historic Appointment of Dr. Monica Bertagnolli as Director of the National Cancer Institute</a></h1>
 										<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[10px] sm:text-[16px]">The White House <img class="px-2" src="img/diamond-bullet.svg"/> August 10, 2022</h2>
-										<p tabindex="1">Dr. Bertagnolli joins NCI at a time of renewed attention to the Cancer Moonshot, one of President Biden’s signature initiatives – reignited in February with bold new goals to reduce the cancer death rate by at least 50 percent in the United States over the next 25 years and create a more supportive experience for patients and families.</p>
+										<p tabindex="1"> President Biden formally announced the appointment of Dr. Monica Bertagnolli as the 16th director of the National Cancer Institute. The White House Office of Science and Technology Policy provided the following statements in support of the appointment: “Congratulations to Dr. Monica Bertagnolli for her historic appointment as the 16th director – and first woman director – of the National Cancer Institute. Dr. Bertagnolli is a leader with impeccable credentials who has made outstanding contributions to the field of clinical oncology. Dr. Bertagnolli arrives at NCI at a critical time in our Nation’s efforts to reduce cancer deaths as well as fundamental inequities in the oncology system.”</p>
 									</div>
 								</div>
 							</div>
@@ -460,11 +403,11 @@
 							<p tabindex="1">From enhanced data-sharing for cancer registry reporting, to improved patient access to clinical trials, to helping patients better manage hypertension from the comfort of their own homes, CodeX community members continue to push the data-sharing envelope. </p>
 						</div>
 					</a>
-					<a class="mb-8 xl:mb-0 xl:pl-2" target="_blank" href="https://www.whitehouse.gov/briefing-room/statements-releases/2022/08/10/president-biden-intends-to-appoint-dr-monica-bertagnolli-as-director-of-the-national-cancer-institute/">
+					<a class="mb-8 xl:mb-0 xl:pl-2" target="_blank" href="https://www.whitehouse.gov/ostp/news-updates/2022/08/10/statements-on-president-bidens-historic-appointment-of-dr-monica-bertagnolli-as-director-of-the-national-cancer-institute/">
 						<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
-							<h1 tabindex="1" class="satoshi-bold font-black font-16px underline">President Biden Intends to Appoint Dr. Monica Bertagnolli, Past President and Chair of ASCO and Founding Chair of mCODE, as Director of NCI</h1>
+							<h1 tabindex="1" class="satoshi-bold font-black font-16px underline">Statements on President Biden’s Historic Appointment of Dr. Monica Bertagnolli as Director of the National Cancer Institute</h1>
 							<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[10px] sm:text-[16px]">The White House <img class="px-2" src="img/diamond-bullet.svg"/> August 10, 2022</h2>
-							<p tabindex="1">Dr. Bertagnolli joins NCI at a time of renewed attention to the Cancer Moonshot, one of President Biden’s signature initiatives – reignited in February with bold new goals to reduce the cancer death rate by at least 50 percent in the United States over the next 25 years and create a more supportive experience for patients and families.</p>
+							<p tabindex="1">President Biden formally announced the appointment of Dr. Monica Bertagnolli as the 16th director of the National Cancer Institute. The White House Office of Science and Technology Policy provided the following statements in support of the appointment: “Congratulations to Dr. Monica Bertagnolli for her historic appointment as the 16th director – and first woman director – of the National Cancer Institute. Dr. Bertagnolli is a leader with impeccable credentials who has made outstanding contributions to the field of clinical oncology. Dr. Bertagnolli arrives at NCI at a critical time in our Nation’s efforts to reduce cancer deaths as well as fundamental inequities in the oncology system.”</p>
 						</div>
 					</a>
 				</div>
@@ -522,41 +465,12 @@
 					<p tabindex="1" class="mt-4"><a tabindex="1" class="underline" target="_blank" href="http://hl7.org/fhir/us/mcode/index.html">Read the mCODE Implementation Guide</a><img class="inline ml-2" src="img/arrow.svg"/></p>
 				</div>
 			</div>
-
-			<div class="footer grid text-white font-16px pt-8 lg:py-8 ">
-				<div class="flex flex-col lg:flex-row justify-self-end mr-16 lg:mr-0">
-					<div class="py-2 lg:py-0 lg:px-3">
-						<a tabindex="3" href="index">Home</a>
-					</div>
-					<div class="py-2 lg:py-0 lg:px-3">
-						<a tabindex="3" href="#news">News</a>
-					</div>
-					<div class="py-2 lg:py-0 lg:px-3">
-						<a tabindex="3" href="uses">Use Cases</a>
-					</div>
-					<div class="py-2 lg:py-0 lg:px-3">
-						<a tabindex="3" href="community">Community</a>
-					</div>
-					<div class="py-2 lg:py-0 lg:px-3">
-						<a tabindex="3" href="story">Our Story</a>
-					</div>
-					<div class="py-2 lg:py-0 lg:px-3">
-						<a tabindex="3" href="contact">Contact</a>
-					</div>
-				</div>
-				<div class="flex flex-col lg:flex-row ml-8 lg:ml-0">
-					<div class="p-2 lg:py-0 lg:px-3">
-						<a tabindex="3" target="_blank" href="https://www.linkedin.com/company/codex-common-oncology-data-elements-extensions/?trk=public_profile_topcard-current-company" class="flex flex-row underline"><img width="20px" class="mr-2" src="img/linkedin.svg"/>Linkedin</a>
-					</div>
-					<div class="p-2 lg:py-0 lg:px-3">
-						<a tabindex="3" target="_blank" href="https://confluence.hl7.org/display/COD/CodeX+Home" class="flex flex-row underline"><img width="20px" class="mr-2" src="img/confluence.svg"/>Confluence</a>
-					</div>
-				</div>
-				<div class="flex justify-center col-span-2 lg:col-span-1 satoshi-bold font-black font-16px my-12 lg:my-0 lg:order-first">
-					Copyright ⓒ CodeX™ | FHIR | HL7 Accelerator
-				</div>
-			</div>
+      <div id="footerApp">
+        <footers />
+      </div>
 		</div>
+    <script>headerApp.mount('#headerApp')</script>
+    <script>footerApp.mount('#footerApp')</script>
 		<script src="js/index.min.js"></script>
 	</body>
 </html>

@@ -16,19 +16,22 @@ headerApp.component('mobile-header', {
 					</div>
 				</div>
 				<div id="mobile-menu" class="mobile-menu hidden">
-					<div>
+					<div class="pb-2">
 						<a href="index">Home</a>
 					</div>
-					<div>
+					<div class="pb-2">
 						<a href="#news">News</a>
 					</div>
-					<div>
+					<div class="pb-2">
 						<a href="uses">Use Cases</a>
 					</div>
-					<div>
+					<div class="pb-2">
 						<a href="community">Community</a>
 					</div>
-					<div>
+                    <div class="pb-2">
+                        <a href="story">Our Story</a>
+                    </div>
+					<div class="pb-2">
 						<a href="contact">Contact</a>
 					</div>
 				</div>
@@ -45,32 +48,35 @@ headerApp.component('desktop-header', {
 					<img class="code-logo self-end" src="img/code-logo-white.png" />
 					</a>
 					<div class="flex flex-row gap-8 ml-auto text-white items-center">
-						<div class="flex items-center underline decoration-solid underline-offset-8">
+						<div :class="['flex items-center',{ 'underline decoration-solid underline-offset-8' : underlineLink=='index'}]">
 							<a tabindex="1" href="index">Home</a>
 						</div>
 						<div class="flex items-center">
 							<a tabindex="1" href="#news">News</a>
 						</div>
-						<div class="flex items-center">
+						<div :class="['flex items-center',{ 'underline decoration-solid underline-offset-8' : underlineLink=='uses'}]">
 							<a tabindex="1" href="uses">Use Cases</a>
 						</div>
-						<div class="flex items-center">
+						<div :class="['flex items-center',{ 'underline decoration-solid underline-offset-8' : underlineLink=='community'}]">
 							<a tabindex="1" href="community">Community</a>
 						</div>
-						<div class="flex items-center">
+                        <div :class="['flex items-center',{ 'underline decoration-solid underline-offset-8' : underlineLink=='story'}]">
+                            <a tabindex="1" href="story">Our Story</a>
+                        </div>
+						<div :class="['flex items-center',{ 'underline decoration-solid underline-offset-8' : underlineLink=='contact'}]">
 							<a tabindex="1" href="contact">Contact</a>
 						</div>
 					</div>
 				</div>
 			</div>`,
-	props: {logoColor: String}
+	props: {logoColor: String, underlineLink: String}
 });
 
 headerApp.component('headers', {
 	template:
-        `<desktop-header :logo-color="logoColor" />
+        `<desktop-header :logo-color="logoColor" :underline-link="underlineLink" />
          <mobile-header :logo-color="logoColor" />`,
-	props: {logoColor: String}
+    props: {logoColor: String, underlineLink: String}
 });
 
 const footerApp = Vue.createApp();
