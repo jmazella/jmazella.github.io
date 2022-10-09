@@ -18,73 +18,17 @@
 		<link rel="icon" href="/favicon.ico" sizes="any">
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 		<title>CodeX Use Cases</title>
+		<link href="css/tailwind-elements.min.css" rel="stylesheet" />
 		<link href="css/styles.css" rel="stylesheet" />
 		<link href="css/satoshi.css" rel="stylesheet" />
+		<script src="js/vue.global.prod.js"></script>
+		<script src="js/templates.js"></script>
 		<script src="js/scripts.js"></script>
 	</head>
 	<body class="bg-darkgrey sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
-			<div class="header-container absolute inset-0 z-10">
-				<div class="flex">
-					<a class="flex" href="index">
-						<img class="logo" alt="CodeX Logo" src="img/logo-white.svg" />
-						<img class="code-logo self-end" src="img/code-logo-white.png" />
-					</a>
-					<div class="flex flex-row gap-8 ml-auto text-white items-center">
-						<div class="flex items-center">
-							<a tabindex="1" href="index">Home</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="index#news">News</a>
-						</div>
-						<div class="flex items-center underline decoration-solid underline-offset-8">
-							<a tabindex="1" href="uses">Use Cases</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="community">Community</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="story">Our Story</a>
-						</div>
-						<div class="flex items-center">
-							<a tabindex="1" href="contact">Contact</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div style="" class="mobile-header-container-gradient">
-				<div class="flex place-items-center mobile-header">
-					<a class="flex" href="index">
-						<img src="img/logo-white.svg" class="logo" />
-						<img src="img/code-logo-white.png" class="code-logo" />
-					</a>
-					<div id="open-menu-button-div" onclick="openmenu();" class="open-menu-button-div ml-auto">
-						<img class="open-menu-button" src="img/menu-white.svg" />
-					</div>
-					<div id="close-menu-button-div" onclick="closemenu();" class="close-menu-button-div ml-auto hidden">
-						<img class="close-menu-button" src="img/close-white.svg" />
-					</div>
-				</div>
-				<div id="mobile-menu" class="mobile-menu text-white hidden">
-					<div>
-						<a href="index">Home</a>
-					</div>
-					<div>
-						<a href="index#news">News</a>
-					</div>
-					<div>
-						<a href="uses">Use Cases</a>
-					</div>
-					<div>
-						<a href="community">Community</a>
-					</div>
-					<div>
-						<a href="story">Our Story</a>
-					</div>
-					<div>
-						<a href="contact">Contact</a>
-					</div>
-				</div>
+			<div id="headerApp">
+				<headers logo-color="white" underline-link="uses" />
 			</div>
 			<div class="main mb-auto">
 				<div class="use-header flex justify-center items-center">
@@ -245,39 +189,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="footer grid text-white font-16px pt-8 lg:py-8 ">
-				<div class="flex flex-col lg:flex-row justify-self-end mr-16 lg:mr-0">
-					<div class="py-2 lg:py-0 lg:px-3">
-						<a tabindex="3" href="index">Home</a>
-					</div>
-					<div class="py-2 lg:py-0 lg:px-3">
-						<a tabindex="3" href="index#news">News</a>
-					</div>
-					<div class="py-2 lg:py-0 lg:px-3">
-						<a tabindex="3" href="uses">Use Cases</a>
-					</div>
-					<div class="py-2 lg:py-0 lg:px-3">
-						<a tabindex="3" href="community">Community</a>
-					</div>
-					<div class="py-2 lg:py-0 lg:px-3">
-						<a tabindex="3" href="story">Our Story</a>
-					</div>
-					<div class="py-2 lg:py-0 lg:px-3">
-						<a tabindex="3" href="contact">Contact</a>
-					</div>
-				</div>
-				<div class="flex flex-col lg:flex-row ml-8 lg:ml-0">
-					<div class="p-2 lg:py-0 lg:px-3">
-						<a tabindex="3" target="_blank" href="https://www.linkedin.com/company/codex-common-oncology-data-elements-extensions/?trk=public_profile_topcard-current-company" class="flex flex-row underline"><img width="20px" class="mr-2" src="img/linkedin.svg"/>Linkedin</a>
-					</div>
-					<div class="p-2 lg:py-0 lg:px-3">
-						<a tabindex="3" target="_blank" href="https://confluence.hl7.org/display/COD/CodeX+Home" class="flex flex-row underline"><img width="20px" class="mr-2" src="img/confluence.svg"/>Confluence</a>
-					</div>
-				</div>
-				<div style="" class="flex justify-center col-span-2 lg:col-span-1 satoshi-bold font-black font-16px my-12 lg:my-0 lg:order-first">
-					Copyright ⓒ CodeX™ | FHIR | HL7 Accelerator
-				</div>
+			<div id="footerApp">
+				<footers />
 			</div>
 		</div>
+		<script>headerApp.mount('#headerApp')</script>
+		<script>footerApp.mount('#footerApp')</script>
+		<script src="js/tailwind-elements.min.js"></script>
 	</body>
 </html>
