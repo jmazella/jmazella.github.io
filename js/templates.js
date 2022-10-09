@@ -3,39 +3,39 @@ const headerApp = Vue.createApp();
 headerApp.component('mobile-header', {
 	template:
 		`<div class="mobile-header-container">
-				<div class="flex place-items-center mobile-header">
-					<a class="flex" href="index">
-					<img :src="'img/logo-'+logoColor+'.svg'" class="logo" />
-					<img :src="'img/code-logo-'+logoColor+'.png'" class="code-logo" />
-					</a>
-					<div id="open-menu-button-div" onclick="openmenu();" class="open-menu-button-div ml-auto">
-						<img class="open-menu-button" src="img/menu-black.svg" />
-					</div>
-					<div id="close-menu-button-div" onclick="closemenu();" class="close-menu-button-div ml-auto hidden">
-						<img class="close-menu-button" src="img/close-black.svg" />
-					</div>
+			<div class="flex place-items-center mobile-header">
+				<a class="flex" href="index">
+				<img :src="'img/logo-'+logoColor+'.svg'" class="logo" />
+				<img :src="'img/code-logo-'+logoColor+'.png'" class="code-logo" />
+				</a>
+				<div id="open-menu-button-div" onclick="openmenu();" class="open-menu-button-div ml-auto">
+					<img class="open-menu-button" src="img/menu-black.svg" />
 				</div>
-				<div id="mobile-menu" class="mobile-menu hidden">
-					<div class="pb-2">
-						<a href="index">Home</a>
-					</div>
-					<div class="pb-2">
-						<a href="#news">News</a>
-					</div>
-					<div class="pb-2">
-						<a href="uses">Use Cases</a>
-					</div>
-					<div class="pb-2">
-						<a href="community">Community</a>
-					</div>
-                    <div class="pb-2">
-                        <a href="story">Our Story</a>
-                    </div>
-					<div class="pb-2">
-						<a href="contact">Contact</a>
-					</div>
+				<div id="close-menu-button-div" onclick="closemenu();" class="close-menu-button-div ml-auto hidden">
+					<img class="close-menu-button" src="img/close-black.svg" />
 				</div>
-			</div>`,
+			</div>
+			<div id="mobile-menu" class="mobile-menu hidden">
+				<div class="pb-2">
+					<a href="index">Home</a>
+				</div>
+				<div class="pb-2">
+					<a href="#news">News</a>
+				</div>
+				<div class="pb-2">
+					<a href="uses">Use Cases</a>
+				</div>
+				<div class="pb-2">
+					<a href="community">Community</a>
+				</div>
+                <div class="pb-2">
+                    <a href="story">Our Story</a>
+                </div>
+				<div class="pb-2">
+					<a href="contact">Contact</a>
+				</div>
+			</div>
+		</div>`,
 	props: {logoColor: String}
 });
 
@@ -98,12 +98,15 @@ footerApp.component('footers', {
                     <a tabindex="3" href="community">Community</a>
                 </div>
                 <div class="py-2 lg:py-0 lg:px-3">
+                    <a tabindex="3" href="story">Our Story</a>
+                </div>
+                <div class="py-2 lg:py-0 lg:px-3">
                     <a tabindex="3" href="contact">Contact</a>
                 </div>
             </div>
             <div class="flex flex-col lg:flex-row ml-8 lg:ml-0">
                 <div class="p-2 lg:py-0 lg:px-3">
-                    <a tabindex="3" target="_blank" href="https://www.linkedin.com/company/codex-common-oncology-data-elements-extensions/?trk=public_profile_topcard-current-company" class="flex flex-row underline"><img width="20" class="mr-2" src="img/linkedin.svg"/>Linkedin</a>
+                    <a tabindex="3" target="_blank" href="https://www.linkedin.com/company/codex-common-oncology-data-elements-extensions/?trk=public_profile_topcard-current-company" class="flex flex-row underline"><img width="20" class="mr-2" src="img/linkin.svg"/>Linkedin</a>
                 </div>
                 <div class="p-2 lg:py-0 lg:px-3">
                     <a tabindex="3" target="_blank" href="https://confluence.hl7.org/display/COD/CodeX+Home" class="flex flex-row underline"><img width="20" class="mr-2" src="img/confluence.svg"/>Confluence</a>
