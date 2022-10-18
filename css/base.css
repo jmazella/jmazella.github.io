@@ -340,6 +340,12 @@ p {
 	height:100%;
 }
 
+.news-card-carousel{
+	padding: 35px;
+	min-height: 400px;
+	height:100%;
+}
+
 .quote{
 	margin-top: .2rem;
 	margin-right: 1.5rem;

@@ -51,7 +51,7 @@
 					</div>
 				</div>
 			</div>
- 			<div class="flex justify-center text-black bg-white banner-container md:hidden">
+<!--  			<div class="flex justify-center text-black bg-white banner-container md:hidden">
 				<div class="flex flex-col mt-14 mb-6 max-w-[350px]">
 					<h2 class='font-40px font-black satoshi-black leading-none'>Better Data,</h2>
 					<h2 class='font-40px font-black satoshi-black leading-none mt-2'>Better Health</h2>
@@ -302,22 +302,44 @@
 						<p tabindex="1" class="mt-4"><a class="underline" href="uses">Read more use cases</a><img class="inline ml-2" src="img/arrow.svg"/></p>
 					</div>
 				</div>
-			</div>
-
+			</div> -->
+<!-- 			<div id="newsApp">
+				<news />
+			</div> -->
 			<div class="news-container p-10 pb-16 flex flex-col">
 				<div class="flex flex-col lg:flex-row justify-center items-center">
 					<h1 tabindex="1" id="news" class="satoshi-black font-black font-36px pb-5 place-self-center">News & Updates</h1>
 					<div tabindex="1" class="pb-5 pl-6"><a tabindex="1" class="underline" target="_blank" href="https://confluence.hl7.org/display/COD/CodeX+Home?desktop=true&macroName=confiform-entry-register#CodeXHome-News">Read More</a><img class="inline ml-2" src="img/arrow.svg"/></div>
 				</div>
-				<div id="newsCarousel" class="carousel carousel-dark slide relative lg:hidden" data-bs-ride="carousel" data-bs-interval="false">
+				<div id="newsCarouselWide" class="carousel carousel-dark slide relative " data-bs-ride="carousel" data-bs-interval="false">
 					<div class="carousel-inner relative w-full overflow-hidden">
-						<div class="carousel-item active relative float-left w-full">
-							<div class="flex flex-col px-2 justify-center sm:px-16 md:px-32 lg:px-4 xl:px-16 lg:grid lg:grid-cols-3 lg:gap-x-4 xl:gap-x-6">
-								<div class="mb-8 xl:mb-0 xl:pr-2" >
-									<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
-										<h1 tabindex="1" class="satoshi-bold font-black font-16px underline"><a target='_blank' href="https://www.fightcancer.org/releases/acs-can-provided-nearly-1-million-support-amgen-expand-cancer-clinical-trial-enrollment">ACS-CAN and CodeX Provided Nearly $1 Million in Support from Amgen</a></h1>
-										<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[12px] sm:text-[16px]">ACS CAN <img class="px-2" src="img/diamond-bullet.svg"/> March 3, 2022</h2>
-										<p tabindex="1">Pilot Test Trial Eligibility Screening Interventions Aiming to Increase and Diversify Patient Enrollment in Cancer Clinical Trials.</p>
+						<div style="width: 100%" class="carousel-item active relative">
+							<div class="grid grid-cols-3 gap-x-2 px-12">
+								<div class="flex flex-col px-2 justify-center lg:px-4 lg:gap-x-4 ">
+									<div class="mb-8 h-full">
+										<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card-carousel">
+											<h1 tabindex="1" class="satoshi-bold font-black font-16px underline"><a target='_blank' href="https://www.fightcancer.org/releases/acs-can-provided-nearly-1-million-support-amgen-expand-cancer-clinical-trial-enrollment">ACS-CAN and CodeX Provided Nearly $1 Million in Support from Amgen</a></h1>
+											<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[12px] sm:text-[16px]">ACS CAN <img class="px-2" src="img/diamond-bullet.svg"/> March 3, 2022</h2>
+											<p tabindex="1">Pilot Test Trial Eligibility Screening Interventions Aiming to Increase and Diversify Patient Enrollment in Cancer Clinical Trials.</p>
+										</div>
+									</div>
+								</div>
+								<div class="flex flex-col px-2 justify-center lg:px-4 lg:gap-x-4 ">
+									<div class="mb-8 h-full">
+										<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card-carousel">
+											<h1 tabindex="1" class="satoshi-bold font-black font-16px underline"><a target="_blank" href="https://confluence.hl7.org/display/COD/July+Newsletter%3A+CodeX+Adds+Genomics%2C+Cardiovascular+Health+to+Data-Sharing+Domains">CodeX Adds Genomics and Cardiovascular Health to Data-Sharing Domains</a></h1>
+											<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[12px] sm:text-[16px]">CodeX Confluence <img class="px-2" src="img/diamond-bullet.svg"/> July 14, 2022</h2>
+											<p tabindex="1">From enhanced data-sharing for cancer registry reporting, to improved patient access to clinical trials, to helping patients better manage hypertension from the comfort of their own homes, CodeX community members continue to push the data-sharing envelope. </p>
+										</div>
+									</div>
+								</div>
+								<div class="flex flex-col px-2 justify-center lg:px-4 lg:gap-x-4 ">
+									<div class="mb-8 h-full">
+										<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card-carousel">
+											<h1 tabindex="1" class="satoshi-bold font-black font-16px underline"><a target="_blank" href="https://www.whitehouse.gov/ostp/news-updates/2022/08/10/statements-on-president-bidens-historic-appointment-of-dr-monica-bertagnolli-as-director-of-the-national-cancer-institute/">Statements on President Biden’s Historic Appointment of Dr. Monica Bertagnolli as Director of the National Cancer Institute</a></h1>
+											<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[10px] sm:text-[16px]">The White House <img class="px-2" src="img/diamond-bullet.svg"/> August 10, 2022</h2>
+											<p tabindex="1"> President Biden formally announced the appointment of Dr. Monica Bertagnolli as the 16th director of the National Cancer Institute. The White House Office of Science and Technology Policy provided the following statements in support of the appointment: “Congratulations to Dr. Monica Bertagnolli for her historic appointment as the 16th director – and first woman director – of the National Cancer Institute. Dr. Bertagnolli is a leader with impeccable credentials who has made outstanding contributions to the field of clinical oncology. Dr. Bertagnolli arrives at NCI at a critical time in our Nation’s efforts to reduce cancer deaths as well as fundamental inequities in the oncology system.”</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -325,21 +347,10 @@
 						<div class="carousel-item relative float-left w-full">
 							<div class="flex flex-col px-2 justify-center sm:px-16 md:px-32 lg:px-4 xl:px-16 lg:grid lg:grid-cols-3 lg:gap-x-4 xl:gap-x-6">
 								<div class="mb-8 xl:mb-0">
-									<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
+									<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card-carousel">
 										<h1 tabindex="1" class="satoshi-bold font-black font-16px underline"><a target="_blank" href="https://confluence.hl7.org/display/COD/July+Newsletter%3A+CodeX+Adds+Genomics%2C+Cardiovascular+Health+to+Data-Sharing+Domains">CodeX Adds Genomics and Cardiovascular Health to Data-Sharing Domains</a></h1>
-										<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[12px] sm:text-[16px]">CodeX Confluence <img class="px-2" src="img/diamond-bullet.svg"/> July 14, 2022</h2>
+										<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[12px] sm:text-[16px]">222CodeX Confluence <img class="px-2" src="img/diamond-bullet.svg"/> July 14, 2022</h2>
 										<p tabindex="1">From enhanced data-sharing for cancer registry reporting, to improved patient access to clinical trials, to helping patients better manage hypertension from the comfort of their own homes, CodeX community members continue to push the data-sharing envelope. </p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item relative float-left w-full">
-							<div class="flex flex-col px-2 justify-center sm:px-16 md:px-32 lg:px-4 xl:px-16 lg:grid lg:grid-cols-3 lg:gap-x-4 xl:gap-x-6">
-								<div class="mb-8 xl:mb-0 xl:pl-2">
-									<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
-										<h1 tabindex="1" class="satoshi-bold font-black font-16px underline"><a target="_blank" href="https://www.whitehouse.gov/ostp/news-updates/2022/08/10/statements-on-president-bidens-historic-appointment-of-dr-monica-bertagnolli-as-director-of-the-national-cancer-institute/">Statements on President Biden’s Historic Appointment of Dr. Monica Bertagnolli as Director of the National Cancer Institute</a></h1>
-										<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[10px] sm:text-[16px]">The White House <img class="px-2" src="img/diamond-bullet.svg"/> August 10, 2022</h2>
-										<p tabindex="1"> President Biden formally announced the appointment of Dr. Monica Bertagnolli as the 16th director of the National Cancer Institute. The White House Office of Science and Technology Policy provided the following statements in support of the appointment: “Congratulations to Dr. Monica Bertagnolli for her historic appointment as the 16th director – and first woman director – of the National Cancer Institute. Dr. Bertagnolli is a leader with impeccable credentials who has made outstanding contributions to the field of clinical oncology. Dr. Bertagnolli arrives at NCI at a critical time in our Nation’s efforts to reduce cancer deaths as well as fundamental inequities in the oncology system.”</p>
 									</div>
 								</div>
 							</div>
@@ -348,7 +359,7 @@
 					<button
 						class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
 						type="button"
-						data-bs-target="#newsCarousel"
+						data-bs-target="#newsCarouselWide"
 						data-bs-slide="prev"
 						>
 					<span class="carousel-control-prev-icon prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
@@ -357,7 +368,7 @@
 					<button
 						class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
 						type="button"
-						data-bs-target="#newsCarousel"
+						data-bs-target="#newsCarouselWide"
 						data-bs-slide="next"
 						>
 					<span class="carousel-control-next-icon next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
@@ -366,7 +377,7 @@
 					<div class="carousel-indicators indicator-container absolute right-0 left-0 flex justify-center p-0 mb-4">
 						<button
 							type="button"
-							data-bs-target="#newsCarousel"
+							data-bs-target="#newsCarouselWide"
 							data-bs-slide-to="0"
 							class="round-indicator active"
 							aria-current="true"
@@ -374,42 +385,12 @@
 							></button>
 						<button
 							type="button"
-							data-bs-target="#newsCarousel"
+							data-bs-target="#newsCarouselWide"
 							data-bs-slide-to="1"
 							class="round-indicator"
 							aria-label="News Story 2"
 							></button>
-						<button
-							type="button"
-							data-bs-target="#newsCarousel"
-							data-bs-slide-to="2"
-							class="round-indicator"
-							aria-label="News Story 3"
-							></button>
 					</div>
-				</div>
-				<div class="flex flex-col px-2 justify-center sm:px-16 md:px-32 lg:px-4 xl:px-16 lg:grid lg:grid-cols-3 lg:gap-x-4 xl:gap-x-6 hidden lg:block">
-					<a class="mb-8 xl:mb-0 xl:pr-2" target='_blank' href="https://www.fightcancer.org/releases/acs-can-provided-nearly-1-million-support-amgen-expand-cancer-clinical-trial-enrollment">
-						<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
-							<h1 tabindex="1" class="satoshi-bold font-black font-16px underline">ACS-CAN and CodeX Provided Nearly $1 Million in Support from Amgen</h1>
-							<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[12px] sm:text-[16px]">ACS CAN <img class="px-2" src="img/diamond-bullet.svg"/> March 3, 2022</h2>
-							<p tabindex="1">Pilot Test Trial Eligibility Screening Interventions Aiming to Increase and Diversify Patient Enrollment in Cancer Clinical Trials.</p>
-						</div>
-					</a>
-					<a class="mb-8 xl:mb-0" target="_blank" href="https://confluence.hl7.org/display/COD/July+Newsletter%3A+CodeX+Adds+Genomics%2C+Cardiovascular+Health+to+Data-Sharing+Domains">
-						<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
-							<h1 tabindex="1" class="satoshi-bold font-black font-16px underline">CodeX Adds Genomics and Cardiovascular Health to Data-Sharing Domains</h1>
-							<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[12px] sm:text-[16px]">CodeX Confluence <img class="px-2" src="img/diamond-bullet.svg"/> July 14, 2022</h2>
-							<p tabindex="1">From enhanced data-sharing for cancer registry reporting, to improved patient access to clinical trials, to helping patients better manage hypertension from the comfort of their own homes, CodeX community members continue to push the data-sharing envelope. </p>
-						</div>
-					</a>
-					<a class="mb-8 xl:mb-0 xl:pl-2" target="_blank" href="https://www.whitehouse.gov/ostp/news-updates/2022/08/10/statements-on-president-bidens-historic-appointment-of-dr-monica-bertagnolli-as-director-of-the-national-cancer-institute/">
-						<div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
-							<h1 tabindex="1" class="satoshi-bold font-black font-16px underline">Statements on President Biden’s Historic Appointment of Dr. Monica Bertagnolli as Director of the National Cancer Institute</h1>
-							<h2 tabindex="1" class="flex py-2 font-bold text-newsgrey text-[10px] sm:text-[16px]">The White House <img class="px-2" src="img/diamond-bullet.svg"/> August 10, 2022</h2>
-							<p tabindex="1">President Biden formally announced the appointment of Dr. Monica Bertagnolli as the 16th director of the National Cancer Institute. The White House Office of Science and Technology Policy provided the following statements in support of the appointment: “Congratulations to Dr. Monica Bertagnolli for her historic appointment as the 16th director – and first woman director – of the National Cancer Institute. Dr. Bertagnolli is a leader with impeccable credentials who has made outstanding contributions to the field of clinical oncology. Dr. Bertagnolli arrives at NCI at a critical time in our Nation’s efforts to reduce cancer deaths as well as fundamental inequities in the oncology system.”</p>
-						</div>
-					</a>
 				</div>
 			</div>
 			<div class="bg-darkgrey flex flex-col md:flex-row px-8 py-12 lg:py-16 justify-center">
@@ -469,7 +450,41 @@
 				<footers />
 			</div>
 		</div>
+		<script>
+			const newsItems = [
+				{
+					'title':'ACS-CAN and CodeX Provided Nearly $1 Million in Support from Amgen',
+					'summary':'Pilot Test Trial Eligibility Screening Interventions Aiming to Increase and Diversify Patient Enrollment in Cancer Clinical Trials.',
+					'source':'ACS CAN',
+					'date':'March 3, 2022',
+					'link':'https://www.fightcancer.org/releases/acs-can-provided-nearly-1-million-support-amgen-expand-cancer-clinical-trial-enrollment'
+				},
+				{
+					'title':'CodeX Adds Genomics and Cardiovascular Health to Data-Sharing Domains',
+					'summary':'From enhanced data-sharing for cancer registry reporting, to improved patient access to clinical trials, to helping patients better manage hypertension from the comfort of their own homes, CodeX community members continue to push the data-sharing envelope. ',
+					'source':'CodeX Confluence',
+					'date':'July 14, 2022',
+					'link':'https://confluence.hl7.org/display/COD/July+Newsletter%3A+CodeX+Adds+Genomics%2C+Cardiovascular+Health+to+Data-Sharing+Domains'
+				},
+				{
+					'title':'Statements on President Biden’s Historic Appointment of Dr. Monica Bertagnolli as Director of the National Cancer Institute',
+					'summary':'President Biden formally announced the appointment of Dr. Monica Bertagnolli as the 16th director of the National Cancer Institute. The White House Office of Science and Technology Policy provided the following statements in support of the appointment: “Congratulations to Dr. Monica Bertagnolli for her historic appointment as the 16th director – and first woman director – of the National Cancer Institute. Dr. Bertagnolli is a leader with impeccable credentials who has made outstanding contributions to the field of clinical oncology. Dr. Bertagnolli arrives at NCI at a critical time in our Nation’s efforts to reduce cancer deaths as well as fundamental inequities in the oncology system.”',
+					'source':'The White House',
+					'date':'August 10, 2022',
+					'link':'https://www.whitehouse.gov/ostp/news-updates/2022/08/10/statements-on-president-bidens-historic-appointment-of-dr-monica-bertagnolli-as-director-of-the-national-cancer-institute/'
+				},
+				{
+					'title':'22CodeX Adds Genomics and Cardiovascular Health to Data-Sharing Domains',
+					'summary':'From enhanced data-sharing for cancer registry reporting, to improved patient access to clinical trials, to helping patients better manage hypertension from the comfort of their own homes, CodeX community members continue to push the data-sharing envelope. ',
+					'source':'CodeX Confluence',
+					'date':'July 14, 2022',
+					'link':'https://confluence.hl7.org/display/COD/July+Newsletter%3A+CodeX+Adds+Genomics%2C+Cardiovascular+Health+to+Data-Sharing+Domains'
+				},
+			];
+
+		</script>
 		<script>headerApp.mount('#headerApp')</script>
+		<script>newsApp.mount('#newsApp')</script>
 		<script>footerApp.mount('#footerApp')</script>
 		<script src="js/tailwind-elements.min.js"></script>
 	</body>

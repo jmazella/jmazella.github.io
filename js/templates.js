@@ -157,9 +157,71 @@ newsApp.component('desktop-news', {
 	props: {newsItems: Array}
 });
 
+// For when we have more than 3 items
+newsApp.component('desktop-news-carousel', {
+    template:
+     `
+        <div id="newsCarouselWide" class="carousel carousel-dark slide relative hidden lg:block" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner relative w-full overflow-hidden">
+                    <template v-for="(group, index) in itemGroups">
+                        <div :class="['carousel-item relative float-left w-full', {'active': index==0}]">
+                            <div class="flex flex-col px-2 justify-center sm:px-16 md:px-32 lg:px-4 xl:px-16 lg:grid lg:grid-cols-3 lg:gap-x-4 xl:gap-x-6">
+                                <div :class="['mb-8 xl:mb-0', { 'xl:pr-2': index==0, 'xl:pl-2': index==(newsItems.length-1) }]" >
+                                <template v-for="item in group">
+                                    <news-item :item="item" />
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+                <button
+                    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                    type="button"
+                    data-bs-target="#newsCarouselWide"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                    type="button"
+                    data-bs-target="#newsCarouselWide"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators indicator-container absolute right-0 left-0 flex justify-center p-0 mb-4">
+                    <button
+                        v-for="(item, index) in newsItems"
+                        type="button"
+                        data-bs-target="#newsCarouselWide"
+                        :data-bs-slide-to="index"
+                        :class="['round-indicator', {'active': index==0}]"
+                        aria-current="true"
+                        :aria-label="'News Story '+ (index+1)"
+                    />
+                </div>
+            </div>
+    `,
+    props: {newsItems: Array},
+    computed: {
+        itemGroups() {
+            var groups = []
+            const groupSize = 3;
+            for (var i = 0; i < newsItems.length; i += groupSize) {
+                groups.push(newsItems.slice(i, i + groupSize));
+            }
+          return groups;
+        }
+    }
+});
+
 newsApp.component('mobile-news', {
 	template:
-			`
+	`
 		<div id="newsCarousel" class="carousel carousel-dark slide relative lg:hidden" data-bs-ride="carousel" data-bs-interval="false">
 				<div class="carousel-inner relative w-full overflow-hidden">
 					<div v-for="(item, index) in newsItems" :class="['carousel-item relative float-left w-full', {'active': index==0}]">
@@ -200,34 +262,28 @@ newsApp.component('mobile-news', {
 					/>
 				</div>
 			</div>
-		`,
-	props: ['newsItems']
+	`,
+	props: {'newsItems': Array}
 });
-
-// newsApp.component('news', {
-//	 template:
-//		 `<div class="news-container p-10 pb-16 flex flex-col">
-//			 <h1 tabindex="1" id="news" class="satoshi-black font-black font-36px pb-5 place-self-center">News & Updates</h1>
-//			 <mobile-news :news-items="newsItems" />
-//			 <desktop-news :news-items="newsItems" />
-//		 </div>`,
-//	 data() {
-//		 return {
-//			 newsItems: newsItems
-//		 }
-//	 }
-// });
 
 newsApp.component('news', {
 	template:
 	`
-		<div class="news-container p-10 pb-16 flex flex-col">
-			<h1 tabindex="1" id="news" class="satoshi-black font-black font-36px pb-5 place-self-center">News & Updates</h1>
-			<mobile-news :news-items="newsItems" />
-			<desktop-news :news-items="newsItems" />
-		</div>
+        <div class="news-container p-10 pb-16 flex flex-col">
+            <div class="flex flex-col lg:flex-row justify-center items-center">
+                <h1 tabindex="1" id="news" class="satoshi-black font-black font-36px pb-5 place-self-center">News & Updates</h1>
+                <div tabindex="1" class="pb-5 pl-6"><a tabindex="1" class="underline" target="_blank" href="https://confluence.hl7.org/display/COD/CodeX+Home?desktop=true&macroName=confiform-entry-register#CodeXHome-News">Read More</a><img class="inline ml-2" src="img/arrow.svg"/></div>
+            </div>
+        	<mobile-news :news-items="newsItems" />
+        	<desktop-news v-if="newsItems.length < 4" :news-items="newsItems" />
+            <desktop-news-carousel v-if="newsItems.length > 3" :news-items="newsItems" />
+    	</div>
 	`,
-props: {newsItems: Array}
+    data() {
+      return {
+          newsItems: newsItems
+      }
+    }
 });
 
 const usesApp = Vue.createApp();
