@@ -234,7 +234,7 @@ usesApp.component('use-item-list', {
 					<img width="22" class="mx-6 mt-1 lg:hidden" :src="image" />
 					<div>
 						<div>
-							<h3 tabindex="2" class="font-20px inline-block satoshi-bold font-bold lg:underline"><a target="_blank" :href="use.url">{{use.title}}</a></h3>
+							<h3 tabindex="2" class="font-20px inline-block satoshi-bold font-bold underline"><a target="_blank" :href="use.url">{{use.title}}</a></h3>
 							<span tabindex="2" v-if="use.newDomain" tabindex="2" class="use-explain-badge whitespace-nowrap hidden lg:inline">NEW DOMAIN</span>
 						</div>
 						<div tabindex="2" class="font-16px leading-6 mt-1">{{use.description}}</div>
