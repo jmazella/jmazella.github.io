@@ -28,7 +28,7 @@
 	<body class="bg-darkgrey sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
 			<div id="headerApp">
-				<headers logo-color="white" underline-link="uses" />
+				<headers logo-color="white" mobile-text-color="white" mobile-logo-color="white" mobile-class="mobile-header-container-gradient" underline-link="uses" />
 			</div>
 			<div class="main mb-auto">
 				<div class="use-header flex justify-center items-center">
@@ -44,156 +44,92 @@
 					<img tabindex="2" class="lgx:hidden" src="img/use-steps.svg" />
 					<img tabindex="2" width="380px" class="pb-8 lg:hidden" src="img/use-steps.svg" />
 				</div>
-				<div class="bg-white uses-list ">
-					<div class="flex flex-col place-content-center use-container lgx:p-0 lg:flex-row">
-						<div class="lgx:flex flex-row justify-center items-center use-num-container lgx:m-0 bg-darkred text-white lg:bg-white lg:text-darkred py-10 lg:py-0">
-							<div tabindex="2" class="use-num satoshi-bold font-bold lgx:leading-none mr-5 w-fit lg:mr-0 lg:w-32">5</div>
-							<div tabindex="2" class="use-num-desc self-end">In Execution</div>
-						</div>
-						<div tabindex="-1" class="lg:flex flex-col items-stretch hidden">
-							<img width="63px" src="img/diamond1.svg" />
-							<div class="use-line use-line-1 border-darkred"></div>
-						</div>
-						<div class="use-list pr-14 pt-10 lg:pr-0 lg:pt-0">
-							<div class="flex flex-row items-start pb-4">
-								<img width="22px" class="mx-6 mt-1 lg:hidden" src="img/diamond1.svg" />
-								<div>
-									<div tabindex="2">
-										<h3 class="font-20px satoshi-bold font-bold lg:underline"><a target="_blank" href="https://confluence.hl7.org/display/COD/Cancer+Registry+Reporting">Cancer Registry Reporting</a></h3>
-									</div>
-									<div tabindex="2" class="font-16px leading-6 mt-1">Enable reporting of mCODE-based cancer data from cancer center health center EHRs to state and private registries that are aggregating data for different reasons, substantially reducing duplication and burden while increasing reporting speed and accuracy.</div>
-								</div>
-							</div>
-							<div class="flex flex-row items-start py-4">
-								<img width="22px" class="mx-6 mt-1 lg:hidden" src="img/diamond1.svg" />
-								<div>
-									<div tabindex="2">
-										<h3 class="font-20px satoshi-bold font-bold lg:underline"><a target="_blank" href="https://confluence.hl7.org/display/COD/EHR+Endpoints+for+Cancer+Clinical+Trials">EHR Endpoints for Clinical Trials (ICAREdata)</a></h3>
-									</div>
-									<div tabindex="2" class="font-16px leading-6 mt-1">Collect research-quality mCODE-based data from EHRs to increase the value of real-world data for clinical trials, and reduce and potentially eliminate manual and/or duplicate data entry into case report forms.</div>
-								</div>
-							</div>
-							<div class="flex flex-row items-start py-4">
-								<img width="22px" class="mx-6 mt-1 lg:hidden" src="img/diamond1.svg" />
-								<div>
-									<div tabindex="2">
-										<h3 class="font-20px satoshi-bold font-bold lg:underline"><a target="_blank" href="https://confluence.hl7.org/pages/viewpage.action?pageId=66938394">Integrated Trial Matching for Cancer Patients and Providers</a></h3>
-									</div>
-									<div tabindex="2" class="font-16px leading-6 mt-1"> Leverage mCODE-based data standards and open APIs that enable interoperable, scalable, and accessible clinical trial matching services to improve the ability of patients to find clinical trials for which they may be eligible. </div>
-								</div>
-							</div>
-							<div class="flex flex-row items-start py-4">
-								<img width="22px" class="mx-6 mt-1 lg:hidden" src="img/diamond1.svg" />
-								<div>
-									<div tabindex="2">
-										<h3 class="font-20px satoshi-bold font-bold lg:underline"><a target="_blank" href="https://confluence.hl7.org/pages/viewpage.action?pageId=76164453">mCODE++ Extraction</a></h3>
-									</div>
-									<div tabindex="2" class="font-16px leading-6 mt-1"> Develop software to enable existing EHRs and other systems to share cancer patient data conformant to the mCODE FHIR Implementation Guides to support a variety of use cases. </div>
-								</div>
-							</div>
-							<div class="flex flex-row items-start pt-4">
-								<img width="22px" class="mx-6 mt-1 lg:hidden" src="img/diamond1.svg" />
-								<div>
-									<div tabindex="2">
-										<h3 class="font-20px satoshi-bold font-bold lg:underline"><a target="_blank" href="https://confluence.hl7.org/display/COD/Radiation+Therapy+Treatment+Data+for+Cancer">Radiation Treatment Therapy Data for Cancer</a></h3>
-									</div>
-									<div tabindex="2" class="font-16px leading-6 mt-1"> Leverage mCODE and extensions to enable sharing of critical radiation therapy treatment data for care coordination or data reuse (research, quality measurement, payer-required reporting). </div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="flex flex-col place-content-center use-container mt-10 lg:mt-0 lgx:p-0 lg:flex-row">
-						<div class="lgx:flex flex-row justify-center items-center use-num-container lgx:m-0 bg-gold text-white lg:bg-white lg:text-gold py-10 lg:py-0">
-							<div tabindex="2" class="use-num satoshi-bold font-bold lgx:leading-none mr-5 w-fit lg:mr-0 lg:w-32">1</div>
-							<div tabindex="2" class="use-num-desc self-end">In Planning</div>
-						</div>
-						<div tabindex="-1" class="lg:flex flex-col items-stretch hidden">
-							<img width="43px" src="img/diamond2.svg" />
-							<div class="use-line border-gold"></div>
-						</div>
-						<div class="use-list pr-14 pt-10 lg:pr-0 lg:pt-0">
-							<div class="flex flex-row items-start pb-4">
-								<img width="22px" class="mx-6 mt-1 lg:hidden" src="img/diamond2.svg" />
-								<div>
-									<div tabindex="2">
-										<h3 class="font-20px satoshi-bold font-bold lg:underline"><a target="_blank" href="https://confluence.hl7.org/display/COD/Prior+Authorization+in+Oncology">Prior Authorization in Oncology</a></h3>
-									</div>
-									<div tabindex="2" class="font-16px leading-6 mt-1">Facilitate sharing of mCODE-based clinical data between providers and payers to reduce burden and speed authorization or requests for more information.</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="flex flex-col place-content-center use-container mt-10 lg:mt-0 lgx:p-0 lg:flex-row">
-						<div class="lgx:flex flex-row justify-center items-center use-num-container lgx:m-0 bg-medgrey text-white lg:bg-white lg:text-medgrey py-10 lg:py-0">
-							<div tabindex="2" class="use-num satoshi-bold font-bold lgx:leading-none mr-5 w-fit lg:mr-0 lg:w-32">5</div>
-							<div tabindex="2" class="use-num-desc self-end">In Discovery</div>
-						</div>
-						<div tabindex="-1" class="lg:flex flex-col items-stretch hidden">
-							<img width="33px" src="img/diamond3.svg" />
-							<div class="use-line border-medgrey"></div>
-						</div>
-						<div class="use-list pr-14 pt-10 lg:pr-0 lg:pt-0">
-							<span tabindex="2" class="use-explain-badge whitespace-nowrap lg:hidden">NEW DOMAIN</span>
-							<div class="flex flex-row items-start py-4">
-								<img width="22px" class="mx-6 mt-1 lg:hidden" src="img/diamond3.svg" />
-								<div>
-									<div>
-										<h3 tabindex="2" class="h3 font-20px inline-block satoshi-bold lg:underline"><a target="_blank" href="https://confluence.hl7.org/display/COD/CardX+-+Hypertension+Management">CardX Hypertension Management</a></h3>
-										<span tabindex="2" class="use-explain-badge whitespace-nowrap hidden lg:inline">NEW DOMAIN</span>
-									</div>
-									<div tabindex="2" class="font-16px leading-6 mt-1">Design and build an integrated standard that enables interoperable, scalable, and accessible hypertension management, both at home and in the clinic, so that blood pressure data can easily be shared among home blood pressure measurement devices, patient data managers, and health systems. </div>
-								</div>
-							</div>
-							<span tabindex="2" class="use-explain-badge whitespace-nowrap satoshi-bold lg:hidden">NEW DOMAIN</span>
-							<div class="flex flex-row items-start py-4">
-								<img width="22px" class="mx-6 mt-1 lg:hidden" src="img/diamond3.svg" />
-								<div>
-									<div>
-										<h3 tabindex="2" class="h3 font-20px inline-block satoshi-bold lg:underline"><a target="_blank" href="https://confluence.hl7.org/display/COD/GenomeX+-+Genomics+Data+Exchange">Genomics Data Exchange</a></h3>
-										<span tabindex="2" class="use-explain-badge whitespace-nowrap hidden lg:inline">NEW DOMAIN</span>
-									</div>
-									<!--<div tabindex="2" class="font-16px leading-6 mt-1">Designing and building scalable FHIR genomics interfaces so that genomic data can easily be shared between laboratories, EHRs, and/or genomics repositories. </div>-->
-									<div tabindex="2" class="font-16px leading-6 mt-1">Design and build an integrated standard that enables interoperable, scalable, and accessible genomics data that can easily be shared among laboratories, EHR Systems, and/or genomics repositories. </div>
-								</div>
-							</div>
-							<span tabindex="2" class="use-explain-badge whitespace-nowrap lg:hidden">NEW DOMAIN</span>
-							<div class="flex flex-row items-start py-4">
-								<img width="22px" class="mx-6 mt-1 lg:hidden" src="img/diamond3.svg" />
-								<div>
-									<div>
-										<h3 tabindex="2" class="h3 font-20px inline-block satoshi-bold lg:underline"><a target="_blank" href="https://confluence.hl7.org/display/COD/GenomeX+-+Genomics+Operations">Genomics Operations</a></h3>
-										<span tabindex="2" class="use-explain-badge whitespace-nowrap hidden lg:inline">NEW DOMAIN</span>
-									</div>
-									<div tabindex="2" class="font-16px leading-6 mt-1">Enable access to complex genomic data through APIs so that developers can more easily develop and populate data for a range of genomic applications. </div>
-								</div>
-							</div>
-							<div class="flex flex-row items-start py-4">
-								<img width="22px" class="mx-6 mt-1 lg:hidden" src="img/diamond3.svg" />
-								<div>
-									<div>
-										<h3 tabindex="2" class="h3 font-20px inline-block satoshi-bold lg:underline"><a target="_blank" href="https://confluence.hl7.org/display/COD/Risk+Evaluation+and+Mitigation+Strategies+%28REMS%29+Integration">Risk Evaluation and Mitigation Strategies</a></h3>
-									</div>
-									<div tabindex="2" class="font-16px leading-6 mt-1">Create integrated, automated, efficient, and effective REMS programs by leveraging open data standards. Create the data infrastructure to enable REMS integration into the current workflow and data sharing across REMS stakeholders, reducing undue burden. </div>
-								</div>
-							</div>
-							<div class="flex flex-row items-start py-4 lg:pb-0">
-								<img width="22px" class="mx-6 mt-1 lg:hidden" src="img/diamond3.svg" />
-								<div>
-									<div>
-										<h3 tabindex="2" class="h3 font-20px inline-block satoshi-bold lg:underline"><a target="_blank" href="https://confluence.hl7.org/display/COD/Quality+Measures">Quality Measures</a></h3>
-									</div>
-									<div tabindex="2" class="font-16px leading-6 mt-1">Create a solution that demonstrates the ability to author and evaluate digital quality measures using the FHIR data model and mCODE, where applicable, for value-based programs and clinical quality improvement in the oncology domain.</div>
-								</div>
-							</div>
-						</div>
-					</div>
+ 				<div id="usesApp">
+					<uses />
 				</div>
 			</div>
 			<div id="footerApp">
 				<footers />
 			</div>
 		</div>
+		<script>
+			const useItems = {
+				'execution':[
+					{
+						'title': 'Cancer Registry Reporting',
+						'description': 'Enable reporting of mCODE-based cancer data from cancer center health center EHRs to state and private registries that are aggregating data for different reasons, substantially reducing duplication and burden while increasing reporting speed and accuracy.',
+						'url': 'https://confluence.hl7.org/display/COD/Cancer+Registry+Reporting',
+						'newDomain': false
+					},
+					{
+						'title': 'EHR Endpoints for Clinical Trials (ICAREdata)',
+						'description': 'Collect research-quality mCODE-based data from EHRs to increase the value of real-world data for clinical trials, and reduce and potentially eliminate manual and/or duplicate data entry into case report forms.',
+						'url': 'https://confluence.hl7.org/display/COD/EHR+Endpoints+for+Cancer+Clinical+Trials',
+						'newDomain': false
+					},
+					{
+						'title': 'Integrated Trial Matching for Cancer Patients and Providers',
+						'description': 'Leverage mCODE-based data standards and open APIs that enable interoperable, scalable, and accessible clinical trial matching services to improve the ability of patients to find clinical trials for which they may be eligible.',
+						'url': 'https://confluence.hl7.org/pages/viewpage.action?pageId=66938394',
+						'newDomain': false
+					},
+					{
+						'title': 'mCODE++ Extraction',
+						'description': 'Develop software to enable existing EHRs and other systems to share cancer patient data conformant to the mCODE FHIR Implementation Guides to support a variety of use cases. ',
+						'url': 'https://confluence.hl7.org/pages/viewpage.action?pageId=76164453',
+						'newDomain': false
+					},
+					{
+						'title': 'Radiation Treatment Therapy Data for Cancer',
+						'description': 'Leverage mCODE and extensions to enable sharing of critical radiation therapy treatment data for care coordination or data reuse (research, quality measurement, payer-required reporting).',
+						'url': 'https://confluence.hl7.org/display/COD/Radiation+Therapy+Treatment+Data+for+Cancer',
+						'newDomain': false
+					}
+				],
+				'planning':[
+					{
+						'title': 'Prior Authorization in Oncology',
+						'description': 'Facilitate sharing of mCODE-based clinical data between providers and payers to reduce burden and speed authorization or requests for more information.',
+						'url': 'https://confluence.hl7.org/display/COD/Prior+Authorization+in+Oncology',
+						'newDomain': false
+					}
+				],
+				'discovery':[
+					{
+						'title': 'CardX Hypertension Management',
+						'description': 'Design and build an integrated standard that enables interoperable, scalable, and accessible hypertension management, both at home and in the clinic, so that blood pressure data can easily be shared among home blood pressure measurement devices, patient data managers, and health systems. ',
+						'url': 'https://confluence.hl7.org/display/COD/CardX+-+Hypertension+Management',
+						'newDomain': true
+					},
+					{
+						'title': 'Genomics Data Exchange',
+						'description': 'Design and build an integrated standard that enables interoperable, scalable, and accessible genomics data that can easily be shared among laboratories, EHR Systems, and/or genomics repositories. ',
+						'url': 'https://confluence.hl7.org/display/COD/GenomeX+-+Genomics+Data+Exchange',
+						'newDomain': true
+					},
+					{
+						'title': 'Genomics Operations',
+						'description': 'Enable access to complex genomic data through APIs so that developers can more easily develop and populate data for a range of genomic applications. ',
+						'url': 'https://confluence.hl7.org/display/COD/GenomeX+-+Genomics+Operations',
+						'newDomain': true
+					},
+					{
+						'title': 'Risk Evaluation and Mitigation Strategies',
+						'description': 'Create integrated, automated, efficient, and effective REMS programs by leveraging open data standards. Create the data infrastructure to enable REMS integration into the current workflow and data sharing across REMS stakeholders, reducing undue burden. ',
+						'url': 'https://confluence.hl7.org/display/COD/Risk+Evaluation+and+Mitigation+Strategies+%28REMS%29+Integration',
+						'newDomain': false
+					},
+					{
+						'title': 'Quality Measures',
+						'description': 'Create a solution that demonstrates the ability to author and evaluate digital quality measures using the FHIR data model and mCODE, where applicable, for value-based programs and clinical quality improvement in the oncology domain.',
+						'url': 'https://confluence.hl7.org/display/COD/Quality+Measures',
+						'newDomain': false
+					}
+				]
+			};
+		</script>
 		<script>headerApp.mount('#headerApp')</script>
+		<script>usesApp.mount('#usesApp')</script>
 		<script>footerApp.mount('#footerApp')</script>
 		<script src="js/tailwind-elements.min.js"></script>
 	</body>

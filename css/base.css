@@ -135,7 +135,6 @@ p {
 
 .mobile-menu{
 	margin-left: 75px;
-	margin-bottom: 5%;
 	font-size: 24px;
 	font-weight: 500;
 }
@@ -268,7 +267,18 @@ p {
 
 .use-list{
 	width: 800px;
-	padding-left: 100px;
+}
+
+.use-list-execute{
+	padding-left: 81px;
+}
+
+.use-list-planning{
+	padding-left: 89px;
+}
+
+.use-list-discovery{
+	padding-left: 96px;
 }
 
 .use-explain{

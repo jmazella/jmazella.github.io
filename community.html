@@ -28,7 +28,7 @@
 	<body class="bg-darkgrey sans">
 		<div class="container flex flex-col h-screen justify-between min-w-full">
 			<div id="headerApp">
-				<headers logo-color="white" underline-link="community" />
+				<headers logo-color="white" mobile-text-color="white" mobile-logo-color="white" mobile-class="mobile-header-container-grey" underline-link="community" />
 			</div>
 		<div class="content">
 			<div class="main mb-auto">
@@ -45,45 +45,14 @@
 				</div>
 				<div class="px-16 bg-white">
 					<h1 tabindex="2" class="satoshi-black font-bold font-36px text-darkbrown">Leadership</h1>
-					<div class="pt-2.5 flex flex-col lg:flex-row lg:gap-x-8 justify-between">
-						<div class="w-full lg:w-1/4 lg:mr-3 pb-4 flex flex-col">
-							<img  alt="Headshot of Dr. Steven Bratt" class="pb-2.5" src="img/steveBratt.svg">
-							<a tabindex="2" class="satoshi-bold underline" target="_blank" href="https://confluence.hl7.org/display/~steve_bratt">Dr. Steven Bratt, PhD</a>
-							<h3 tabindex="2" class="font-medium text-medgrey">Program Manager</h3>
-						</div>
-						<div class="w-full lg:w-1/4 lg:mr-1.5 pb-4 flex flex-col">
-							<img  alt=" Headshot of Dr. Su Chen" class="pb-2.5" src="img/suChen.svg">
-							<a tabindex="2" class="satoshi-bold underline" target="_blank" href="https://confluence.hl7.org/display/~suchen">Dr. Su Chen, MD</a>
-							<h3 tabindex="2" class="font-medium text-medgrey">Clinical Director</h3>
-						</div>
-						<div class="w-full lg:w-1/4 lg:ml-1.5 pb-4 flex flex-col">
-							<img  alt=" Headshot of Dr. Michele Galioto" class="pb-2.5" src="img/micheleGalioto.png">
-							<p tabindex="2" class="satoshi-bold underline"><a target="_blank" href="https://confluence.hl7.org/display/~mgalioto">Dr. Michele Galioto, DNP, RN, CNS</a></p>
-							<h3 tabindex="2" class="font-medium text-medgrey">Deputy Director</h3>
-						</div>
-						<div class="w-full lg:w-1/4 lg:ml-3 pb-4 flex flex-col">
-							<img alt="Headshot of Susan Hull" class="pb-2.5" src="img/sHull.png">
-							<p tabindex="2" class="satoshi-bold underline"><a target="_blank" href="https://confluence.hl7.org/display/~susanhull">Susan Hull, MSN, RN-BC, NEA-BC, FAMIA</a></p>
-							<h3 tabindex="2" class="font-medium text-medgrey">Strategic Advisor</h3>
-						</div>
+					<div id="leaderApp" class="pt-2.5 grid grid-cols-1 lg:grid-cols-4 lg:gap-x-11 justify-between">
+						<leaders />
 					</div>
 				</div>
 				<div class="px-16 bg-white">
 					<h1 tabindex="2" class="pt-16 pb-7 satoshi-black font-bold font-36px text-darkbrown">Managing Committees</h1>
-					<div class="flex flex-col justify-between lg:flex-row">
-						<div class="pb-4">
-							<h2 tabindex="2" class="satoshi-bold text-darkbrown uppercase font-16px">Steering Committee</h2>
-							<p tabindex="2" >Dr. Steven Bratt, PhD (MITRE)<br>Dr. Charles Jaffee, MD, PhD (HL7)</p>
-							<!--<p><a tabindex="2" class="visible lg:invisible pt-2 underline flex" target="_blank" href="https://confluence.hl7.org/display/COD/CodeX+Governance+Committees">See the full list <img class="ml-2" src="img/arrow.svg"></a></p>-->
-						</div>
-						<div>
-							<h2 tabindex="2" class="satoshi-bold text-darkbrown uppercase font-16px">Operating Committee</h2>
-							<p tabindex="2" >Alliance for Clinical Trials in Oncology<br>American Association of Physicists in Medicine (AAPM)<br>American Cancer Society - Cancer Action Network (ACS CAN)<br>American Society of Clinical Oncology<br>American Society for Radiation Oncology (ASTRO)<br>Amgen<br>Centers for Disease Control and Prevention (CDC) <br>Center for International Blood and Marrow Transplant Research (CIBMTR)<br>Canadian Organization of Medical Physicists (COMP)<br>Evernorth<br>Food and Drug Administration (FDA)<br>Health Level Seven (HL7)<br>Learning Health Community<br></p>
-							<!--<p><a tabindex="2" class="visible lg:invisible pt-2 underline flex" target="_blank" href="https://confluence.hl7.org/display/COD/CodeX+Governance+Committees">See the full list <img class="ml-2" src="img/arrow.svg"></a></p>-->
-						</div>
-						<div class="hidden lg:block">
-							<p tabindex="2" >Michigan Cancer Surveillance Program<br>MITRE<br>NRG Oncology<br>Oncology Nursing Society<br>Ontada<br>Pfizer<br>Society for Imaging Informatics in Medicine<br>Syntropy<br>Telligen<br>Tempus<br>TrialJectory<br>UnitedHealthcare<br>University of Nebraska Medical Center<br>Varian<br></p>
-						</div>
+					<div id="commApp" class="flex flex-col justify-between lg:flex-row">
+						<committees />
 					</div>
 				</div>
 				<div class="px-16 pt-20 bg-white">
@@ -98,7 +67,7 @@
 					<div class="flex flex-row flex-wrap gap-x-4 justify-between lg:gap-x-0">
 						<div class="pt-9 pb-5 w-1/4 lg:w-1/3 lg:flex lg:gap-x-8">
 							<div class="flex w-16 lg:w-20 justify-end">
-								<img alt="Health Systems icon of hospital building" class="h-16 lg:h-20" src="img/healthSystems.png">
+								<img title="Health Systems icon of hospital building" alt="Health Systems icon of hospital building" class="h-16 lg:h-20" src="img/healthSystems.png">
 							</div>
 							<div class="mt-3 lg:mt-0">
 								<h1 tabindex="2" class="community-cop-number satoshi-bold">55</h1>
@@ -107,7 +76,7 @@
 						</div>
 						<div class="pt-9 pb-5 w-1/4 lg:w-1/3 lg:flex lg:gap-x-8">
 							<div class="flex w-16 lg:w-20 justify-end">
-								<img alt="Payers icon health shield" class="h-16 lg:h-20" src="img/payers.png">
+								<img title="Payers icon health shield" alt="Payers icon health shield" class="h-16 lg:h-20" src="img/payers.png">
 							</div>
 							<div class="mt-3 lg:mt-0">
 								<h1 tabindex="2" class="community-cop-number satoshi-bold">7</h1>
@@ -116,7 +85,7 @@
 						</div>
 						<div class="pt-9 pb-5 w-1/4 lg:w-1/3 lg:flex lg:gap-x-8">
 							<div class="flex w-16 lg:w-20 justify-end">
-								<img alt="pharma icon of pharmacy building" class="h-16 lg:h-20" src="img/pharma.png">
+								<img title="pharma icon of pharmacy building" alt="pharma icon of pharmacy building" class="h-16 lg:h-20" src="img/pharma.png">
 							</div>
 							<div class="mt-3 lg:mt-0">
 								<h1 tabindex="2" class="community-cop-number satoshi-bold">10</h1>
@@ -125,7 +94,7 @@
 						</div>
 						<div class="pt-9 pb-5 w-1/4 lg:w-1/3 lg:flex lg:gap-x-8">
 							<div class="flex w-16 lg:w-20 justify-end">
-								<img alt="EHR and Tech Companies Icon of person with electronic device" class="h-16 lg:h-20" src="img/ehrsAndTechCompanies.png">
+								<img title="EHR and Tech Companies Icon of person with electronic device" alt="EHR and Tech Companies Icon of person with electronic device" class="h-16 lg:h-20" src="img/ehrsAndTechCompanies.png">
 							</div>
 							<div class="mt-3 lg:mt-0">
 								<h1 tabindex="2" class="community-cop-number satoshi-bold">85</h1>
@@ -134,7 +103,7 @@
 						</div>
 						<div class="pt-9 pb-5 w-1/4 lg:w-1/3 lg:flex lg:gap-x-8">
 							<div class="flex w-16 lg:w-20 justify-end">
-								<img alt="Medical Societies and Consortia icon of building" class="h-16 lg:h-20" src="img/medicalSocAndConsortia.png">
+								<img title="Medical Societies and Consortia icon of building" alt="Medical Societies and Consortia icon of building" class="h-16 lg:h-20" src="img/medicalSocAndConsortia.png">
 							</div>
 							<div class="mt-3 lg:mt-0">
 								<h1 tabindex="2" class="community-cop-number satoshi-bold">12</h1>
@@ -143,7 +112,7 @@
 						</div>
 						<div class="pt-9 pb-5 w-1/4 lg:w-1/3 lg:flex lg:gap-x-8">
 							<div class="flex w-16 lg:w-20 justify-end">
-								<img alt="Government Agencies icon of federal building" class="h-16 lg:h-20" src="img/governmentAgencies.png">
+								<img title="Government Agencies icon of federal building" alt="Government Agencies icon of federal building" class="h-16 lg:h-20" src="img/governmentAgencies.png">
 							</div>
 							<div class="mt-3 lg:mt-0">
 								<h1 tabindex="2" class="community-cop-number satoshi-bold">14</h1>
@@ -152,7 +121,7 @@
 						</div>
 						<div class="pt-9 pb-5 w-1/4 lg:w-1/3 lg:flex lg:gap-x-8">
 							<div class="flex w-16 lg:w-20 justify-end">
-								<img alt="Research Organizations Icon of microscope" class="h-16 lg:h-20" src="img/researchOrganizations.png">
+								<img title="Research Organizations Icon of microscope" alt="Research Organizations Icon of microscope" class="h-16 lg:h-20" src="img/researchOrganizations.png">
 							</div>
 							<div class="mt-3 lg:mt-0">
 								<h1 tabindex="2" class="community-cop-number satoshi-bold">12</h1>
@@ -161,7 +130,7 @@
 						</div>
 						<div class="pt-9 pb-5 w-1/4 lg:w-1/3 lg:flex lg:gap-x-8">
 							<div class="flex w-16 lg:w-20 justify-end">
-								<img alt="Non-profit and foundations icon of people gathered together" class="h-16 lg:h-20" src="img/nonProfAndFoundations.png">
+								<img title="Non-profit and foundations icon of people gathered together" alt="Non-profit and foundations icon of people gathered together" class="h-16 lg:h-20" src="img/nonProfAndFoundations.png">
 							</div>
 							<div class="mt-3 lg:mt-0">
 								<h1 tabindex="2" class="community-cop-number satoshi-bold">7</h1>
@@ -170,7 +139,7 @@
 						</div>
 						<div class="pt-9 pb-5 w-1/4 lg:w-1/3 lg:flex lg:gap-x-8">
 							<div class="flex w-16 lg:w-20 justify-end">
-								<img alt="Patient Advocacy Organizations icon of megaphone" class="h-16 lg:h-20" src="img/patientAdvocacyOrgs.png">
+								<img title="Patient Advocacy Organizations icon of megaphone" alt="Patient Advocacy Organizations icon of megaphone" class="h-16 lg:h-20" src="img/patientAdvocacyOrgs.png">
 							</div>
 							<div class="mt-3 lg:mt-0">
 								<h1 tabindex="2" class="community-cop-number satoshi-bold">2</h1>
@@ -189,7 +158,78 @@
 				<footers />
 			</div>
 		</div>
+		<script>
+			const leaders = [
+				{
+					'name': 'Dr. Steven Bratt, PhD',
+					'title': 'Program Manager',
+					'image': 'steveBratt.svg',
+					'image-alt': 'Headshot of Dr. Steven Bratt',
+					'link': 'https://confluence.hl7.org/display/~steve_bratt'
+				},
+				{
+					'name': 'Dr. Su Chen, MD',
+					'title': 'Clinical Director',
+					'image': 'suChen.svg',
+					'image-alt': 'Headshot of Dr. Su Chen',
+					'link': 'https://confluence.hl7.org/display/~suchen'
+				},
+				{
+					'name': 'Dr. Michele Galiato, DNP, RN, CNS',
+					'title': 'Deputy Director',
+					'image': 'micheleGalioto.png',
+					'image-alt': 'Headshot of Dr. Michele Galioto',
+					'link': 'https://confluence.hl7.org/display/~mgalioto'
+				},
+				{
+					'name': 'Susan Hull, MSN, RN-BC, NEA-BC, FAMIA',
+					'title': 'Strategic Advisor',
+					'image': 'sHull.png',
+					'image-alt': 'Headshot of Susan Hull',
+					'link': 'https://confluence.hl7.org/display/~susanhull'
+				}
+			];
+			const commMembers = {
+				'steering':
+				[
+					'Dr. Steven Bratt, PhD (MITRE)',
+					'Dr. Charles Jaffee, MD, PhD (HL7)'
+				],
+				'operating':
+				[
+					'Alliance for Clinical Trials in Oncology',
+					'American Association of Physicists in Medicine (AAPM)',
+					'American Cancer Society - Cancer Action Network (ACS CAN)',
+					'American Society of Clinical Oncology',
+					'American Society for Radiation Oncology (ASTRO)',
+					'Amgen',
+					'Centers for Disease Control and Prevention (CDC)',
+					'Center for International Blood and Marrow Transplant Research (CIBMTR)',
+					'Canadian Organization of Medical Physicists (COMP)',
+					'Evernorth',
+					'Food and Drug Administration (FDA)',
+					'Health Level Seven (HL7)',
+					'Learning Health Community',
+					'Michigan Cancer Surveillance Program',
+					'MITRE',
+					'NRG Oncology',
+					'Oncology Nursing Society',
+					'Ontada',
+					'Pfizer',
+					'Society for Imaging Informatics in Medicine',
+					'Syntropy',
+					'Telligen',
+					'Tempus',
+					'TrialJectory',
+					'UnitedHealthcare',
+					'University of Nebraska Medical Center',
+					'Varian'
+				]
+			};
+		</script>
 		<script>headerApp.mount('#headerApp')</script>
+		<script>leaderApp.mount('#leaderApp')</script>
+		<script>commApp.mount('#commApp')</script>
 		<script>footerApp.mount('#footerApp')</script>
 		<script src="js/tailwind-elements.min.js"></script>
 	</body>
