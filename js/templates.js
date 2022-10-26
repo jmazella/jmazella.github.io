@@ -21,7 +21,7 @@ headerApp.component('mobile-header', {
 					<a href="index">Home</a>
 				</div>
 				<div class="pb-2">
-					<a href="#news">News</a>
+					<a href="index#news">News</a>
 				</div>
 				<div class="pb-2">
 					<a href="uses">Use Cases</a>
@@ -55,7 +55,7 @@ headerApp.component('desktop-header', {
 						<a tabindex="1" href="index">Home</a>
 					</div>
 					<div class="flex items-center">
-						<a tabindex="1" href="#news">News</a>
+						<a tabindex="1" href="index#news">News</a>
 					</div>
 					<div :class="['flex items-center',{ 'underline decoration-solid underline-offset-8' : underlineLink=='uses'}]">
 						<a tabindex="1" href="uses">Use Cases</a>
@@ -96,7 +96,7 @@ footerApp.component('footers', {
 					<a tabindex="3" href="index">Home</a>
 				</div>
 				<div class="py-2 lg:py-0 lg:px-3">
-					<a tabindex="3" href="#news">News</a>
+					<a tabindex="3" href="index#news">News</a>
 				</div>
 				<div class="py-2 lg:py-0 lg:px-3">
 					<a tabindex="3" href="uses">Use Cases</a>
@@ -132,7 +132,7 @@ newsApp.component('news-item', {
     template:
     `
         <div class="bg-backgroundgrey border-t-4 border-lightbrown news-card">
-            <h1 tabindex="1" class="satoshi-bold font-black font-16px underline"><a target='_blank' href="{{item.url}}">{{item.title}}</a></h1>
+            <h1 tabindex="1" class="satoshi-bold font-black font-16px underline"><a target='_blank' :href="item.link">{{item.title}}</a></h1>
             <h2 tabindex="1" :class="'flex py-2 font-bold text-newsgrey sm:text-[16px] ' + textSize">{{item.source}} <img class="px-2" src="img/diamond-bullet.svg"/> {{item.date}}</h2>
             <p tabindex="1">{{item.summary}}</p>
         </div>
@@ -264,7 +264,7 @@ usesApp.component('uses', {
 			</div>
 			<div class="flex flex-col place-content-center use-container mt-10 lg:mt-0 lgx:p-0 lg:flex-row">
 				<div class="lgx:flex flex-row justify-center items-center use-num-container lgx:m-0 bg-gold text-white lg:bg-white lg:text-gold py-10 lg:py-0">
-					<div tabindex="2" class="use-num satoshi-bold font-bold lgx:leading-none mr-5 w-fit lg:mr-0 lg:w-32">1</div>
+					<div tabindex="2" class="use-num satoshi-bold font-bold lgx:leading-none mr-5 w-fit lg:mr-0 lg:w-32">{{useItems.planning.length}}</div>
 					<div tabindex="2" class="use-num-desc self-end">In Planning</div>
 				</div>
 				<div tabindex="-1" class="hidden lg:flex flex-col items-stretch">
@@ -277,7 +277,7 @@ usesApp.component('uses', {
 			</div>
 			<div class="flex flex-col place-content-center use-container mt-10 lg:mt-0 lgx:p-0 lg:flex-row">
 				<div class="lgx:flex flex-row justify-center items-center use-num-container lgx:m-0 bg-medgrey text-white lg:bg-white lg:text-medgrey py-10 lg:py-0">
-					<div tabindex="2" class="use-num satoshi-bold font-bold lgx:leading-none mr-5 w-fit lg:mr-0 lg:w-32">5</div>
+					<div tabindex="2" class="use-num satoshi-bold font-bold lgx:leading-none mr-5 w-fit lg:mr-0 lg:w-32">{{useItems.discovery.length}}</div>
 					<div tabindex="2" class="use-num-desc self-end">In Discovery</div>
 				</div>
 				<div tabindex="-1" class="hidden lg:flex flex-col items-stretch">
