@@ -15,7 +15,7 @@ function submitContactForm(form){
 	var submitButton = document.getElementById('contact-submit');
 	submitButton.disabled = true;
 	submitButton.classList.remove('clickable');
-	emailjs.sendForm('service_vhw7slgx', 'template_q4j4dpix', form)
+	emailjs.sendForm('service_vhw7slg', 'template_q4j4dpi', form)
 	.then(function(){
 		document.getElementById('contact-submit-success').classList.remove('hidden');
 	}, function(error){
