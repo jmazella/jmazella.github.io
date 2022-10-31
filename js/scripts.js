@@ -12,10 +12,13 @@ function closemenu(){
 
 function submitContactForm(form){
 	event.preventDefault();
-	emailjs.sendForm('service_vhw7slg', 'template_q4j4dpi', form)
-		.then(function(){
-			console.log('Form Sent');
-		}, function(error){
-			console.log('Form Send failed, error: ', error);
-		});
+	var submitButton = document.getElementById('contact-submit');
+	submitButton.disabled = true;
+	submitButton.classList.remove('clickable');
+	emailjs.sendForm('service_vhw7slgx', 'template_q4j4dpix', form)
+	.then(function(){
+		document.getElementById('contact-submit-success').classList.remove('hidden');
+	}, function(error){
+		document.getElementById('contact-submit-error').classList.remove('hidden');
+	});
 }

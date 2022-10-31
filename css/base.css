@@ -384,6 +384,18 @@ p {
 	height:700px;
 }
 
+.clickable{
+	cursor: pointer;
+}
+
+.error{
+	background-color: #dc3545;
+}
+
+.success{
+	background-color: #28a745;
+}
+
 @media all and (max-width: 820px) {
 	.header-container {display: none;}
 	.mobile-header-container {display: block;}
